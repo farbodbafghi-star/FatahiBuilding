@@ -11,7 +11,7 @@ const approachPoints = [
 
 const additionTypes = [
   { title: "Second-Storey Additions", description: "Adding a full or partial second floor to a bungalow or single-storey home. Foundation assessment, structural reinforcement, and seamless exterior integration." },
-  { title: "Rear &amp; Side Extensions", description: "Expanding the footprint of your home into your lot. Kitchen extensions, family room additions, primary suite expansions — designed to flow naturally from the existing layout." },
+  { title: "Rear &amp; Side Extensions", description: "Expanding the footprint of your home into your lot. Kitchen extensions, family room additions, and primary suite expansions, designed to flow naturally from the existing layout." },
   { title: "Garage Conversions &amp; Additions", description: "Attached garage additions or converting existing garage space into livable area with a new garage built to match." },
   { title: "In-Law Suites", description: "Self-contained suites designed with privacy and independence in mind, while maintaining the architectural integrity of the main home." },
 ];
@@ -19,7 +19,7 @@ const additionTypes = [
 export default function AdditionsPage() {
   return (
     <>
-      {/* HERO — with image */}
+      {/* HERO */}
       <section className="relative h-[70vh] min-h-[550px] flex items-end">
         <Image src="/images/projects/poyntz/twilight-2.jpg" alt="Home addition by Fatahi Building" fill className="object-cover" priority quality={90} />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/40 to-navy-dark/20" />
@@ -27,7 +27,7 @@ export default function AdditionsPage() {
           <div className="max-w-2xl">
             <p className="section-label mb-8 animate-fade-in">Additions &amp; Extensions</p>
             <h1 className="font-heading text-4xl md:text-5xl font-light text-white leading-tight tracking-wide animate-fade-up">Expansion that feels<br />like it was always there</h1>
-            <p className="mt-6 text-lg text-white/70 font-light leading-relaxed animate-fade-up animate-delay-200">Seamless additions designed to integrate with your existing architecture — not just attach to it.</p>
+            <p className="mt-6 text-lg text-white/70 font-light leading-relaxed animate-fade-up animate-delay-200">Seamless additions designed to integrate with your existing architecture, not just attach to it.</p>
             <div className="divider mt-10 animate-fade-in animate-delay-300" />
           </div>
         </div>
@@ -39,18 +39,18 @@ export default function AdditionsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-28 items-center">
             <ScrollReveal>
               <div>
-                <p className="section-label mb-8">The Challenge</p>
-                <h2 className="font-heading text-3xl md:text-4xl font-light text-white leading-snug tracking-wide">Most additions look<br />like additions</h2>
+                <p className="section-label mb-8">Seamless by Design</p>
+                <h2 className="font-heading text-3xl md:text-4xl font-light text-white leading-snug tracking-wide">Built to look like it<br />was always there</h2>
                 <div className="divider mt-10 mb-10" />
-                <p className="text-white/70 font-light leading-relaxed mb-6">You can usually spot where an addition starts. The roofline changes. The materials don&apos;t quite match. Inside, there&apos;s a step up or a hallway that feels like an afterthought. It&apos;s clear the new part was bolted onto the old.</p>
-                <p className="text-white/70 font-light leading-relaxed mb-6">Because we design and build, we approach additions differently. We study the existing architecture — its proportions, materials, rooflines, and interior character — and design the addition as if it were part of the original plan.</p>
-                <p className="text-white/70 font-light leading-relaxed">The goal is simple: when it&apos;s finished, no one should be able to tell where the original home ends and the addition begins.</p>
+                <p className="text-white/70 font-light leading-relaxed mb-6">A great addition is invisible. The rooflines align. The materials match. Inside, every floor height, trim profile, and finish flows seamlessly from original to new.</p>
+                <p className="text-white/70 font-light leading-relaxed mb-6">Our integrated design-build approach allows us to study the existing architecture, its proportions, materials, rooflines, and interior character, and design the addition as if it were part of the original plan.</p>
+                <p className="text-white/70 font-light leading-relaxed">The measure of our success is invisibility, the point where original and new become indistinguishable.</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={200}>
               <div className="grid grid-cols-2 gap-4">
                 <div className="img-zoom aspect-[3/4]">
-                  <Image src="/images/projects/poyntz/interior-07.jpg" alt="Interior craftsmanship — addition detail" width={400} height={530} className="w-full h-full object-cover" />
+                  <Image src="/images/projects/poyntz/interior-07.jpg" alt="Interior craftsmanship, addition detail" width={400} height={530} className="w-full h-full object-cover" />
                 </div>
                 <div className="img-zoom aspect-[3/4] mt-12">
                   <Image src="/images/projects/terrace/interior-02.jpg" alt="Seamless interior transition" width={400} height={530} className="w-full h-full object-cover" />
@@ -112,7 +112,7 @@ export default function AdditionsPage() {
 
       {/* IMAGE BREAK */}
       <section className="relative h-[50vh] min-h-[400px]">
-        <Image src="/images/projects/terrace/living.jpg" alt="Interior living space — seamless addition" fill className="object-cover" />
+        <Image src="/images/projects/terrace/living.jpg" alt="Interior living space, seamless addition" fill className="object-cover" />
         <div className="absolute inset-0 bg-navy-dark/30" />
       </section>
 
@@ -120,9 +120,9 @@ export default function AdditionsPage() {
       <section className="relative py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-8 md:px-16 text-center">
           <ScrollReveal>
-            <p className="section-label mb-8">Need More Space?</p>
+            <p className="section-label mb-8">Expand with Intention</p>
             <h2 className="font-heading text-3xl md:text-4xl font-light text-white tracking-wide mb-8">Let&apos;s talk about what&apos;s possible</h2>
-            <p className="text-white/50 font-light text-sm leading-relaxed max-w-xl mx-auto mb-10">Tell us about your home and what you need. We&apos;ll discuss how an addition can work with your existing architecture — and whether it&apos;s the right approach for your situation.</p>
+            <p className="text-white/50 font-light text-sm leading-relaxed max-w-xl mx-auto mb-10">Tell us about your residence and your vision for it. We&apos;ll discuss how an addition can honour your existing architecture and whether it&apos;s the right approach.</p>
             <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500">Start a Conversation</Link>
           </ScrollReveal>
         </div>

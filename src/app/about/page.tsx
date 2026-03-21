@@ -16,66 +16,10 @@ export default function AboutPage() {
               One standard.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/70 font-light leading-relaxed max-w-2xl">
-              A father-son team that designs and builds custom homes in Toronto
-              &amp; the GTA. Over 30 years of doing both under one roof.
+              A father and son united by a singular conviction: that the mind
+              which conceives a home should be the same one that brings it to
+              life. Three decades. One standard.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <div className="section-sep" />
-
-      {/* DESIGN-BUILD PHILOSOPHY */}
-      <section className="py-10 md:py-16">
-        <div className="max-w-7xl mx-auto px-8 md:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-28 items-center">
-            <ScrollReveal>
-              <div>
-                <p className="section-label mb-8">Our Philosophy</p>
-                <h2 className="text-3xl md:text-4xl font-heading font-light text-white leading-snug tracking-wide">
-                  Design and construction
-                  <br />
-                  in the same hands
-                </h2>
-                <div className="divider mt-10 mb-10" />
-                <p className="text-white/70 font-light text-[15px] leading-[1.85] mb-6">
-                  Most homeowners hire an architect, then hand the drawings to a
-                  builder. The builder interprets them. Details get lost.
-                  Compromises get made without the designer in the room. The
-                  finished home drifts from what was envisioned.
-                </p>
-                <p className="text-white/70 font-light text-[15px] leading-[1.85] mb-6">
-                  We work differently. We design and build under one roof. The
-                  person who draws your home is the same person on site every day
-                  making sure it&apos;s built right. No gaps between design and
-                  construction. No details lost in translation.
-                </p>
-                <p className="text-white/70 font-light text-[15px] leading-[1.85]">
-                  When design and construction are in the same hands, nothing
-                  gets lost.
-                </p>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={200}>
-              <div className="relative bg-white/5 border border-white/10 p-10 md:p-14">
-                <span className="text-beige/15 text-7xl font-serif leading-none absolute top-6 left-8">
-                  &ldquo;
-                </span>
-                <div className="relative z-10 pt-8">
-                  <p className="text-cream font-light text-lg leading-relaxed italic">
-                    We don&apos;t hand off drawings to someone else. Majid designs
-                    the home, then he builds it. That&apos;s the difference — the
-                    person who imagined the space is the same person making sure
-                    every detail is right.
-                  </p>
-                  <div className="divider mt-10 mb-4" />
-                  <p className="text-white/40 text-sm font-light">
-                    The Fatahi Building approach
-                  </p>
-                </div>
-              </div>
-            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -108,14 +52,14 @@ export default function AboutPage() {
                 <h3 className="text-2xl font-heading font-light text-white tracking-wide mb-4">Majid Fatahi</h3>
                 <div className="divider mb-6" />
                 <p className="text-white/70 font-light text-[15px] leading-[1.85] mb-4">
-                  30+ years designing and building custom homes. Majid doesn&apos;t
-                  just oversee — he draws it, then he builds it. He&apos;s on site
-                  every day making sure what was designed is exactly what takes shape.
+                  For over three decades, Majid has led every project as both
+                  its architect and its master builder. A rare discipline that
+                  ensures the integrity of the original vision is never compromised.
                 </p>
                 <p className="text-white/70 font-light text-[15px] leading-[1.85]">
-                  When the designer is also the builder, nothing gets lost
-                  between the drawing and the finished home. That&apos;s the
-                  standard Majid has held for three decades.
+                  His philosophy is simple: the person who conceives a space
+                  should be the one accountable for its realization. That
+                  commitment has defined every residence he has created.
                 </p>
                 <a href="https://www.linkedin.com/in/majidfatahi/" target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-beige text-sm font-light hover:text-beige-light transition-colors duration-300 mt-4">
@@ -140,15 +84,15 @@ export default function AboutPage() {
                 <h3 className="text-2xl font-heading font-light text-white tracking-wide mb-4">Farbod Fatahi</h3>
                 <div className="divider mb-6" />
                 <p className="text-white/70 font-light text-[15px] leading-[1.85] mb-4">
-                  Farbod manages every project from first conversation to final
-                  walkthrough. He&apos;s the point of contact throughout the entire
-                  build — making sure communication is clear, timelines are met,
-                  and nothing falls through the cracks.
+                  Farbod orchestrates the client experience from the initial
+                  consultation through to the final reveal, ensuring absolute
+                  clarity, precision in scheduling, and an unwavering standard
+                  of communication.
                 </p>
                 <p className="text-white/70 font-light text-[15px] leading-[1.85]">
-                  Weekly Friday reports. Every change order documented with
-                  scope, cost, and timeline impact. No surprises. You&apos;ll always
-                  know exactly where your project stands.
+                  Comprehensive weekly briefings. Every decision documented
+                  with full transparency on scope, cost, and timeline. Our
+                  clients are never left to wonder.
                 </p>
                 <a href="https://www.linkedin.com/in/farbodfatahi/" target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-beige text-sm font-light hover:text-beige-light transition-colors duration-300 mt-4">
@@ -157,6 +101,61 @@ export default function AboutPage() {
                   </svg>
                   Connect on LinkedIn
                 </a>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-sep" />
+
+      {/* DESIGN-BUILD PHILOSOPHY */}
+      <section className="py-10 md:py-16">
+        <div className="max-w-7xl mx-auto px-8 md:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-28 items-center">
+            <ScrollReveal>
+              <div>
+                <p className="section-label mb-8">Our Philosophy</p>
+                <h2 className="text-3xl md:text-4xl font-heading font-light text-white leading-snug tracking-wide">
+                  Design and construction
+                  <br />
+                  in the same hands
+                </h2>
+                <div className="divider mt-10 mb-10" />
+                <p className="text-white/70 font-light text-[15px] leading-[1.85] mb-6">
+                  Design and construction exist as a single discipline within
+                  our practice. The creative vision that shapes a residence is
+                  the same intelligence that guides its realization, ensuring
+                  nothing is lost, nothing is compromised.
+                </p>
+                <p className="text-white/70 font-light text-[15px] leading-[1.85] mb-6">
+                  Every design decision is informed by a deep understanding of
+                  materials, structure, and craft. The residence you approve is
+                  precisely the residence we deliver.
+                </p>
+                <p className="text-white/70 font-light text-[15px] leading-[1.85]">
+                  When design and construction are in the same hands, nothing
+                  gets lost.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={200}>
+              <div className="relative bg-white/5 border border-white/10 p-10 md:p-14">
+                <span className="text-beige/15 text-7xl font-serif leading-none absolute top-6 left-8">
+                  &ldquo;
+                </span>
+                <div className="relative z-10 pt-8">
+                  <p className="text-cream font-light text-lg leading-relaxed italic">
+                    The mind that conceives the space is the same one that
+                    ensures every detail is realized with precision. That is
+                    the Fatahi standard.
+                  </p>
+                  <div className="divider mt-10 mb-4" />
+                  <p className="text-white/40 text-sm font-light">
+                    The Fatahi Building approach
+                  </p>
+                </div>
               </div>
             </ScrollReveal>
           </div>
@@ -179,10 +178,10 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "Design-Build Integrity", description: "The person who designs your home is the same person who builds it. No handoffs. No translation errors. No compromises." },
-              { title: "Total Transparency", description: "Weekly reports. Documented change orders. Clear budgets. You will never have to guess what\u2019s happening with your project." },
-              { title: "On-Site Every Day", description: "Majid is on site daily. Not checking in from an office \u2014 physically present, making sure every detail is built as designed." },
-              { title: "Built to Last", description: "We don\u2019t cut corners. We use materials and methods that stand the test of time, because your home should outlast trends." },
+              { title: "Design-Build Integrity", description: "A singular creative vision guides every project from concept through completion. No delegation. No dilution." },
+              { title: "Total Transparency", description: "Comprehensive weekly briefings. Documented change orders. Clear budgets. You will never have to wonder where your project stands." },
+              { title: "Constant Presence", description: "Majid maintains a direct, hands-on involvement with every project, ensuring the architectural intent is honoured in every detail." },
+              { title: "Built to Last", description: "We use materials and methods that stand the test of time, because your home should outlast trends." },
             ].map((value, i) => (
               <ScrollReveal key={value.title} delay={i * 100}>
                 <div className="bg-white/5 border border-white/10 p-10 md:p-12 h-full">

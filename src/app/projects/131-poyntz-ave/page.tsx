@@ -9,27 +9,27 @@ export const metadata: Metadata = {
 };
 
 const galleryImages = [
-  { src: "/images/projects/poyntz/twilight-1.jpg", alt: "Poyntz Avenue — twilight exterior view" },
-  { src: "/images/projects/poyntz/twilight-2.jpg", alt: "Poyntz Avenue — twilight angle view" },
-  { src: "/images/projects/poyntz/twilight-3.jpg", alt: "Poyntz Avenue — evening exterior" },
-  { src: "/images/projects/poyntz/interior-01.jpg", alt: "Poyntz Avenue — interior living space" },
-  { src: "/images/projects/poyntz/interior-02.jpg", alt: "Poyntz Avenue — glass staircase detail" },
-  { src: "/images/projects/poyntz/interior-03.jpg", alt: "Poyntz Avenue — open-concept living area" },
-  { src: "/images/projects/poyntz/interior-04.jpg", alt: "Poyntz Avenue — kitchen and dining" },
-  { src: "/images/projects/poyntz/interior-05.jpg", alt: "Poyntz Avenue — fireplace surround" },
-  { src: "/images/projects/poyntz/interior-06.jpg", alt: "Poyntz Avenue — primary bedroom" },
-  { src: "/images/projects/poyntz/interior-07.jpg", alt: "Poyntz Avenue — ensuite bathroom" },
-  { src: "/images/projects/poyntz/interior-08.jpg", alt: "Poyntz Avenue — wine display" },
-  { src: "/images/projects/poyntz/interior-09.jpg", alt: "Poyntz Avenue — hallway detail" },
-  { src: "/images/projects/poyntz/interior-10.jpg", alt: "Poyntz Avenue — finishing details" },
+  { src: "/images/projects/poyntz/twilight-1.jpg", alt: "Poyntz Avenue, twilight exterior view" },
+  { src: "/images/projects/poyntz/twilight-2.jpg", alt: "Poyntz Avenue, twilight angle view" },
+  { src: "/images/projects/poyntz/twilight-3.jpg", alt: "Poyntz Avenue, evening exterior" },
+  { src: "/images/projects/poyntz/interior-01.jpg", alt: "Poyntz Avenue, interior living space" },
+  { src: "/images/projects/poyntz/interior-02.jpg", alt: "Poyntz Avenue, glass staircase detail" },
+  { src: "/images/projects/poyntz/interior-03.jpg", alt: "Poyntz Avenue, open-concept living area" },
+  { src: "/images/projects/poyntz/interior-04.jpg", alt: "Poyntz Avenue, kitchen and dining" },
+  { src: "/images/projects/poyntz/interior-05.jpg", alt: "Poyntz Avenue, fireplace surround" },
+  { src: "/images/projects/poyntz/interior-06.jpg", alt: "Poyntz Avenue, primary bedroom" },
+  { src: "/images/projects/poyntz/interior-07.jpg", alt: "Poyntz Avenue, ensuite bathroom" },
+  { src: "/images/projects/poyntz/interior-08.jpg", alt: "Poyntz Avenue, wine display" },
+  { src: "/images/projects/poyntz/interior-09.jpg", alt: "Poyntz Avenue, hallway detail" },
+  { src: "/images/projects/poyntz/interior-10.jpg", alt: "Poyntz Avenue, finishing details" },
 ];
 
 export default function PoyntzAvenuePage() {
   return (
     <>
-      {/* HERO — with image */}
+      {/* HERO */}
       <section className="relative h-[70vh] min-h-[500px] flex items-end">
-        <Image src="/images/projects/poyntz/twilight-1.jpg" alt="Poyntz Avenue — custom home exterior at twilight" fill className="object-cover" priority quality={90} />
+        <Image src="/images/projects/poyntz/twilight-1.jpg" alt="Poyntz Avenue, custom home exterior at twilight" fill className="object-cover" priority quality={90} />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/30 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 pb-16 w-full">
           <div className="max-w-2xl">
@@ -63,8 +63,8 @@ export default function PoyntzAvenuePage() {
                 <div className="divider mb-8" />
                 <div className="space-y-6 text-white/70 font-light leading-relaxed">
                   <p>A modern custom home featuring clean contemporary lines, an open-concept interior with glass staircase, marble fireplace surround, built-in wine display, and warm oak flooring throughout. Designed and built by Fatahi Building.</p>
-                  <p>Every detail of this home was considered from the earliest sketches through to final construction. The design integrates natural light at every turn, with floor-to-ceiling windows that frame the surrounding landscape. Interior materials were selected for both beauty and durability &mdash; engineered oak flooring, honed marble, tempered glass, and custom millwork throughout.</p>
-                  <p>The result is a home that feels both striking and livable &mdash; a space that works for how the family actually lives, not just how it photographs.</p>
+                  <p>Every detail of this home was considered from the earliest sketches through to final construction. The design integrates natural light at every turn, with floor-to-ceiling windows that frame the surrounding landscape. Interior materials were selected for both beauty and durability: engineered oak flooring, honed marble, tempered glass, and custom millwork throughout.</p>
+                  <p>The result is a home that feels both striking and livable, a space that works for how the family actually lives, not just how it photographs.</p>
                 </div>
               </div>
             </div>

@@ -10,19 +10,19 @@ export default function Footer() {
 
   return (
     <footer className="bg-navy-dark text-white/60">
-      {/* CTA Banner — homepage only */}
+      {/* CTA Banner, homepage only */}
       {isHome && (
         <div className="border-y border-white/5">
           <div className="max-w-4xl mx-auto px-8 md:px-16 py-24 text-center">
-            <p className="section-label mb-8">Let&apos;s Build</p>
+            <p className="section-label mb-8">Begin</p>
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light text-white tracking-wide leading-tight mb-8">
-              Ready to build something
+              Your vision deserves
               <br />
-              that&apos;s truly yours?
+              to be realized.
             </h2>
             <div className="divider mx-auto mb-8" />
             <p className="text-white/40 font-light text-lg mb-14 max-w-md mx-auto leading-relaxed">
-              Every project starts with a conversation about how you want to live.
+              It begins with a conversation about how you envision your life.
             </p>
             <Link
               href="/contact"
@@ -49,7 +49,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        {/* Columns — centered */}
+        {/* Columns */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 sm:gap-16 text-center max-w-4xl mx-auto">
           {/* Explore */}
           <div>
@@ -58,7 +58,6 @@ export default function Footer() {
               {[
                 { href: "/projects", label: "Projects" },
                 { href: "/services", label: "Services" },
-                { href: "/process", label: "Our Process" },
                 { href: "/about", label: "About" },
                 { href: "/insights", label: "Insights" },
               ].map((link) => (

@@ -9,20 +9,20 @@ export const metadata: Metadata = {
 };
 
 const galleryImages = [
-  { src: "/images/projects/terrace/dining.jpg", alt: "Terrace — dining area with walnut ceiling" },
-  { src: "/images/projects/terrace/kitchen-1.jpg", alt: "Terrace — kitchen with black marble island" },
-  { src: "/images/projects/terrace/kitchen-2.jpg", alt: "Terrace — kitchen brass fixture details" },
-  { src: "/images/projects/terrace/living.jpg", alt: "Terrace — living room" },
-  { src: "/images/projects/terrace/interior-01.jpg", alt: "Terrace — interior detail" },
-  { src: "/images/projects/terrace/interior-02.jpg", alt: "Terrace — staircase and finishes" },
+  { src: "/images/projects/terrace/dining.jpg", alt: "Terrace, dining area with walnut ceiling" },
+  { src: "/images/projects/terrace/kitchen-1.jpg", alt: "Terrace, kitchen with black marble island" },
+  { src: "/images/projects/terrace/kitchen-2.jpg", alt: "Terrace, kitchen brass fixture details" },
+  { src: "/images/projects/terrace/living.jpg", alt: "Terrace, living room" },
+  { src: "/images/projects/terrace/interior-01.jpg", alt: "Terrace, interior detail" },
+  { src: "/images/projects/terrace/interior-02.jpg", alt: "Terrace, staircase and finishes" },
 ];
 
 export default function TerracePage() {
   return (
     <>
-      {/* HERO — with image */}
+      {/* HERO */}
       <section className="relative h-[70vh] min-h-[500px] flex items-end">
-        <Image src="/images/projects/terrace/dining.jpg" alt="Terrace — dining area with walnut ceiling details" fill className="object-cover" priority quality={90} />
+        <Image src="/images/projects/terrace/dining.jpg" alt="Terrace, dining area with walnut ceiling details" fill className="object-cover" priority quality={90} />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/30 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 pb-16 w-full">
           <div className="max-w-2xl">
@@ -57,7 +57,7 @@ export default function TerracePage() {
                 <div className="space-y-6 text-white/70 font-light leading-relaxed">
                   <p>A warm, sophisticated custom home with walnut ceiling details, black marble kitchen island with brass fixtures, floating oak staircase, and thoughtful material transitions throughout. Designed and built by Fatahi Building.</p>
                   <p>This home was designed around the idea that warmth and refinement don&apos;t have to compete. Rich walnut ceiling panels set the tone in the main living areas, while the kitchen anchors the open-concept ground floor with a dramatic black marble island and custom brass hardware.</p>
-                  <p>Every material transition was planned &mdash; from the way the oak flooring meets the stone thresholds, to how the floating staircase connects the upper and lower levels with visual lightness. The result is a home that feels layered and considered, where nothing was left to chance.</p>
+                  <p>Every material transition was planned, from the way the oak flooring meets the stone thresholds, to how the floating staircase connects the upper and lower levels with visual lightness. The result is a home that feels layered and considered, where nothing was left to chance.</p>
                 </div>
               </div>
             </div>

@@ -6,25 +6,25 @@ const services = [
   {
     number: "01",
     title: "Custom Homes",
-    headline: "Your home, designed around your life",
+    headline: "A residence conceived entirely for you",
     description:
-      "Ground-up design and construction. Your home, designed around your life, built by the same team that drew it. From first sketch to final walkthrough, one team handles everything.",
+      "From the first consultation through to completion, a single team architects and realizes your home, with every detail considered as one cohesive vision.",
     details: [
-      "Architectural design tailored to how you actually live",
-      "Full construction management from foundation to finish",
-      "One team from concept through completion",
-      "Weekly progress reports and full transparency",
+      "Architectural design tailored to your way of life",
+      "Complete project stewardship from concept through completion",
+      "One team, one vision, one uncompromising standard",
+      "Complete transparency at every milestone",
     ],
     image: "/images/projects/poyntz/twilight-1.jpg",
-    imageAlt: "Custom home exterior at twilight — Poyntz Avenue",
+    imageAlt: "Custom home exterior at twilight, Poyntz Avenue",
     href: "/services/custom-homes",
   },
   {
     number: "02",
     title: "Whole-Home Transformations",
-    headline: "Redesigned and rebuilt — not just renovated",
+    headline: "Reimagined from within",
     description:
-      "Complete reimagining of an existing structure. We redesign and rebuild — not just renovate. The result should feel like it was always meant to be this way.",
+      "A complete reconception of an existing residence. Every space, every system, every material, refined to feel as though it was always meant to be this way.",
     details: [
       "Full interior redesign with structural modifications",
       "Modern systems integrated into existing frameworks",
@@ -32,15 +32,15 @@ const services = [
       "Permits, engineering, and construction under one roof",
     ],
     image: "/images/projects/terrace/kitchen-1.jpg",
-    imageAlt: "Whole-home transformation — modern kitchen design",
+    imageAlt: "Whole-home transformation, modern kitchen design",
     href: "/services/transformations",
   },
   {
     number: "03",
     title: "Additions & Extensions",
-    headline: "Expansion that feels original",
+    headline: "An extension that honours the original",
     description:
-      "Seamless expansion that feels like it was always part of the original design. We design the addition to integrate with the existing architecture.",
+      "Precisely integrated expansion, designed to be indistinguishable from the original architecture.",
     details: [
       "Architectural integration with existing structure",
       "Foundation and structural engineering",
@@ -56,7 +56,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
-      {/* HERO — with image */}
+      {/* HERO */}
       <section className="relative h-[60vh] min-h-[500px] flex items-end">
         <Image
           src="/images/projects/poyntz/twilight-3.jpg"
@@ -142,67 +142,17 @@ export default function ServicesPage() {
         </div>
       ))}
 
-      {/* WHY DESIGN-BUILD */}
+      {/* CTA */}
       <section className="py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-8 md:px-16">
           <ScrollReveal>
-            <div className="text-center mb-16">
-              <p className="section-label mb-8">The Difference</p>
-              <h2 className="font-heading text-3xl md:text-4xl font-light text-white tracking-wide">
-                Why design-build?
+            <div className="text-center max-w-2xl mx-auto">
+              <p className="section-label mb-8">Start Here</p>
+              <h2 className="font-heading text-3xl md:text-4xl font-light text-white tracking-wide mb-6">
+                Let&apos;s discuss your vision
               </h2>
-            </div>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 lg:gap-28 items-start">
-            <ScrollReveal>
-              <div>
-                <h3 className="font-heading text-xl font-light text-white/40 tracking-wide mb-6">
-                  The traditional approach
-                </h3>
-                <div className="space-y-5">
-                  {[
-                    "You hire an architect. Then find a builder. They&apos;ve never worked together.",
-                    "The builder interprets the drawings differently than the architect intended.",
-                    "Changes cost more because two separate companies need to coordinate.",
-                    "Timelines stretch. Budgets inflate. Details get lost between teams.",
-                  ].map((point, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <span className="text-white/20 text-sm mt-0.5">&times;</span>
-                      <p className="text-white/40 font-light text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: point }} />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={200}>
-              <div>
-                <h3 className="font-heading text-xl font-light text-white tracking-wide mb-6">
-                  The design-build approach
-                </h3>
-                <div className="space-y-5">
-                  {[
-                    "One team designs and builds. The person who draws your home is on site every day.",
-                    "No gaps between design intent and construction execution.",
-                    "Changes are handled in real time by people who understand both the design and the build.",
-                    "Faster timelines, predictable costs, and a finished home that matches what was envisioned.",
-                  ].map((point, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <span className="w-1.5 h-1.5 rounded-full bg-beige mt-2 shrink-0" />
-                      <p className="text-white/70 font-light text-sm leading-relaxed">{point}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
-
-          <ScrollReveal delay={300}>
-            <div className="text-center mt-20">
-              <div className="w-px h-12 bg-white/10 mx-auto mb-8" />
               <p className="text-white/40 font-light text-sm leading-relaxed max-w-xl mx-auto mb-10">
-                Over 30 years of designing and building custom homes in Toronto. Every project. One team. No gaps.
+                Three decades of design-build excellence in Toronto. It begins with a conversation.
               </p>
               <Link
                 href="/contact"

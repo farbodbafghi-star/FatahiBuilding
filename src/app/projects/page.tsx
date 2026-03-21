@@ -46,7 +46,7 @@ export default function ProjectsPage() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-light font-heading text-white leading-tight tracking-wide">Selected Projects</h1>
               <div className="divider mt-10 mb-10" />
               <p className="text-white/50 font-light leading-relaxed max-w-lg">
-                Every home we build starts with how you want to live. Here are some of the custom homes we&apos;ve designed and built across Toronto and the GTA.
+                Each residence begins with a deeply personal vision. These are some of the homes we&apos;ve brought to life across Toronto and the GTA.
               </p>
             </div>
           </ScrollReveal>
@@ -64,14 +64,14 @@ export default function ProjectsPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
                   <div className="lg:col-span-8">
                     <div className="img-zoom relative aspect-[16/10] overflow-hidden">
-                      <Image src={project.image} alt={`${project.title} — ${project.type} in ${project.location}`} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 1024px) 100vw, 66vw" />
+                      <Image src={project.image} alt={`${project.title}, ${project.type} in ${project.location}`} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 1024px) 100vw, 66vw" />
                       <div className="absolute inset-0 bg-navy/0 group-hover:bg-navy/15 transition-all duration-500" />
                     </div>
                   </div>
                   <div className="lg:col-span-4">
                     <p className="section-label mb-4">{project.type}</p>
                     <h2 className="text-2xl md:text-3xl font-light font-heading text-white tracking-wide group-hover:text-beige transition-colors duration-300">{project.title}</h2>
-                    <p className="text-white/40 text-sm font-light mt-2">{project.location} &mdash; {project.year}</p>
+                    <p className="text-white/40 text-sm font-light mt-2">{project.location} &middot; {project.year}</p>
                     <div className="w-10 h-px bg-beige/30 my-6" />
                     <p className="text-white/70 font-light text-sm leading-relaxed mb-8">{project.description}</p>
                     <span className="inline-flex items-center text-beige text-[13px] font-medium tracking-[0.15em] uppercase group-hover:text-beige-light transition-colors duration-300">
@@ -109,7 +109,7 @@ export default function ProjectsPage() {
                     <div className="relative aspect-[16/10] overflow-hidden bg-white/5">
                       <Image
                         src={project.image}
-                        alt={`${project.title} — ${project.type} under construction`}
+                        alt={`${project.title}, ${project.type} under construction`}
                         fill
                         className="object-cover"
                         sizes="(max-width: 1024px) 100vw, 58vw"
@@ -119,7 +119,7 @@ export default function ProjectsPage() {
                   <div className="lg:col-span-5">
                     <p className="section-label mb-4">{project.type}</p>
                     <h3 className="text-2xl md:text-3xl font-light font-heading text-white tracking-wide">{project.title}</h3>
-                    <p className="text-white/40 text-sm font-light mt-2">{project.location} &mdash; Est. {project.expected}</p>
+                    <p className="text-white/40 text-sm font-light mt-2">{project.location} &middot; Est. {project.expected}</p>
                     <div className="w-10 h-px bg-beige/30 my-6" />
                     <p className="text-white/70 font-light text-sm leading-relaxed mb-6">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
@@ -145,13 +145,13 @@ export default function ProjectsPage() {
           <ScrollReveal>
             <p className="section-label mb-8">Start Your Project</p>
             <h2 className="text-3xl md:text-4xl font-light font-heading text-white tracking-wide mb-6">
-              Ready to build something
+              Ready to begin something
               <br />
-              that&apos;s truly yours?
+              truly yours?
             </h2>
             <div className="divider mx-auto mb-8" />
             <p className="text-white/50 font-light leading-relaxed max-w-md mx-auto mb-10">
-              Every project starts with a conversation. Tell us how you want to live, and we&apos;ll show you what&apos;s possible.
+              It begins with a vision. Share yours, and we&apos;ll show you what&apos;s possible.
             </p>
             <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500">
               Let&apos;s Talk

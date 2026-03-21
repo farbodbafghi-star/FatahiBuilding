@@ -123,7 +123,7 @@ export default function ContactPage() {
                         Send Message
                       </button>
                       <p className="mt-4 text-white/30 text-xs font-light">
-                        This isn&apos;t a quote request — it&apos;s the start of a conversation about whether we&apos;re the right fit for your project.
+                        This isn&apos;t a quote request. It&apos;s the start of a conversation about whether we&apos;re the right fit for your project.
                       </p>
                     </div>
                   </form>
@@ -174,7 +174,7 @@ export default function ContactPage() {
                     <div className="bg-white/5 border border-white/10 p-8">
                       <p className="text-white text-sm font-medium mb-3">What to expect</p>
                       <p className="text-white/40 font-light text-xs leading-relaxed">
-                        After you reach out, we&apos;ll schedule a brief call to learn more about your project. If it&apos;s a good fit, we&apos;ll arrange a site visit and begin the design conversation. There&apos;s no obligation — this is about finding the right match for both sides.
+                        After you reach out, we&apos;ll schedule a brief call to learn more about your project. If it&apos;s a good fit, we&apos;ll arrange a site visit and begin the design conversation. There&apos;s no obligation. This is about finding the right match for both sides.
                       </p>
                     </div>
                   </div>

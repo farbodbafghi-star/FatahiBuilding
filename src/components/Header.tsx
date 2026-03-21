@@ -16,7 +16,6 @@ const navLinks = [
     ],
   },
   { href: "/projects", label: "Projects" },
-  { href: "/process", label: "Our Process" },
   { href: "/about", label: "About" },
   { href: "/insights", label: "Insights" },
 ];
@@ -49,7 +48,7 @@ export default function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-8 flex items-center justify-between">
-        {/* Logo — cropped to icon only */}
+        {/* Logo */}
         <Link href="/" className="relative z-50 block h-9 w-9 overflow-hidden">
           <Image
             src="/images/branding/logo-beige.png"

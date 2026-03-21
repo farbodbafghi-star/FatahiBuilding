@@ -20,7 +20,7 @@ export default function TestimonialsPage() {
             </h1>
             <div className="divider mt-10 mb-10 animate-fade-in animate-delay-200" />
             <p className="text-white/50 font-light leading-relaxed animate-fade-up animate-delay-200">
-              We let our work and our clients speak for us. Here&apos;s what people say after building with Fatahi Building.
+              Our reputation is defined by those we serve.
             </p>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function TestimonialsPage() {
               </div>
               <div className="hidden md:block w-px h-12 bg-white/10" />
               <p className="text-white/40 font-light text-sm text-center md:text-left">
-                Rated 5 stars on Google — every project, every time.
+                Rated 5 stars on Google, every project, every time.
               </p>
             </div>
           </ScrollReveal>
@@ -104,15 +104,15 @@ export default function TestimonialsPage() {
           <ScrollReveal>
             <div className="text-center mb-16">
               <p className="section-label mb-8">Why Clients Choose Us</p>
-              <h2 className="text-3xl md:text-4xl font-light font-heading text-white tracking-wide">What sets us apart</h2>
+              <h2 className="text-3xl md:text-4xl font-light font-heading text-white tracking-wide">The Fatahi difference</h2>
             </div>
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { title: "One Team, Start to Finish", description: "The person who designs your home is the same person on site every day building it. No miscommunication. No details lost between teams." },
-              { title: "Transparent Process", description: "Weekly progress reports with photos. Documented change orders. You always know exactly what's happening with your project and why." },
-              { title: "Quality Without Compromise", description: "Over 30 years of building custom homes to the same standard. Every detail gets the same attention, whether it's visible or behind the walls." },
+              { title: "One Team, Start to Finish", description: "A singular creative vision guides each project from concept through completion. Every detail honoured, nothing left to interpretation." },
+              { title: "Absolute Clarity", description: "Comprehensive weekly briefings. Complete documentation. Our clients enjoy total transparency throughout the entire journey." },
+              { title: "Uncompromising Craft", description: "Three decades of meticulous attention to every element, whether visible or concealed. The standard never wavers." },
             ].map((item, i) => (
               <ScrollReveal key={i} delay={i * 150}>
                 <div className="text-center">
@@ -135,10 +135,10 @@ export default function TestimonialsPage() {
           <ScrollReveal>
             <p className="section-label mb-8">Your Project</p>
             <h2 className="text-3xl md:text-4xl font-light font-heading text-white tracking-wide mb-8">
-              Ready to build something worth talking about?
+              Ready to begin something extraordinary?
             </h2>
             <p className="text-white/40 font-light text-sm leading-relaxed max-w-xl mx-auto mb-10">
-              Every project on this page started the same way — with a conversation. Tell us how you want to live, and we&apos;ll show you what&apos;s possible.
+              Every project on this page began the same way, with a vision and a conversation. Share yours.
             </p>
             <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500">
               Start a Conversation
