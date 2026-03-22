@@ -44,7 +44,7 @@ export default function AboutPage() {
                 <div className="aspect-[3/4] bg-white/5 border border-white/10 flex items-center justify-center mb-8">
                   <div className="text-center">
                     <div className="w-16 h-px bg-beige/30 mx-auto mb-4" />
-                    <p className="text-white/20 text-sm font-light tracking-widest uppercase">Photo Coming Soon</p>
+                    <p className="text-white/20 text-sm font-light tracking-widest">Photo Coming Soon</p>
                     <div className="w-16 h-px bg-beige/30 mx-auto mt-4" />
                   </div>
                 </div>
@@ -76,7 +76,7 @@ export default function AboutPage() {
                 <div className="aspect-[3/4] bg-white/5 border border-white/10 flex items-center justify-center mb-8">
                   <div className="text-center">
                     <div className="w-16 h-px bg-beige/30 mx-auto mb-4" />
-                    <p className="text-white/20 text-sm font-light tracking-widest uppercase">Photo Coming Soon</p>
+                    <p className="text-white/20 text-sm font-light tracking-widest">Photo Coming Soon</p>
                     <div className="w-16 h-px bg-beige/30 mx-auto mt-4" />
                   </div>
                 </div>
@@ -211,7 +211,7 @@ export default function AboutPage() {
                 <div className="text-center">
                   <p className="text-white text-3xl md:text-4xl font-heading font-light tracking-wide">{item.stat}</p>
                   <div className="w-8 h-px bg-beige mx-auto my-4" />
-                  <p className="text-white/40 text-xs font-light tracking-widest uppercase">{item.label}</p>
+                  <p className="text-white/40 text-xs font-light tracking-widest">{item.label}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -236,7 +236,7 @@ export default function AboutPage() {
               </p>
               <Link
                 href="/contact"
-                className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500"
+                className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] hover:bg-beige hover:text-navy transition-all duration-500"
               >
                 Book a Conversation
               </Link>

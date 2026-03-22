@@ -62,12 +62,12 @@ export default function ContactPage() {
                   <form onSubmit={handleSubmit} className="space-y-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                       <div>
-                        <label htmlFor="firstName" className="block text-xs font-medium tracking-[0.2em] uppercase text-white/40 mb-3">First Name</label>
+                        <label htmlFor="firstName" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-3">First Name</label>
                         <input type="text" id="firstName" name="firstName" required value={formData.firstName} onChange={handleChange}
                           className="w-full border-b border-white/10 pb-3 text-sm font-light text-white bg-transparent focus:outline-none focus:border-beige transition-colors duration-300" />
                       </div>
                       <div>
-                        <label htmlFor="lastName" className="block text-xs font-medium tracking-[0.2em] uppercase text-white/40 mb-3">Last Name</label>
+                        <label htmlFor="lastName" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-3">Last Name</label>
                         <input type="text" id="lastName" name="lastName" required value={formData.lastName} onChange={handleChange}
                           className="w-full border-b border-white/10 pb-3 text-sm font-light text-white bg-transparent focus:outline-none focus:border-beige transition-colors duration-300" />
                       </div>
@@ -75,12 +75,12 @@ export default function ContactPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                       <div>
-                        <label htmlFor="email" className="block text-xs font-medium tracking-[0.2em] uppercase text-white/40 mb-3">Email</label>
+                        <label htmlFor="email" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-3">Email</label>
                         <input type="email" id="email" name="email" required value={formData.email} onChange={handleChange}
                           className="w-full border-b border-white/10 pb-3 text-sm font-light text-white bg-transparent focus:outline-none focus:border-beige transition-colors duration-300" />
                       </div>
                       <div>
-                        <label htmlFor="phone" className="block text-xs font-medium tracking-[0.2em] uppercase text-white/40 mb-3">Phone</label>
+                        <label htmlFor="phone" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-3">Phone</label>
                         <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange}
                           className="w-full border-b border-white/10 pb-3 text-sm font-light text-white bg-transparent focus:outline-none focus:border-beige transition-colors duration-300" />
                       </div>
@@ -88,7 +88,7 @@ export default function ContactPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                       <div>
-                        <label htmlFor="projectType" className="block text-xs font-medium tracking-[0.2em] uppercase text-white/40 mb-3">Project Type</label>
+                        <label htmlFor="projectType" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-3">Project Type</label>
                         <select id="projectType" name="projectType" required value={formData.projectType} onChange={handleChange}
                           className="w-full border-b border-white/10 pb-3 text-sm font-light text-white bg-transparent focus:outline-none focus:border-beige transition-colors duration-300 appearance-none cursor-pointer">
                           <option value="" className="bg-navy-dark">Select one</option>
@@ -96,21 +96,21 @@ export default function ContactPage() {
                         </select>
                       </div>
                       <div>
-                        <label htmlFor="location" className="block text-xs font-medium tracking-[0.2em] uppercase text-white/40 mb-3">Project Location</label>
+                        <label htmlFor="location" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-3">Project Location</label>
                         <input type="text" id="location" name="location" placeholder="City or neighbourhood" value={formData.location} onChange={handleChange}
                           className="w-full border-b border-white/10 pb-3 text-sm font-light text-white bg-transparent focus:outline-none focus:border-beige transition-colors duration-300 placeholder:text-white/20" />
                       </div>
                     </div>
 
                     <div>
-                      <label htmlFor="description" className="block text-xs font-medium tracking-[0.2em] uppercase text-white/40 mb-3">Tell Us About Your Project</label>
+                      <label htmlFor="description" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-3">Tell Us About Your Project</label>
                       <textarea id="description" name="description" rows={5} value={formData.description} onChange={handleChange}
                         placeholder="What are you hoping to achieve? What matters most to you in a home?"
                         className="w-full border-b border-white/10 pb-3 text-sm font-light text-white bg-transparent focus:outline-none focus:border-beige transition-colors duration-300 resize-none placeholder:text-white/20" />
                     </div>
 
                     <div>
-                      <label htmlFor="referral" className="block text-xs font-medium tracking-[0.2em] uppercase text-white/40 mb-3">How Did You Hear About Us?</label>
+                      <label htmlFor="referral" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-3">How Did You Hear About Us?</label>
                       <select id="referral" name="referral" value={formData.referral} onChange={handleChange}
                         className="w-full border-b border-white/10 pb-3 text-sm font-light text-white bg-transparent focus:outline-none focus:border-beige transition-colors duration-300 appearance-none cursor-pointer">
                         <option value="" className="bg-navy-dark">Select one</option>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                     </div>
 
                     <div className="pt-4">
-                      <button type="submit" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500">
+                      <button type="submit" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] hover:bg-beige hover:text-navy transition-all duration-500">
                         Send Message
                       </button>
                       <p className="mt-4 text-white/30 text-xs font-light">

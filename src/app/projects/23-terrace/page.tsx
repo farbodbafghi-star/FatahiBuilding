@@ -26,7 +26,7 @@ export default function TerracePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/30 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 pb-16 w-full">
           <div className="max-w-2xl">
-            <Link href="/projects" className="inline-flex items-center text-white/50 text-[13px] font-medium tracking-[0.15em] uppercase hover:text-beige transition-colors duration-500 mb-8 group">
+            <Link href="/projects" className="inline-flex items-center text-white/50 text-[13px] font-medium tracking-[0.15em] hover:text-beige transition-colors duration-500 mb-8 group">
               <svg className="mr-2 w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
               </svg>
@@ -101,8 +101,8 @@ export default function TerracePage() {
               Every project starts with a conversation about how you want to live. Let&apos;s talk about what&apos;s possible for your home.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500">Start a Conversation</Link>
-              <Link href="/projects" className="text-white/50 px-12 py-4 text-[13px] font-light tracking-[0.15em] uppercase hover:text-beige transition-colors duration-500">View All Projects</Link>
+              <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] hover:bg-beige hover:text-navy transition-all duration-500">Start a Conversation</Link>
+              <Link href="/projects" className="text-white/50 px-12 py-4 text-[13px] font-light tracking-[0.15em] hover:text-beige transition-colors duration-500">View All Projects</Link>
             </div>
           </ScrollReveal>
         </div>

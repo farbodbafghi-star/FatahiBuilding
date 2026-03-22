@@ -117,7 +117,7 @@ export default function TransformationsPage() {
             <p className="section-label mb-8">Ready to Transform?</p>
             <h2 className="font-heading text-3xl md:text-4xl font-light text-white tracking-wide mb-8">Share your vision with us</h2>
             <p className="text-white/50 font-light text-sm leading-relaxed max-w-xl mx-auto mb-10">We&apos;ll start with a conversation about what&apos;s working, what isn&apos;t, and what&apos;s possible. No commitment, just clarity.</p>
-            <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500">Start a Conversation</Link>
+            <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] hover:bg-beige hover:text-navy transition-all duration-500">Start a Conversation</Link>
           </ScrollReveal>
         </div>
       </section>

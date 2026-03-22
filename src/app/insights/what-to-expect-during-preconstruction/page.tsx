@@ -17,7 +17,7 @@ export default function PreconstructionArticle() {
           <ScrollReveal>
             <Link
               href="/insights"
-              className="inline-flex items-center text-beige text-[13px] font-light tracking-[0.15em] uppercase mb-12 hover:text-beige-light transition-colors duration-300"
+              className="inline-flex items-center text-beige text-[13px] font-light tracking-[0.15em] mb-12 hover:text-beige-light transition-colors duration-300"
             >
               <svg
                 className="mr-2 w-3.5 h-3.5 rotate-180"
@@ -265,7 +265,7 @@ export default function PreconstructionArticle() {
             </p>
             <Link
               href="/contact"
-              className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500"
+              className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] hover:bg-beige hover:text-navy transition-all duration-500"
             >
               Get in Touch
             </Link>

@@ -118,7 +118,7 @@ export default function TestimonialsPage() {
                 <div className="text-center">
                   <span className="text-beige text-2xl font-light">0{i + 1}</span>
                   <div className="w-8 h-px bg-beige/30 mx-auto my-5" />
-                  <h3 className="text-sm font-medium font-heading text-white tracking-wider uppercase mb-4">{item.title}</h3>
+                  <h3 className="text-sm font-medium font-heading text-white tracking-wider mb-4">{item.title}</h3>
                   <p className="text-white/50 font-light text-sm leading-relaxed">{item.description}</p>
                 </div>
               </ScrollReveal>
@@ -140,7 +140,7 @@ export default function TestimonialsPage() {
             <p className="text-white/40 font-light text-sm leading-relaxed max-w-xl mx-auto mb-10">
               Every project on this page began the same way, with a vision and a conversation. Share yours.
             </p>
-            <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500">
+            <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] hover:bg-beige hover:text-navy transition-all duration-500">
               Start a Conversation
             </Link>
           </ScrollReveal>

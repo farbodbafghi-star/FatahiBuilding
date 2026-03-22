@@ -49,7 +49,7 @@ export default function CustomHomesPage() {
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-white/5 border border-white/10 px-8 py-6 hidden md:block z-10">
                   <p className="text-beige text-3xl font-light">30+</p>
-                  <p className="text-white/50 text-xs font-light tracking-widest uppercase mt-1">Years of mastery</p>
+                  <p className="text-white/50 text-xs font-light tracking-widest mt-1">Years of mastery</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -89,7 +89,7 @@ export default function CustomHomesPage() {
             <p className="section-label mb-8">Ready to Begin?</p>
             <h2 className="font-heading text-3xl md:text-4xl font-light text-white tracking-wide mb-8">Every residence begins with a vision</h2>
             <p className="text-white/50 font-light text-sm leading-relaxed max-w-xl mx-auto mb-10">Share your vision with us. We&apos;ll show you what&apos;s possible. No obligation. Simply a conversation between you and the team who will bring it to life.</p>
-            <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500">Start a Conversation</Link>
+            <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] hover:bg-beige hover:text-navy transition-all duration-500">Start a Conversation</Link>
           </ScrollReveal>
         </div>
       </section>

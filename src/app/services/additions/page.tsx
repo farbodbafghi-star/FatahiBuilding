@@ -123,7 +123,7 @@ export default function AdditionsPage() {
             <p className="section-label mb-8">Expand with Intention</p>
             <h2 className="font-heading text-3xl md:text-4xl font-light text-white tracking-wide mb-8">Let&apos;s talk about what&apos;s possible</h2>
             <p className="text-white/50 font-light text-sm leading-relaxed max-w-xl mx-auto mb-10">Tell us about your residence and your vision for it. We&apos;ll discuss how an addition can honour your existing architecture and whether it&apos;s the right approach.</p>
-            <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500">Start a Conversation</Link>
+            <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] hover:bg-beige hover:text-navy transition-all duration-500">Start a Conversation</Link>
           </ScrollReveal>
         </div>
       </section>

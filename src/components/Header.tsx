@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navLinks = [
-  { href: "/", label: "Home" },
   {
     href: "/services",
     label: "Services",
@@ -16,13 +15,12 @@ const navLinks = [
     ],
   },
   { href: "/projects", label: "Projects" },
-  { href: "/about", label: "About" },
   { href: "/insights", label: "Insights" },
+  { href: "/about", label: "About" },
 ];
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
 
   useEffect(() => {
@@ -30,14 +28,6 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  useEffect(() => {
-    if (mobileOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-  }, [mobileOpen]);
 
   return (
     <header
@@ -47,9 +37,9 @@ export default function Header() {
           : "bg-transparent py-6"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-8 flex items-center justify-between">
+      <div className="w-full px-[5%] flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="relative z-50 block h-9 w-9 overflow-hidden">
+        <Link href="/" className="relative block h-12 w-12 overflow-hidden">
           <Image
             src="/images/branding/logo-beige.png"
             alt="Fatahi Building"
@@ -60,22 +50,21 @@ export default function Header() {
           />
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-10">
+        {/* Nav */}
+        <nav className="flex items-center gap-8">
           {navLinks.map((link) =>
             link.children ? (
               <div
                 key={link.href}
-                className="relative group"
+                className="relative group flex items-center"
                 onMouseEnter={() => setServicesOpen(true)}
                 onMouseLeave={() => setServicesOpen(false)}
               >
-                <Link
-                  href={link.href}
-                  className="text-white/80 hover:text-beige text-[13px] font-light tracking-[0.15em] uppercase transition-colors duration-300"
+                <span
+                  className="text-white hover:text-beige text-[12px] font-light tracking-[0.15em] transition-colors duration-300 cursor-default leading-none"
                 >
                   {link.label}
-                </Link>
+                </span>
                 <div
                   className={`absolute top-full left-0 pt-5 transition-all duration-300 ${
                     servicesOpen
@@ -100,7 +89,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white/80 hover:text-beige text-[13px] font-light tracking-[0.15em] uppercase transition-colors duration-300"
+                className="text-white hover:text-beige text-[12px] font-light tracking-[0.15em] transition-colors duration-300 leading-none"
               >
                 {link.label}
               </Link>
@@ -108,71 +97,11 @@ export default function Header() {
           )}
           <Link
             href="/contact"
-            className="ml-6 border border-beige/30 text-beige px-7 py-2.5 text-[13px] font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500"
+            className="ml-2 border border-white/30 text-white px-6 py-2.5 text-[12px] font-light tracking-[0.15em] rounded-full hover:bg-beige hover:text-navy hover:border-beige transition-all duration-500"
           >
-            Start a Conversation
+            Contact Us
           </Link>
         </nav>
-
-        {/* Mobile Hamburger */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden relative z-50 w-8 h-8 flex flex-col justify-center items-center gap-1.5"
-          aria-label="Toggle menu"
-        >
-          <span
-            className={`block w-6 h-px bg-white transition-all duration-300 ${
-              mobileOpen ? "rotate-45 translate-y-[3.5px]" : ""
-            }`}
-          />
-          <span
-            className={`block w-6 h-px bg-white transition-all duration-300 ${
-              mobileOpen ? "-rotate-45 -translate-y-[3.5px]" : ""
-            }`}
-          />
-        </button>
-
-        {/* Mobile Menu */}
-        <div
-          className={`fixed inset-0 bg-navy-dark z-40 flex flex-col items-center justify-center transition-all duration-500 lg:hidden ${
-            mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-          }`}
-        >
-          <nav className="flex flex-col items-center gap-8">
-            {navLinks.map((link) => (
-              <div key={link.href} className="text-center">
-                <Link
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="font-heading text-white text-3xl font-light tracking-wide hover:text-beige transition-colors"
-                >
-                  {link.label}
-                </Link>
-                {link.children && (
-                  <div className="mt-3 flex flex-col gap-2">
-                    {link.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        onClick={() => setMobileOpen(false)}
-                        className="text-white/40 text-sm font-light tracking-wide hover:text-beige transition-colors"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-            <Link
-              href="/contact"
-              onClick={() => setMobileOpen(false)}
-              className="mt-6 border border-beige/30 text-beige px-10 py-3.5 text-sm font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500"
-            >
-              Start a Conversation
-            </Link>
-          </nav>
-        </div>
       </div>
     </header>
   );

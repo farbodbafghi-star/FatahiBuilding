@@ -87,7 +87,7 @@ export default function InsightsPage() {
                           {categoryIcons[article.category]}
                         </div>
                         <div className="absolute bottom-4 left-4">
-                          <p className="text-white/20 text-[11px] font-medium tracking-[0.2em] uppercase">{article.category}</p>
+                          <p className="text-white/20 text-[11px] font-medium tracking-[0.2em]">{article.category}</p>
                         </div>
                       </div>
                     </div>
@@ -99,7 +99,7 @@ export default function InsightsPage() {
                       <p className="text-white/60 font-light text-sm leading-relaxed mb-6">{article.excerpt}</p>
                       <div className="flex items-center justify-between">
                         <p className="text-white/30 text-xs font-light">{article.date}</p>
-                        <span className="inline-flex items-center text-beige text-[13px] font-medium tracking-[0.15em] uppercase group-hover:text-beige-light transition-colors duration-300">
+                        <span className="inline-flex items-center text-beige text-[13px] font-medium tracking-[0.15em] group-hover:text-beige-light transition-colors duration-300">
                           Read More
                           <svg className="ml-2 w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
@@ -129,7 +129,7 @@ export default function InsightsPage() {
             <p className="text-white/50 font-light leading-relaxed max-w-md mx-auto mb-10">
               Whether you&apos;re in the early planning stages or ready to start building, we&apos;re here to answer your questions.
             </p>
-            <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] uppercase hover:bg-beige hover:text-navy transition-all duration-500">
+            <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] hover:bg-beige hover:text-navy transition-all duration-500">
               Get in Touch
             </Link>
           </ScrollReveal>
