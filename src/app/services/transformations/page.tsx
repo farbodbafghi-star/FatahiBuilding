@@ -1,14 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
-
-const features = [
-  { title: "Complete Redesign", description: "We don&apos;t work within existing constraints. We reimagine the entire spatial composition. Walls dissolve. Light enters. The residence is reconceived around your way of life." },
-  { title: "Structural Integrity", description: "Every modification is engineered with precision. Load-bearing walls, foundation work, structural steel. We orchestrate the engineering so the result feels effortless." },
-  { title: "Modern Systems", description: "New electrical, plumbing, HVAC, and insulation integrated into the existing framework. The infrastructure is elevated alongside every visible surface." },
-  { title: "Design Continuity", description: "The finished residence should feel cohesive, not like an intervention was made. Every material, finish, and detail is selected to create a unified result." },
-];
-
+import ProcessJourney from "@/components/ProcessJourney";
+import { transformationsPhases } from "@/data/process-phases";
 
 export default function TransformationsPage() {
   return (
@@ -36,9 +30,8 @@ export default function TransformationsPage() {
                 <p className="section-label mb-8">Beyond Renovation</p>
                 <h2 className="font-heading text-3xl md:text-4xl font-light text-white leading-snug tracking-wide">The difference between<br />renovating and transforming</h2>
                 <div className="divider mt-10 mb-10" />
-                <p className="text-white/70 font-light leading-relaxed mb-6">A renovation refreshes surfaces. A transformation reconceives the entire residence. We take an existing structure and completely reimagine how it functions, with new layouts, new systems, and new finishes, while preserving what makes the home worth keeping.</p>
-                <p className="text-white/70 font-light leading-relaxed mb-6">Because we design and build under one roof, we approach every element with a complete perspective, including spatial flow, natural light, and structural possibility, resolving the full composition before a single wall is moved.</p>
-                <p className="text-white/70 font-light leading-relaxed">The goal isn&apos;t a home that looks renovated. It&apos;s a home that feels like it was always meant to be this way.</p>
+                <p className="text-white/70 font-light leading-relaxed mb-6">A renovation refreshes surfaces. A transformation reconceives the entire residence: new layouts, new systems, new finishes, while preserving what makes the home worth keeping.</p>
+                <p className="text-white/70 font-light leading-relaxed">Because we design and build under one roof, we resolve the full composition before a single wall is moved. The goal is a home that feels like it was always meant to be this way.</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={200}>
@@ -54,27 +47,8 @@ export default function TransformationsPage() {
 
       <div className="section-sep" />
 
-      {/* FEATURES */}
-      <section className="relative py-10 md:py-16">
-        <div className="max-w-7xl mx-auto px-8 md:px-16">
-          <ScrollReveal>
-            <div className="text-center mb-16">
-              <p className="section-label mb-8">Our Approach</p>
-              <h2 className="font-heading text-3xl md:text-4xl font-light text-white tracking-wide">What a transformation includes</h2>
-            </div>
-          </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            {features.map((feature, i) => (
-              <ScrollReveal key={i} delay={i * 100}>
-                <div className="border-l border-beige/40 pl-8">
-                  <h3 className="font-heading text-lg font-light text-white tracking-wide mb-4">{feature.title}</h3>
-                  <p className="text-white/50 font-light text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: feature.description }} />
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* PROCESS */}
+      <ProcessJourney phases={transformationsPhases} heading="How your transformation unfolds" />
 
       <div className="section-sep" />
 
@@ -92,10 +66,8 @@ export default function TransformationsPage() {
               <div className="space-y-6">
                 {[
                   "You love your neighbourhood but your home no longer fits your life.",
-                  "The layout feels disconnected, with rooms that don&apos;t flow and space that isn&apos;t used well.",
-                  "You want a result that feels custom-built, not patched together.",
                   "You&apos;ve outgrown cosmetic updates and need something more fundamental.",
-                  "You want one team handling design, permits, engineering, and construction.",
+                  "You want one team handling design, engineering, and construction.",
                 ].map((point, i) => (
                   <div key={i} className="flex items-start gap-4">
                     <span className="w-1.5 h-1.5 rounded-full bg-beige mt-2 shrink-0" />
@@ -108,7 +80,11 @@ export default function TransformationsPage() {
         </div>
       </section>
 
-      <div className="section-sep" />
+      {/* IMAGE BREAK */}
+      <section className="relative h-[50vh] min-h-[400px]">
+        <Image src="/images/projects/poyntz/interior-02.jpg" alt="Custom staircase and entryway, whole-home transformation" fill className="object-cover" />
+        <div className="absolute inset-0 bg-navy-dark/30" />
+      </section>
 
       {/* CTA */}
       <section className="relative py-10 md:py-16">

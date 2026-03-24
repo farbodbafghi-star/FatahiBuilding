@@ -1,20 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
-
-const approachPoints = [
-  { title: "Architectural Integration", description: "The addition is designed to match the existing rooflines, materials, and proportions. From the outside, it should look like it was always there." },
-  { title: "Interior Continuity", description: "Floor heights, trim profiles, door styles, and finishes are matched to the original home. The transition between old and new should be invisible." },
-  { title: "Structural Engineering", description: "Proper foundation work, structural connections, and load management. We engineer the addition to integrate with the existing structure, not just attach to it." },
-  { title: "Permit &amp; Municipal Coordination", description: "Zoning analysis, permit applications, committee of adjustment if needed. We handle the process from start to approval." },
-];
-
-const additionTypes = [
-  { title: "Second-Storey Additions", description: "Adding a full or partial second floor to a bungalow or single-storey home. Foundation assessment, structural reinforcement, and seamless exterior integration." },
-  { title: "Rear &amp; Side Extensions", description: "Expanding the footprint of your home into your lot. Kitchen extensions, family room additions, and primary suite expansions, designed to flow naturally from the existing layout." },
-  { title: "Garage Conversions &amp; Additions", description: "Attached garage additions or converting existing garage space into livable area with a new garage built to match." },
-  { title: "In-Law Suites", description: "Self-contained suites designed with privacy and independence in mind, while maintaining the architectural integrity of the main home." },
-];
+import ProcessJourney from "@/components/ProcessJourney";
+import { additionsPhases } from "@/data/process-phases";
 
 export default function AdditionsPage() {
   return (
@@ -42,9 +30,8 @@ export default function AdditionsPage() {
                 <p className="section-label mb-8">Seamless by Design</p>
                 <h2 className="font-heading text-3xl md:text-4xl font-light text-white leading-snug tracking-wide">Built to look like it<br />was always there</h2>
                 <div className="divider mt-10 mb-10" />
-                <p className="text-white/70 font-light leading-relaxed mb-6">A great addition is invisible. The rooflines align. The materials match. Inside, every floor height, trim profile, and finish flows seamlessly from original to new.</p>
-                <p className="text-white/70 font-light leading-relaxed mb-6">Our integrated design-build approach allows us to study the existing architecture, its proportions, materials, rooflines, and interior character, and design the addition as if it were part of the original plan.</p>
-                <p className="text-white/70 font-light leading-relaxed">The measure of our success is invisibility, the point where original and new become indistinguishable.</p>
+                <p className="text-white/70 font-light leading-relaxed mb-6">A great addition is invisible. Rooflines align. Materials match. Inside, every floor height, trim profile, and finish flows seamlessly from original to new.</p>
+                <p className="text-white/70 font-light leading-relaxed">Our design-build approach lets us study the existing architecture and design the addition as if it were part of the original plan. The measure of success is the point where old and new become indistinguishable.</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={200}>
@@ -63,56 +50,14 @@ export default function AdditionsPage() {
 
       <div className="section-sep" />
 
-      {/* APPROACH */}
-      <section className="relative py-10 md:py-16">
-        <div className="max-w-7xl mx-auto px-8 md:px-16">
-          <ScrollReveal>
-            <div className="text-center mb-16">
-              <p className="section-label mb-8">Our Approach</p>
-              <h2 className="font-heading text-3xl md:text-4xl font-light text-white tracking-wide">How we make it seamless</h2>
-            </div>
-          </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            {approachPoints.map((point, i) => (
-              <ScrollReveal key={i} delay={i * 100}>
-                <div className="border-l border-beige/40 pl-8">
-                  <h3 className="font-heading text-lg font-light text-white tracking-wide mb-4" dangerouslySetInnerHTML={{ __html: point.title }} />
-                  <p className="text-white/50 font-light text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: point.description }} />
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* PROCESS */}
+      <ProcessJourney phases={additionsPhases} heading="How your addition takes shape" />
 
       <div className="section-sep" />
 
-      {/* TYPES OF ADDITIONS */}
-      <section className="py-10 md:py-16">
-        <div className="max-w-7xl mx-auto px-8 md:px-16">
-          <ScrollReveal>
-            <div className="text-center mb-16">
-              <p className="section-label mb-8">Types of Additions</p>
-              <h2 className="font-heading text-3xl md:text-4xl font-light text-white tracking-wide">What we build</h2>
-            </div>
-          </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {additionTypes.map((type, i) => (
-              <ScrollReveal key={i} delay={i * 100}>
-                <div className="bg-white/5 border border-white/10 p-10 md:p-12 h-full">
-                  <span className="text-beige/40 text-sm font-light">0{i + 1}</span>
-                  <h3 className="font-heading text-lg font-light text-white tracking-wide mt-4 mb-4" dangerouslySetInnerHTML={{ __html: type.title }} />
-                  <p className="text-white/50 font-light text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: type.description }} />
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* IMAGE BREAK */}
       <section className="relative h-[50vh] min-h-[400px]">
-        <Image src="/images/projects/terrace/living.jpg" alt="Interior living space, seamless addition" fill className="object-cover" />
+        <Image src="/images/projects/terrace/kitchen-1.jpg" alt="Custom kitchen with walnut ceiling detail and island" fill className="object-cover" />
         <div className="absolute inset-0 bg-navy-dark/30" />
       </section>
 

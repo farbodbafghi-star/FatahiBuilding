@@ -59,8 +59,11 @@ export default function Footer() {
             <p className="text-white text-sm font-medium mb-6">Navigate</p>
             <ul className="space-y-4">
               {[
-                { href: "/services/custom-homes", label: "Services" },
                 { href: "/projects", label: "Projects" },
+                { href: "/services/custom-homes", label: "Custom Homes" },
+                { href: "/services/transformations", label: "Transformations" },
+                { href: "/services/additions", label: "Additions" },
+                { href: "/process", label: "Process" },
                 { href: "/insights", label: "Insights" },
                 { href: "/about", label: "About" },
               ].map((link) => (
@@ -82,19 +85,27 @@ export default function Footer() {
             <p className="text-white text-sm font-medium mb-6">Contact</p>
             <ul className="space-y-4 text-sm font-light text-white/40">
               <li>
-                <a
-                  href="mailto:info@fatahibuilding.com"
+                <Link
+                  href="/contact"
                   className="hover:text-beige transition-colors duration-300 inline-flex items-center gap-1"
                 >
-                  Email <span className="text-[10px]">&#8599;</span>
+                  Start a Conversation <span className="text-[10px]">&#8599;</span>
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@fatahibuilding.com"
+                  className="hover:text-beige transition-colors duration-300"
+                >
+                  info@fatahibuilding.com
                 </a>
               </li>
               <li>
                 <a
                   href="tel:+16476311211"
-                  className="hover:text-beige transition-colors duration-300 inline-flex items-center gap-1"
+                  className="hover:text-beige transition-colors duration-300"
                 >
-                  Get in touch <span className="text-[10px]">&#8599;</span>
+                  (647) 631-1211
                 </a>
               </li>
               <li className="pt-1 leading-relaxed">

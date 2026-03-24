@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+import ProcessJourney from "@/components/ProcessJourney";
+import { customHomesPhases } from "@/data/process-phases";
 
 const galleryImages = [
   { src: "/images/projects/poyntz/interior-01.jpg", alt: "Custom home interior, open concept living area" },
@@ -16,7 +18,7 @@ export default function CustomHomesPage() {
     <>
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[550px] flex items-end">
-        <Image src="/images/projects/poyntz/twilight-1.jpg" alt="Custom home by Fatahi Building, Poyntz Avenue at twilight" fill className="object-cover" priority quality={90} />
+        <Image src="/images/projects/poyntz/twilight-1.jpg" alt="Custom home by Fatahi Building, Poyntz at twilight" fill className="object-cover" priority quality={90} />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/40 to-navy-dark/20" />
         <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 pb-24 w-full">
           <div className="max-w-2xl">
@@ -43,19 +45,18 @@ export default function CustomHomesPage() {
               </div>
             </ScrollReveal>
             <ScrollReveal delay={200}>
-              <div className="relative">
-                <div className="img-zoom">
-                  <Image src="/images/projects/poyntz/twilight-2.jpg" alt="Custom home exterior, architectural detail" width={800} height={600} className="w-full h-[500px] object-cover" />
-                </div>
-                <div className="absolute -bottom-6 -left-6 bg-white/5 border border-white/10 px-8 py-6 hidden md:block z-10">
-                  <p className="text-beige text-3xl font-light">30+</p>
-                  <p className="text-white/50 text-xs font-light tracking-widest mt-1">Years of mastery</p>
-                </div>
+              <div className="img-zoom">
+                <Image src="/images/projects/poyntz/twilight-2.jpg" alt="Custom home exterior, architectural detail" width={800} height={600} className="w-full h-[500px] object-cover" />
               </div>
             </ScrollReveal>
           </div>
         </div>
       </section>
+
+      <div className="section-sep" />
+
+      {/* PROCESS */}
+      <ProcessJourney phases={customHomesPhases} heading="How your home comes to life" />
 
       <div className="section-sep" />
 

@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Terrace | Projects | Fatahi Building",
-  description: "A warm, sophisticated custom home in Toronto with walnut ceiling details, black marble kitchen island, brass fixtures, and floating oak staircase. Designed and built by Fatahi Building.",
+  description: "A warm, sophisticated custom home in North York, Toronto with walnut ceiling details, black marble kitchen island, brass fixtures, and floating oak staircase. Designed and built by Fatahi Building.",
 };
 
 const galleryImages = [
@@ -46,7 +46,7 @@ export default function TerracePage() {
               <div className="lg:col-span-4">
                 <div className="space-y-8">
                   <div><p className="section-label mb-2">Project Type</p><p className="text-white font-light text-lg">Custom Home</p></div>
-                  <div><p className="section-label mb-2">Location</p><p className="text-white font-light text-lg">Toronto</p></div>
+                  <div><p className="section-label mb-2">Location</p><p className="text-white font-light text-lg">North York, Toronto</p></div>
                   <div><p className="section-label mb-2">Completed</p><p className="text-white font-light text-lg">2021</p></div>
                   <div><p className="section-label mb-2">Scope</p><p className="text-white font-light text-lg">Design &amp; Build</p></div>
                 </div>

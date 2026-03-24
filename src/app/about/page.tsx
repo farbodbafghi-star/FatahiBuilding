@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -7,19 +8,31 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="relative pt-44 pb-24 md:pt-52 md:pb-28">
         <div className="max-w-7xl mx-auto px-8 md:px-16">
-          <div className="max-w-3xl">
-            <div className="divider mb-10" />
-            <p className="section-label mb-8">About Us</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-light text-white leading-tight tracking-wide">
-              Two generations.
-              <br />
-              One standard.
-            </h1>
-            <p className="mt-6 text-lg md:text-xl text-white/70 font-light leading-relaxed max-w-2xl">
-              A father and son united by a singular conviction: that the mind
-              which conceives a home should be the same one that brings it to
-              life. Three decades. One standard.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-28 items-center">
+            <div>
+              <div className="divider mb-10" />
+              <p className="section-label mb-8">About Us</p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-light text-white leading-tight tracking-wide">
+                Two generations.
+                <br />
+                One standard.
+              </h1>
+              <p className="mt-6 text-lg md:text-xl text-white/70 font-light leading-relaxed">
+                A father and son united by a singular conviction: that the mind
+                which conceives a home should be the same one that brings it to
+                life. Three decades. One standard.
+              </p>
+            </div>
+            <div className="relative">
+              {/* Replace src with actual photo of Majid and Farbod */}
+              <div className="aspect-[4/5] bg-white/5 border border-white/10 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-px bg-beige/30 mx-auto mb-4" />
+                  <p className="text-white/20 text-sm font-light tracking-widest">Photo Coming Soon</p>
+                  <div className="w-16 h-px bg-beige/30 mx-auto mt-4" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -103,94 +116,6 @@ export default function AboutPage() {
                 </a>
               </div>
             </ScrollReveal>
-          </div>
-        </div>
-      </section>
-
-      <div className="section-sep" />
-
-      {/* DESIGN-BUILD PHILOSOPHY */}
-      <section className="py-10 md:py-16">
-        <div className="max-w-7xl mx-auto px-8 md:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-28 items-center">
-            <ScrollReveal>
-              <div>
-                <p className="section-label mb-8">Our Philosophy</p>
-                <h2 className="text-3xl md:text-4xl font-heading font-light text-white leading-snug tracking-wide">
-                  Design and construction
-                  <br />
-                  in the same hands
-                </h2>
-                <div className="divider mt-10 mb-10" />
-                <p className="text-white/70 font-light text-[15px] leading-[1.85] mb-6">
-                  Design and construction exist as a single discipline within
-                  our practice. The creative vision that shapes a residence is
-                  the same intelligence that guides its realization, ensuring
-                  nothing is lost, nothing is compromised.
-                </p>
-                <p className="text-white/70 font-light text-[15px] leading-[1.85] mb-6">
-                  Every design decision is informed by a deep understanding of
-                  materials, structure, and craft. The residence you approve is
-                  precisely the residence we deliver.
-                </p>
-                <p className="text-white/70 font-light text-[15px] leading-[1.85]">
-                  When design and construction are in the same hands, nothing
-                  gets lost.
-                </p>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={200}>
-              <div className="relative bg-white/5 border border-white/10 p-10 md:p-14">
-                <span className="text-beige/15 text-7xl font-serif leading-none absolute top-6 left-8">
-                  &ldquo;
-                </span>
-                <div className="relative z-10 pt-8">
-                  <p className="text-cream font-light text-lg leading-relaxed italic">
-                    The mind that conceives the space is the same one that
-                    ensures every detail is realized with precision. That is
-                    the Fatahi standard.
-                  </p>
-                  <div className="divider mt-10 mb-4" />
-                  <p className="text-white/40 text-sm font-light">
-                    The Fatahi Building approach
-                  </p>
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
-
-      <div className="section-sep" />
-
-      {/* VALUES */}
-      <section className="relative py-10 md:py-16">
-        <div className="max-w-7xl mx-auto px-8 md:px-16">
-          <ScrollReveal>
-            <div className="text-center mb-16">
-              <p className="section-label mb-8">What We Stand For</p>
-              <h2 className="text-3xl md:text-4xl font-heading font-light text-white tracking-wide">
-                Principles, not promises
-              </h2>
-            </div>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { title: "Design-Build Integrity", description: "A singular creative vision guides every project from concept through completion. No delegation. No dilution." },
-              { title: "Total Transparency", description: "Comprehensive weekly briefings. Documented change orders. Clear budgets. You will never have to wonder where your project stands." },
-              { title: "Constant Presence", description: "Majid maintains a direct, hands-on involvement with every project, ensuring the architectural intent is honoured in every detail." },
-              { title: "Built to Last", description: "We use materials and methods that stand the test of time, because your home should outlast trends." },
-            ].map((value, i) => (
-              <ScrollReveal key={value.title} delay={i * 100}>
-                <div className="bg-white/5 border border-white/10 p-10 md:p-12 h-full">
-                  <span className="text-beige/40 text-sm font-light">0{i + 1}</span>
-                  <h3 className="text-lg font-heading font-light text-white tracking-wide mt-4 mb-6">{value.title}</h3>
-                  <p className="text-white/50 font-light text-sm leading-relaxed">{value.description}</p>
-                </div>
-              </ScrollReveal>
-            ))}
           </div>
         </div>
       </section>

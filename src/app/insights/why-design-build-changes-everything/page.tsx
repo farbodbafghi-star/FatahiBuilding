@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+import ArticleView from "@/components/ArticleView";
 
 export const metadata: Metadata = {
   title: "Why Design-Build Changes Everything | Fatahi Building",
   description:
-    "When the person who designs your home is the same person building it, nothing gets lost in translation. Here's why design-build leads to better custom homes.",
+    "When the person who designs your home is the same person building it, nothing gets lost in translation. Here's what design-build actually looks like from the inside.",
 };
 
 export default function DesignBuildArticle() {
@@ -47,166 +48,97 @@ export default function DesignBuildArticle() {
 
       {/* ARTICLE BODY */}
       <section className="py-10 md:py-16">
-        <div className="max-w-3xl mx-auto px-8 md:px-16">
-          <ScrollReveal>
-            <div className="prose-custom">
+        <ArticleView
+          summary={
+            <>
               <p>
-                Most people building a custom home start the same way: hire an
-                architect, get a beautiful set of drawings, then find a builder
-                to make it real. It sounds logical. But after 30 years of
-                designing and building custom homes in Toronto, we can tell you
-                &mdash; that gap between the drawing and the build is where most
-                problems start.
+                Design-build means the person who designs your home is the same person who builds it. At Fatahi Building, that person is Majid. He draws the plans, and he&apos;s on site every day making sure the finished home matches what was envisioned.
               </p>
-              <p>
-                Design-build is different. It means the person who draws your
-                home is the same person who builds it. At Fatahi Building,
-                that&apos;s how we&apos;ve always worked. And it&apos;s not a
-                business strategy &mdash; it&apos;s the only way we know how to
-                build something we&apos;re proud of.
-              </p>
-
-              <h2>The Problem With Splitting Design and Construction</h2>
-              <p>
-                When an architect designs a home in isolation, they&apos;re
-                solving a visual problem. They&apos;re thinking about proportion,
-                light, flow, aesthetics. And they should be &mdash; that&apos;s
-                their craft.
-              </p>
-              <p>
-                But a drawing doesn&apos;t know what things cost. It doesn&apos;t
-                know that the structural engineer will need to add a beam that
-                changes the ceiling height in the living room. It doesn&apos;t
-                know that the window spec will blow the budget by $40,000, or
-                that the cantilever over the garage is going to require a
-                foundation redesign.
-              </p>
-              <p>
-                These aren&apos;t rare problems. They happen on the majority of
-                custom home projects where design and construction are handled by
-                separate teams. The result is a painful cycle: the homeowner
-                falls in love with a design, gets a construction quote that&apos;s
-                30&ndash;50% over budget, and then spends months redesigning
-                &mdash; or worse, cutting corners to make the numbers work.
-              </p>
-              <p>
-                The home that gets built is a compromise of the home that was
-                designed. Nobody wins.
-              </p>
-
-              <h2>What Changes When One Team Does Both</h2>
-              <p>
-                When we sit down to design a home, we&apos;re not just thinking
-                about how it looks. We&apos;re thinking about how it gets built.
-              </p>
-              <p>
-                Every line we draw, we already know what it costs. We know how
-                the structure works. We know which materials will perform in
-                Toronto&apos;s climate &mdash; the freeze-thaw cycles, the
-                humidity, the wind loads on an exposed elevation. We know where
-                we can push the design and where the budget needs us to be smart.
-              </p>
-              <p>
-                This means the design you approve is the home you get. Not a
-                version of it. Not a scaled-back compromise. The actual home.
-              </p>
-              <p>Here&apos;s what that looks like in practice:</p>
-              <p>
-                <strong>No budget surprises.</strong> Because we&apos;re pricing
-                as we design, you know the real cost before construction starts
-                &mdash; not an optimistic estimate that inflates once a builder
-                gets involved.
-              </p>
-              <p>
-                <strong>Faster timelines.</strong> There&apos;s no back-and-forth
-                between an architect and a builder interpreting each other&apos;s
-                intent. We don&apos;t need three rounds of value engineering. The
-                design is buildable from day one.
-              </p>
-              <p>
-                <strong>Better problem-solving on site.</strong> Construction
-                always has surprises &mdash; soil conditions, material lead
-                times, a detail that works on paper but not in three dimensions.
-                When the designer is on site every day (which Majid is), those
-                problems get solved in real time. There&apos;s no waiting for an
-                architect to issue a revised drawing.
-              </p>
-              <p>
-                <strong>Design that respects the craft.</strong> When you&apos;ve
-                spent decades actually building &mdash; framing walls, setting
-                stone, installing millwork &mdash; you design differently. You
-                think about how a joint will be finished, how a transition
-                between materials will age, how a staircase will feel to walk up
-                every day. These are things that don&apos;t show up in a
-                rendering but define whether a home feels right.
-              </p>
-
-              <h2>The Misconception About Design-Build</h2>
-              <p>
-                Some people assume that design-build means you&apos;re getting a
-                builder who can draw &mdash; that the design quality suffers
-                because the focus is on construction. That&apos;s a fair concern,
-                but it depends entirely on who you&apos;re working with.
-              </p>
-              <p>
-                At Fatahi Building, design is not an add-on. It&apos;s where
-                every project starts. Majid has been designing homes for over
-                three decades &mdash; not just building them. The design process
-                is thorough: we start with how you want to live, study the lot,
-                understand the neighbourhood context, and develop a home
-                that&apos;s specific to you. The difference is that every design
-                decision is grounded in the reality of how it will be built.
-              </p>
-              <p>
-                Design-build doesn&apos;t mean less design. It means
-                better-informed design.
-              </p>
-
-              <h2>What This Means for You</h2>
-              <p>
-                If you&apos;re early in the process of planning a custom home in
-                Toronto or the GTA, you have a choice in how you structure your
-                team. You can hire an architect and a builder separately &mdash;
-                and many good homes get built that way. But know that you&apos;re
-                introducing a gap between vision and execution that will cost you
-                time, money, and probably some of the details that made you fall
-                in love with the design in the first place.
-              </p>
-              <p>
-                Or you can work with a team where those two things were never
-                separate to begin with.
-              </p>
-
-              <h2>Questions Worth Asking</h2>
+              <h2>What this delivers:</h2>
               <ul>
                 <li>
-                  Who is responsible when the design exceeds the budget?
+                  <strong>The design you approve is the home you get.</strong> Because Majid knows what every line costs as he draws it, the design reflects reality from day one. No rework. No scaling back.
                 </li>
                 <li>
-                  Will the person who designed the home be on site during
-                  construction?
+                  <strong>Faster, cleaner timelines.</strong> One team means one conversation. Decisions happen in real time on site, not through layers of coordination.
                 </li>
                 <li>
-                  How many projects have gone through redesign after the initial
-                  construction quote?
+                  <strong>Design that respects the craft.</strong> When you&apos;ve spent decades framing walls, setting stone, and installing millwork, you design differently. You think about how a joint finishes, how materials transition, how a staircase feels underfoot every morning.
                 </li>
                 <li>
-                  Can you show me a finished home that matches the original
-                  design drawings?
+                  <strong>Cost intelligence built into every detail.</strong> Budgets aren&apos;t a constraint applied after the design is done. They&apos;re part of the creative process from the first sketch.
                 </li>
               </ul>
               <p>
-                The answers will tell you a lot about how the next 12&ndash;18
-                months of your life are going to go.
+                Design-build is not a business model. It&apos;s the only way to guarantee complete continuity between what&apos;s imagined and what&apos;s built. One team, one vision, from concept to keys.
               </p>
               <p>
-                If you&apos;re considering a custom build and want to understand
-                how the design-build process works, we&apos;re always happy to
-                have that conversation.
+                If you&apos;re beginning to think about a custom home, we&apos;d welcome a conversation about what this process looks like for your project.
               </p>
-            </div>
-          </ScrollReveal>
-        </div>
+            </>
+          }
+        >
+          <p>
+            After 30 years of designing and building custom homes in Toronto, Majid has never handed a set of drawings to someone else to build. Not because he can&apos;t. Because the continuity between the drawing and the build is where the quality lives.
+          </p>
+          <p>
+            Design-build means one team handles both. At Fatahi Building, the person who imagines the home is the same person on site every day constructing it. That&apos;s not a tagline. It&apos;s the daily reality of how every project moves from concept to keys.
+          </p>
+
+          <h2>What Design-Build Unity Actually Looks Like</h2>
+          <p>
+            When Majid sits down to design a home, he isn&apos;t solving a visual problem in isolation. He&apos;s thinking about structure, cost, sequence, materials, and climate all at once. Every line he draws, he already knows what it will take to build.
+          </p>
+          <p>This changes the design process in ways that matter:</p>
+          <p>
+            <strong>The design you approve is the home you get.</strong> Because construction knowledge is embedded in every design decision, the plans reflect reality from the start. The home that gets built is the home that was envisioned. Not a version of it. Not a scaled-back compromise.
+          </p>
+          <p>
+            <strong>Cost intelligence is part of the creative process.</strong> Majid knows what things cost to build as he designs them. That dramatic double-height living room? He&apos;s already figured out the steel. That cantilevered upper floor? He knows the foundation implications before you see the drawing. The budget isn&apos;t a constraint applied later. It shapes the design from the first conversation.
+          </p>
+          <p>
+            <strong>Decisions happen in real time.</strong> Construction always has moments that require judgment: soil conditions differ from the report, a material lead time shifts, a detail that works on paper needs adjustment in three dimensions. When the designer is on site every day, those moments get resolved immediately. No waiting. No back-and-forth. Just a decision made by the person who understands both the design intent and the construction reality.
+          </p>
+          <p>
+            <strong>The craft runs deeper.</strong> When you&apos;ve spent decades physically building &mdash; framing walls, setting stone, installing millwork &mdash; you design with your hands as much as your eyes. You think about how a joint will be finished. How a transition between materials will age. How 22 feet of continuous white oak grain should flow from the first floor to the third without a single break. These are details that don&apos;t show up in a rendering, but they define whether a home feels right.
+          </p>
+
+          <h2>Design-Build Is Not &ldquo;A Builder Who Can Draw&rdquo;</h2>
+          <p>
+            Design is where every Fatahi Building project starts. Majid has been designing homes for over three decades. The process is thorough: it begins with how you want to live, studies the lot and neighbourhood context, and develops a home that is specific to you and your family.
+          </p>
+          <p>
+            The difference is that every design decision is grounded in the reality of how it will be built. This doesn&apos;t limit the design. It makes the design more honest.
+          </p>
+          <p>
+            We know which materials will perform in Toronto&apos;s climate &mdash; the freeze-thaw cycles, the humidity swings, the wind loads on an exposed elevation. We know where a design can push boundaries and where the budget needs us to be strategic. That knowledge doesn&apos;t constrain creativity. It focuses it.
+          </p>
+
+          <h2>What This Means for Your Project</h2>
+          <p>
+            If you&apos;re early in the process of planning a custom home in Toronto or the GTA, you have a choice in how you structure your team. Design-build gives you complete continuity: one team from the first sketch to the final walkthrough. One conversation instead of a chain of coordination. A home where every detail carries through exactly as intended.
+          </p>
+          <p>
+            <strong>Questions worth asking any team you&apos;re considering:</strong>
+          </p>
+          <ul>
+            <li>
+              Who is responsible when the design exceeds the budget?
+            </li>
+            <li>
+              Will the person who designed the home be on site during construction?
+            </li>
+            <li>
+              Can you show me a finished home that matches the original design drawings?
+            </li>
+          </ul>
+          <p>
+            The answers will tell you a lot about how the next 12 to 18 months of your life are going to go.
+          </p>
+          <p>
+            If you&apos;re considering a custom build, we&apos;re always happy to have that conversation.
+          </p>
+        </ArticleView>
       </section>
 
       <div className="section-sep" />

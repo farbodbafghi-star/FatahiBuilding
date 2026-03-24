@@ -19,7 +19,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Fatahi Building | Custom Home Builder | Toronto & GTA",
   description:
-    "Design-build custom homes in the Greater Toronto Area. Over 30 years of craftsmanship. We design it and we build it. Nothing gets lost in translation.",
+    "Design-build custom homes in the Greater Toronto Area. Over 30 years of craftsmanship. One team. Concept to completion.",
   keywords: [
     "custom home builder",
     "Toronto",

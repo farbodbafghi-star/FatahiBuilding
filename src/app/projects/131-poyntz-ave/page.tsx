@@ -4,7 +4,7 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Poyntz Avenue | Projects | Fatahi Building",
+  title: "Poyntz | Projects | Fatahi Building",
   description: "A modern custom home in North York, Toronto featuring clean contemporary lines, glass staircase, marble fireplace surround, and warm oak flooring. Designed and built by Fatahi Building.",
 };
 
@@ -40,7 +40,7 @@ export default function PoyntzAvenuePage() {
               All Projects
             </Link>
             <div className="divider mb-6" />
-            <h1 className="text-4xl md:text-5xl font-light font-heading text-white leading-tight tracking-wide">Poyntz Avenue</h1>
+            <h1 className="text-4xl md:text-5xl font-light font-heading text-white leading-tight tracking-wide">Poyntz</h1>
           </div>
         </div>
       </section>

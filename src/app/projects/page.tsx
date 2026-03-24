@@ -9,28 +9,28 @@ export const metadata: Metadata = {
 };
 
 const projects = [
-  { slug: "131-poyntz-ave", title: "Poyntz Avenue", location: "North York, Toronto", type: "Custom Home", year: "2023", image: "/images/projects/poyntz/twilight-1.jpg", description: "A modern custom home featuring clean contemporary lines, an open-concept interior with glass staircase, and warm oak flooring throughout." },
-  { slug: "23-terrace", title: "Terrace", location: "Toronto", type: "Custom Home", year: "2021", image: "/images/projects/terrace/dining.jpg", description: "A warm, sophisticated custom home with walnut ceiling details, black marble kitchen island with brass fixtures, and floating oak staircase." },
+  { slug: "131-poyntz-ave", title: "Poyntz", location: "North York, Toronto", type: "Custom Home", year: "2023", image: "/images/projects/poyntz/twilight-1.jpg", description: "A modern custom home featuring clean contemporary lines, an open-concept interior with glass staircase, and warm oak flooring throughout." },
+  { slug: "23-terrace", title: "Terrace", location: "North York, Toronto", type: "Custom Home", year: "2021", image: "/images/projects/terrace/dining.jpg", description: "A warm, sophisticated custom home with walnut ceiling details, black marble kitchen island with brass fixtures, and floating oak staircase." },
 ];
 
 const inProgress = [
   {
-    title: "Betty Ann Drive",
+    title: "Betty Ann",
     location: "North York, Toronto",
     type: "Custom Home",
     expected: "Summer 2026",
     image: "/images/projects/betty-ann/exterior-1.jpg",
-    highlights: ["~7,000 sq ft", "10.5\u2019 main floor ceilings", "14\u2019 basement ceilings", "4 bed / 8 bath", "Elevator", "3-car garage"],
+    highlights: ["~7,000 sq ft", "10.5\u2019 main floor ceilings", "12\u2019 basement ceilings", "4 bed / 8 bath", "Elevator", "3-car garage"],
     description: "A statement custom home with heated driveway, walkout basement, massive aluminum windows, engineered white oak flooring and millwork throughout, dual show-and-chef\u2019s kitchen, and a deck integrated into the concrete structure.",
   },
   {
-    title: "Farrell Avenue",
+    title: "Farrell",
     location: "North York, Toronto",
     type: "Custom Home",
     expected: "Summer 2026",
     image: "/images/projects/farrell/exterior-1.jpg",
-    highlights: ["~4,500 sq ft", "2-car garage", "Walkout basement", "Open concept", "Heated driveway"],
-    description: "A modern custom home with oversized windows, heated basement, walkout lower level, and a clean open-concept layout designed around how the family lives.",
+    highlights: ["~4,500 sq ft", "14\u2019 basement ceilings", "2-car garage", "Walkout basement", "Open concept", "Heated driveway"],
+    description: "A modern custom home with 14-foot basement ceilings, oversized windows on every floor, engineered white oak flooring throughout, a chef\u2019s kitchen with top-of-the-line appliances, heated driveway, and a walkout lower level.",
   },
 ];
 
@@ -63,9 +63,9 @@ export default function ProjectsPage() {
               <Link href={`/projects/${project.slug}`} className="group block">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
                   <div className="lg:col-span-8">
-                    <div className="img-zoom relative aspect-[16/10] overflow-hidden">
-                      <Image src={project.image} alt={`${project.title}, ${project.type} in ${project.location}`} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 1024px) 100vw, 66vw" />
-                      <div className="absolute inset-0 bg-navy/0 group-hover:bg-navy/15 transition-all duration-500" />
+                    <div className="group/img relative aspect-[16/10] overflow-hidden">
+                      <Image src={project.image} alt={`${project.title}, ${project.type} in ${project.location}`} fill className="object-cover transition-transform duration-700 group-hover/img:scale-105" sizes="(max-width: 1024px) 100vw, 66vw" />
+                      <div className="absolute inset-0 bg-navy/0 group-hover/img:bg-navy/15 transition-all duration-500" />
                     </div>
                   </div>
                   <div className="lg:col-span-4">
@@ -124,7 +124,7 @@ export default function ProjectsPage() {
                     <p className="text-white/70 font-light text-sm leading-relaxed mb-6">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {project.highlights.map((h) => (
-                        <span key={h} className="text-[11px] font-light tracking-[0.1em] text-white/50 border border-white/10 px-3 py-1.5">
+                        <span key={h} className="text-[11px] font-light tracking-[0.1em] text-white/50 border border-white/10 px-3 py-1.5 transition-all duration-300 hover:border-beige/30 hover:text-white/70 hover:shadow-[0_0_12px_-3px_rgba(196,180,158,0.25)] cursor-default">
                           {h}
                         </span>
                       ))}

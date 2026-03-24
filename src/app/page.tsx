@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 const projects = [
   {
     slug: "131-poyntz-ave",
-    title: "Poyntz Avenue",
+    title: "Poyntz",
     location: "North York, Toronto",
     type: "Custom Home",
     image: "/images/projects/poyntz/twilight-1.jpg",
@@ -13,7 +13,7 @@ const projects = [
   {
     slug: "23-terrace",
     title: "Terrace",
-    location: "Toronto",
+    location: "North York, Toronto",
     type: "Custom Home",
     image: "/images/projects/terrace/dining.jpg",
   },
@@ -57,9 +57,9 @@ export default function Home() {
           <div className="max-w-2xl">
             <div className="divider mb-10 animate-fade-in" />
             <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-light text-white leading-[1.15] tracking-wide animate-fade-up">
-              We design it.
+              One team.
               <br />
-              We build it.
+              Concept to completion.
             </h1>
             <p className="mt-8 text-lg md:text-xl text-white/60 font-light leading-relaxed animate-fade-up animate-delay-200 max-w-lg">
               Luxury residences in Toronto &amp; the GTA. Three decades
@@ -208,8 +208,8 @@ export default function Home() {
                   with your life in mind.
                 </p>
                 <p className="text-white/70 font-light leading-[1.85] text-[15px] mb-10">
-                  We handle every phase — design, engineering, construction,
-                  and finishing — so nothing is lost between disciplines and
+                  We handle every phase: design, engineering, construction,
+                  and finishing. Nothing is lost between disciplines and
                   every detail reflects the original intent.
                 </p>
                 <Link
@@ -246,7 +246,7 @@ export default function Home() {
                 <div className="divider mb-8" />
                 <p className="text-white/70 font-light leading-[1.85] text-[15px] mb-5">
                   A complete reimagining of an existing residence. Every space,
-                  every system, every detail — reconceived from the ground up.
+                  every system, every detail, reconceived from the ground up.
                 </p>
                 <p className="text-white/70 font-light leading-[1.85] text-[15px] mb-10">
                   We see what a home can become, not just what it is. Structure,
@@ -313,7 +313,7 @@ export default function Home() {
                 </p>
                 <p className="text-white/70 font-light leading-[1.85] text-[15px] mb-10">
                   Whether it is a new floor, a reimagined rear extension, or
-                  an entirely new wing — we ensure the addition reads as one
+                  an entirely new wing, we ensure the addition reads as one
                   continuous design, not an afterthought.
                 </p>
                 <Link
