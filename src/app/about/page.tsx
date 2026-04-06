@@ -24,13 +24,15 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="relative">
-              {/* Replace src with actual photo of Majid and Farbod */}
-              <div className="aspect-[4/5] bg-white/5 border border-white/10 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-px bg-beige/30 mx-auto mb-4" />
-                  <p className="text-white/20 text-sm font-light tracking-widest">Photo Coming Soon</p>
-                  <div className="w-16 h-px bg-beige/30 mx-auto mt-4" />
-                </div>
+              <div className="aspect-[4/5] overflow-hidden">
+                <Image
+                  src="/images/branding/duo-portrait.jpg"
+                  alt="Majid and Farbod Fatahi"
+                  width={1600}
+                  height={2000}
+                  quality={95}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -54,12 +56,15 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-20">
             <ScrollReveal>
               <div>
-                <div className="aspect-[3/4] bg-white/5 border border-white/10 flex items-center justify-center mb-8">
-                  <div className="text-center">
-                    <div className="w-16 h-px bg-beige/30 mx-auto mb-4" />
-                    <p className="text-white/20 text-sm font-light tracking-widest">Photo Coming Soon</p>
-                    <div className="w-16 h-px bg-beige/30 mx-auto mt-4" />
-                  </div>
+                <div className="aspect-[3/4] overflow-hidden mb-8">
+                  <Image
+                    src="/images/branding/majid-portrait.jpg"
+                    alt="Majid Fatahi"
+                    width={1200}
+                    height={1600}
+                    quality={95}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <p className="section-label mb-3">Founder, Lead Designer &amp; Builder</p>
                 <h3 className="text-2xl font-heading font-light text-white tracking-wide mb-4">Majid Fatahi</h3>
@@ -86,12 +91,15 @@ export default function AboutPage() {
 
             <ScrollReveal delay={200}>
               <div>
-                <div className="aspect-[3/4] bg-white/5 border border-white/10 flex items-center justify-center mb-8">
-                  <div className="text-center">
-                    <div className="w-16 h-px bg-beige/30 mx-auto mb-4" />
-                    <p className="text-white/20 text-sm font-light tracking-widest">Photo Coming Soon</p>
-                    <div className="w-16 h-px bg-beige/30 mx-auto mt-4" />
-                  </div>
+                <div className="aspect-[3/4] overflow-hidden mb-8">
+                  <Image
+                    src="/images/branding/farbod-portrait.jpg"
+                    alt="Farbod Fatahi"
+                    width={1200}
+                    height={1600}
+                    quality={95}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <p className="section-label mb-3">Client Relations &amp; Project Management</p>
                 <h3 className="text-2xl font-heading font-light text-white tracking-wide mb-4">Farbod Fatahi</h3>

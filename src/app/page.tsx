@@ -44,7 +44,7 @@ export default function Home() {
       <section
         className="relative h-screen min-h-[750px] flex items-end"
         style={{
-          backgroundImage: "url('/images/projects/poyntz/hero-exterior-2.png')",
+          backgroundImage: "url('/images/projects/poyntz/hero-exterior-edited.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center 15%",
         }}
@@ -139,19 +139,21 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-5">
                   <div className="img-zoom aspect-[3/4]">
                     <Image
-                      src="/images/projects/poyntz/interior-03.jpg"
-                      alt="Interior detail"
-                      width={400}
-                      height={530}
+                      src="/images/branding/majid-portrait.jpg"
+                      alt="Majid Fatahi, Founder and Lead Designer"
+                      width={1200}
+                      height={1600}
+                      quality={95}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="img-zoom aspect-[3/4] mt-16">
                     <Image
-                      src="/images/projects/terrace/kitchen-1.jpg"
-                      alt="Kitchen craftsmanship"
-                      width={400}
-                      height={530}
+                      src="/images/branding/farbod-portrait.jpg"
+                      alt="Farbod Fatahi, Client Relations and Project Management"
+                      width={1200}
+                      height={1600}
+                      quality={95}
                       className="w-full h-full object-cover"
                     />
                   </div>

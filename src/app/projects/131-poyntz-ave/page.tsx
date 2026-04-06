@@ -9,19 +9,20 @@ export const metadata: Metadata = {
 };
 
 const galleryImages = [
-  { src: "/images/projects/poyntz/twilight-1.jpg", alt: "Poyntz Avenue, twilight exterior view" },
-  { src: "/images/projects/poyntz/twilight-2.jpg", alt: "Poyntz Avenue, twilight angle view" },
-  { src: "/images/projects/poyntz/twilight-3.jpg", alt: "Poyntz Avenue, evening exterior" },
-  { src: "/images/projects/poyntz/interior-01.jpg", alt: "Poyntz Avenue, interior living space" },
-  { src: "/images/projects/poyntz/interior-02.jpg", alt: "Poyntz Avenue, glass staircase detail" },
-  { src: "/images/projects/poyntz/interior-03.jpg", alt: "Poyntz Avenue, open-concept living area" },
-  { src: "/images/projects/poyntz/interior-04.jpg", alt: "Poyntz Avenue, kitchen and dining" },
-  { src: "/images/projects/poyntz/interior-05.jpg", alt: "Poyntz Avenue, fireplace surround" },
-  { src: "/images/projects/poyntz/interior-06.jpg", alt: "Poyntz Avenue, primary bedroom" },
-  { src: "/images/projects/poyntz/interior-07.jpg", alt: "Poyntz Avenue, ensuite bathroom" },
-  { src: "/images/projects/poyntz/interior-08.jpg", alt: "Poyntz Avenue, wine display" },
-  { src: "/images/projects/poyntz/interior-09.jpg", alt: "Poyntz Avenue, hallway detail" },
-  { src: "/images/projects/poyntz/interior-10.jpg", alt: "Poyntz Avenue, finishing details" },
+  { src: "/images/projects/poyntz/001-131 Poyntz Ave - N. York - Twilights-1.jpg", alt: "Poyntz Avenue, twilight front exterior" },
+  { src: "/images/projects/poyntz/004-131 Poyntz Ave - N. York - Twilights-4.jpg", alt: "Poyntz Avenue, twilight rear with patio" },
+  { src: "/images/projects/poyntz/007-131 Poyntz Ave - N. York - Twilights-7.jpg", alt: "Poyntz Avenue, entrance detail at twilight" },
+  { src: "/images/projects/poyntz/025-Images_015.jpg", alt: "Poyntz Avenue, entryway with floating staircase" },
+  { src: "/images/projects/poyntz/027-Images_017.jpg", alt: "Poyntz Avenue, living room with marble fireplace" },
+  { src: "/images/projects/poyntz/030-Images_020.jpg", alt: "Poyntz Avenue, open-concept living and dining" },
+  { src: "/images/projects/poyntz/033-Images_023.jpg", alt: "Poyntz Avenue, dining area with wine wall" },
+  { src: "/images/projects/poyntz/055-Images_045.jpg", alt: "Poyntz Avenue, wine display and chandelier detail" },
+  { src: "/images/projects/poyntz/045-Images_035.jpg", alt: "Poyntz Avenue, kitchen with marble backsplash" },
+  { src: "/images/projects/poyntz/060-Images_050.jpg", alt: "Poyntz Avenue, primary bedroom" },
+  { src: "/images/projects/poyntz/070-Images_060.jpg", alt: "Poyntz Avenue, ensuite bathroom with freestanding tub" },
+  { src: "/images/projects/poyntz/075-Images_065.jpg", alt: "Poyntz Avenue, freestanding tub detail" },
+  { src: "/images/projects/poyntz/100-Images_090.jpg", alt: "Poyntz Avenue, basement living area with fireplace" },
+  { src: "/images/projects/poyntz/120-Images_110.jpg", alt: "Poyntz Avenue, backyard patio" },
 ];
 
 export default function PoyntzAvenuePage() {

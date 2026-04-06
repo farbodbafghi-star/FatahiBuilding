@@ -9,7 +9,7 @@ export default function TransformationsPage() {
     <>
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[550px] flex items-end">
-        <Image src="/images/projects/poyntz/interior-01.jpg" alt="Whole-home transformation by Fatahi Building" fill className="object-cover" priority quality={90} />
+        <Image src="/images/projects/terrace/3Q1A2136.JPG" alt="Whole-home transformation by Fatahi Building" fill className="object-cover" priority quality={90} />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/40 to-navy-dark/20" />
         <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 pb-24 w-full">
           <div className="max-w-2xl">
@@ -37,7 +37,7 @@ export default function TransformationsPage() {
             <ScrollReveal delay={200}>
               <div className="relative">
                 <div className="img-zoom">
-                  <Image src="/images/projects/poyntz/interior-03.jpg" alt="Interior, whole-home transformation" width={800} height={600} className="w-full h-[500px] object-cover" />
+                  <Image src="/images/projects/terrace/3Q1A2233.JPG" alt="Interior, whole-home transformation" width={800} height={600} className="w-full h-[500px] object-cover" />
                 </div>
               </div>
             </ScrollReveal>
@@ -82,7 +82,7 @@ export default function TransformationsPage() {
 
       {/* IMAGE BREAK */}
       <section className="relative h-[50vh] min-h-[400px]">
-        <Image src="/images/projects/poyntz/interior-02.jpg" alt="Custom staircase and entryway, whole-home transformation" fill className="object-cover" />
+        <Image src="/images/projects/terrace/3Q1A2238.JPG" alt="Open-concept living and dining, whole-home transformation" fill className="object-cover" />
         <div className="absolute inset-0 bg-navy-dark/30" />
       </section>
 

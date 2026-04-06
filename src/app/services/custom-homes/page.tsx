@@ -5,12 +5,12 @@ import ProcessJourney from "@/components/ProcessJourney";
 import { customHomesPhases } from "@/data/process-phases";
 
 const galleryImages = [
-  { src: "/images/projects/poyntz/interior-01.jpg", alt: "Custom home interior, open concept living area" },
-  { src: "/images/projects/poyntz/interior-02.jpg", alt: "Custom staircase with glass railings" },
-  { src: "/images/projects/poyntz/interior-03.jpg", alt: "Custom home interior detail" },
-  { src: "/images/projects/poyntz/interior-04.jpg", alt: "Kitchen design and finishes" },
-  { src: "/images/projects/poyntz/interior-05.jpg", alt: "Custom home bathroom design" },
-  { src: "/images/projects/poyntz/interior-06.jpg", alt: "Living space with natural light" },
+  { src: "/images/projects/poyntz/027-Images_017.jpg", alt: "Custom home living room with marble fireplace" },
+  { src: "/images/projects/poyntz/025-Images_015.jpg", alt: "Custom staircase with glass railings" },
+  { src: "/images/projects/poyntz/033-Images_023.jpg", alt: "Dining area with wine wall display" },
+  { src: "/images/projects/poyntz/045-Images_035.jpg", alt: "Kitchen with marble backsplash and pendants" },
+  { src: "/images/projects/poyntz/070-Images_060.jpg", alt: "Ensuite bathroom with freestanding tub" },
+  { src: "/images/projects/terrace/3Q1A2268.JPG", alt: "Kitchen with black marble island and walnut details" },
 ];
 
 export default function CustomHomesPage() {
@@ -46,7 +46,7 @@ export default function CustomHomesPage() {
             </ScrollReveal>
             <ScrollReveal delay={200}>
               <div className="img-zoom">
-                <Image src="/images/projects/poyntz/twilight-2.jpg" alt="Custom home exterior, architectural detail" width={800} height={600} className="w-full h-[500px] object-cover" />
+                <Image src="/images/projects/poyntz/001-131 Poyntz Ave - N. York - Twilights-1.jpg" alt="Custom home exterior at twilight" width={800} height={600} className="w-full h-[500px] object-cover" />
               </div>
             </ScrollReveal>
           </div>

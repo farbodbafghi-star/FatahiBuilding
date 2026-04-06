@@ -42,9 +42,22 @@ const categoryIcons: Record<string, React.ReactNode> = {
       <path d="M4 32l20 12 20-12" />
     </svg>
   ),
+  "Investment & Value": (
+    /* Scale / balance — investment decisions */
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth={1} strokeLinecap="round" strokeLinejoin="round" className="w-16 h-16">
+      <path d="M24 6v36" />
+      <path d="M8 14h32" />
+      <path d="M8 14l-4 14h16L16 14" />
+      <path d="M40 14l-4 14h16L48 14" />
+      <path d="M4 28a8 4 0 0016 0" />
+      <path d="M36 28a8 4 0 0016 0" />
+      <path d="M18 42h12" />
+    </svg>
+  ),
 };
 
 const articles = [
+  { slug: "/insights/renovate-or-rebuild", title: "Is It Worth Renovating or Should You Rebuild?", excerpt: "The decision between renovating your existing home and building new isn\u2019t just about cost. Here\u2019s how to think through it clearly, from a team that does both.", date: "April 2026", category: "Investment & Value" },
   { slug: "/insights/why-design-build-changes-everything", title: "Why Design-Build Changes Everything", excerpt: "When the person who designs your home is the same person building it, nothing gets lost in translation. Here\u2019s why the design-build model leads to better outcomes, fewer surprises, and a home that matches what was promised.", date: "March 2026", category: "Design-Build" },
   { slug: "/insights/what-to-expect-during-preconstruction", title: "What to Expect During Preconstruction", excerpt: "The weeks before construction begins are where the real decisions happen. From material selections to permit timelines, here\u2019s what the preconstruction phase looks like and why it matters more than most people think.", date: "February 2026", category: "Process" },
   { slug: "/insights/choosing-materials-that-last", title: "Choosing Materials That Last", excerpt: "Not every premium material is the right choice for every home. We break down how to evaluate flooring, countertops, and fixtures based on durability, maintenance, and how you actually live.", date: "January 2026", category: "Materials" },

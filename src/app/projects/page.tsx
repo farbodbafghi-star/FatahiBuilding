@@ -101,34 +101,21 @@ export default function ProjectsPage() {
             </div>
           </ScrollReveal>
 
-          <div className="space-y-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-20">
             {inProgress.map((project, i) => (
               <ScrollReveal key={project.title} delay={i * 100}>
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
-                  <div className="lg:col-span-7">
-                    <div className="relative aspect-[16/10] overflow-hidden bg-white/5">
-                      <Image
-                        src={project.image}
-                        alt={`${project.title}, ${project.type} under construction`}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 1024px) 100vw, 58vw"
-                      />
-                    </div>
-                  </div>
-                  <div className="lg:col-span-5">
-                    <p className="section-label mb-4">{project.type}</p>
-                    <h3 className="text-2xl md:text-3xl font-light font-heading text-white tracking-wide">{project.title}</h3>
-                    <p className="text-white/40 text-sm font-light mt-2">{project.location} &middot; Est. {project.expected}</p>
-                    <div className="w-10 h-px bg-beige/30 my-6" />
-                    <p className="text-white/70 font-light text-sm leading-relaxed mb-6">{project.description}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {project.highlights.map((h) => (
-                        <span key={h} className="text-[11px] font-light tracking-[0.1em] text-white/50 border border-white/10 px-3 py-1.5 transition-all duration-300 hover:border-beige/30 hover:text-white/70 hover:shadow-[0_0_12px_-3px_rgba(196,180,158,0.25)] cursor-default">
-                          {h}
-                        </span>
-                      ))}
-                    </div>
+                <div className="text-center">
+                  <p className="section-label mb-4">{project.type}</p>
+                  <h3 className="text-2xl md:text-3xl font-light font-heading text-white tracking-wide">{project.title}</h3>
+                  <p className="text-white/40 text-sm font-light mt-2">{project.location} &middot; Est. {project.expected}</p>
+                  <div className="w-10 h-px bg-beige/30 mx-auto my-6" />
+                  <p className="text-white/70 font-light text-sm leading-relaxed mb-6">{project.description}</p>
+                  <div className="flex flex-wrap justify-center gap-2">
+                    {project.highlights.map((h) => (
+                      <span key={h} className="text-[11px] font-light tracking-[0.1em] text-white/50 border border-white/10 px-3 py-1.5 transition-all duration-300 hover:border-beige/30 hover:text-white/70 hover:shadow-[0_0_12px_-3px_rgba(196,180,158,0.25)] cursor-default">
+                        {h}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </ScrollReveal>

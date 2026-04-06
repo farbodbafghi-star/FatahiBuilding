@@ -9,7 +9,7 @@ export default function AdditionsPage() {
     <>
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[550px] flex items-end">
-        <Image src="/images/projects/poyntz/twilight-2.jpg" alt="Home addition by Fatahi Building" fill className="object-cover" priority quality={90} />
+        <Image src="/images/projects/poyntz/004-131 Poyntz Ave - N. York - Twilights-4.jpg" alt="Home addition by Fatahi Building" fill className="object-cover" priority quality={90} />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/40 to-navy-dark/20" />
         <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 pb-24 w-full">
           <div className="max-w-2xl">
@@ -35,14 +35,7 @@ export default function AdditionsPage() {
               </div>
             </ScrollReveal>
             <ScrollReveal delay={200}>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="img-zoom aspect-[3/4]">
-                  <Image src="/images/projects/poyntz/interior-07.jpg" alt="Interior craftsmanship, addition detail" width={400} height={530} className="w-full h-full object-cover" />
-                </div>
-                <div className="img-zoom aspect-[3/4] mt-12">
-                  <Image src="/images/projects/terrace/interior-02.jpg" alt="Seamless interior transition" width={400} height={530} className="w-full h-full object-cover" />
-                </div>
-              </div>
+              <div className="hidden lg:block" />
             </ScrollReveal>
           </div>
         </div>
@@ -57,7 +50,7 @@ export default function AdditionsPage() {
 
       {/* IMAGE BREAK */}
       <section className="relative h-[50vh] min-h-[400px]">
-        <Image src="/images/projects/terrace/kitchen-1.jpg" alt="Custom kitchen with walnut ceiling detail and island" fill className="object-cover" />
+        <Image src="/images/projects/poyntz/035-Images_025.jpg" alt="Open-concept kitchen and living area" fill className="object-cover" />
         <div className="absolute inset-0 bg-navy-dark/30" />
       </section>
 

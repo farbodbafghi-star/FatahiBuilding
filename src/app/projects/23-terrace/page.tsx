@@ -9,12 +9,18 @@ export const metadata: Metadata = {
 };
 
 const galleryImages = [
-  { src: "/images/projects/terrace/dining.jpg", alt: "Terrace, dining area with walnut ceiling" },
-  { src: "/images/projects/terrace/kitchen-1.jpg", alt: "Terrace, kitchen with black marble island" },
-  { src: "/images/projects/terrace/kitchen-2.jpg", alt: "Terrace, kitchen brass fixture details" },
-  { src: "/images/projects/terrace/living.jpg", alt: "Terrace, living room" },
-  { src: "/images/projects/terrace/interior-01.jpg", alt: "Terrace, interior detail" },
-  { src: "/images/projects/terrace/interior-02.jpg", alt: "Terrace, staircase and finishes" },
+  { src: "/images/projects/terrace/3Q1A2280.JPG", alt: "Terrace, exterior front view" },
+  { src: "/images/projects/terrace/3Q1A2238.JPG", alt: "Terrace, open-concept living and dining with walnut ceiling" },
+  { src: "/images/projects/terrace/3Q1A2268.JPG", alt: "Terrace, kitchen with black marble island and walnut details" },
+  { src: "/images/projects/terrace/3Q1A2136.JPG", alt: "Terrace, kitchen and living area from island" },
+  { src: "/images/projects/terrace/3Q1A2139.JPG", alt: "Terrace, open living room with kitchen view" },
+  { src: "/images/projects/terrace/3Q1A2233.JPG", alt: "Terrace, dining area with walnut ceiling and staircase" },
+  { src: "/images/projects/terrace/3Q1A2130.JPG", alt: "Terrace, floating walnut staircase with glass railing" },
+  { src: "/images/projects/terrace/3Q1A2154.JPG", alt: "Terrace, living room with marble fireplace" },
+  { src: "/images/projects/terrace/3Q1A2167.JPG", alt: "Terrace, second living area with large windows" },
+  { src: "/images/projects/terrace/3Q1A2175.JPG", alt: "Terrace, primary bedroom suite" },
+  { src: "/images/projects/terrace/3Q1A2185.JPG", alt: "Terrace, ensuite bathroom with black marble shower" },
+  { src: "/images/projects/terrace/3Q1A2149.JPG", alt: "Terrace, powder room with brass fixtures" },
 ];
 
 export default function TerracePage() {
