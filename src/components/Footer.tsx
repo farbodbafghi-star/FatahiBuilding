@@ -3,10 +3,35 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export default function Footer() {
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const [subEmail, setSubEmail] = useState("");
+  const [subStatus, setSubStatus] = useState<"idle" | "sending" | "done">("idle");
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!subEmail) return;
+    setSubStatus("sending");
+    try {
+      await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          subject: "New Insights Subscriber",
+          email: subEmail,
+          message: `New subscriber: ${subEmail}`,
+        }),
+      });
+      setSubStatus("done");
+      setSubEmail("");
+    } catch {
+      setSubStatus("idle");
+    }
+  };
 
   return (
     <footer className="bg-navy-dark text-white/60">
@@ -146,25 +171,30 @@ export default function Footer() {
             <p className="text-sm font-light text-white/40 leading-relaxed mb-6">
               Receive perspectives on luxury home design, construction, and living well.
             </p>
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="flex items-center"
-            >
-              <input
-                type="email"
-                placeholder="Enter your email..."
-                className="flex-1 bg-white/5 border border-white/10 rounded-full px-5 py-3 text-sm font-light text-white placeholder:text-white/30 outline-none focus:border-beige/30 transition-colors duration-300"
-              />
-              <button
-                type="submit"
-                className="ml-2 bg-white/10 hover:bg-beige hover:text-navy border border-white/10 hover:border-beige rounded-full w-11 h-11 flex items-center justify-center text-white transition-all duration-300 shrink-0"
-                aria-label="Subscribe"
-              >
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                </svg>
-              </button>
-            </form>
+            {subStatus === "done" ? (
+              <p className="text-beige/70 text-sm font-light">Thank you for subscribing.</p>
+            ) : (
+              <form onSubmit={handleSubscribe} className="flex items-center">
+                <input
+                  type="email"
+                  placeholder="Enter your email..."
+                  value={subEmail}
+                  onChange={(e) => setSubEmail(e.target.value)}
+                  required
+                  className="flex-1 bg-white/5 border border-white/10 rounded-full px-5 py-3 text-sm font-light text-white placeholder:text-white/30 outline-none focus:border-beige/30 transition-colors duration-300"
+                />
+                <button
+                  type="submit"
+                  disabled={subStatus === "sending"}
+                  className="ml-2 bg-white/10 hover:bg-beige hover:text-navy border border-white/10 hover:border-beige rounded-full w-11 h-11 flex items-center justify-center text-white transition-all duration-300 shrink-0 disabled:opacity-50"
+                  aria-label="Subscribe"
+                >
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+                </button>
+              </form>
+            )}
           </div>
         </div>
 

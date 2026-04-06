@@ -8,15 +8,30 @@ export default function ContactPage() {
     name: "", email: "", phone: "", message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
+    setSubmitting(true);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          subject: `New inquiry from ${formData.name}`,
+          from_name: formData.name,
+          ...formData,
+        }),
+      });
+      if (res.ok) setSubmitted(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -68,8 +83,8 @@ export default function ContactPage() {
                   </div>
 
                   <div className="pt-6">
-                    <button type="submit" className="border border-beige/30 text-beige px-14 py-5 text-[13px] font-light tracking-[0.15em] hover:bg-beige hover:text-navy transition-all duration-500">
-                      Send Message
+                    <button type="submit" disabled={submitting} className="border border-beige/30 text-beige px-14 py-5 text-[13px] font-light tracking-[0.15em] hover:bg-beige hover:text-navy transition-all duration-500 disabled:opacity-50">
+                      {submitting ? "Sending..." : "Send Message"}
                     </button>
                   </div>
                 </form>
