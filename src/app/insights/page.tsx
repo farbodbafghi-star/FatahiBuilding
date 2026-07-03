@@ -54,9 +54,20 @@ const categoryIcons: Record<string, React.ReactNode> = {
       <path d="M18 42h12" />
     </svg>
   ),
+  "Craft & Quality": (
+    /* Spirit level — precision / build quality */
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth={1} strokeLinecap="round" strokeLinejoin="round" className="w-16 h-16">
+      <rect x="4" y="19" width="40" height="10" rx="2" />
+      <rect x="19" y="21" width="10" height="6" rx="3" />
+      <path d="M12 24h2" />
+      <path d="M34 24h2" />
+    </svg>
+  ),
 };
 
 const articles = [
+  { slug: "/insights/the-90-percent-you-never-see", title: "The 90% You’ll Never See", excerpt: "Two finished homes can look identical on handover day. Ten years later, they’re not the same home at all. The difference is the 90% behind the drywall, the invisible work that decides how a home actually holds up.", date: "July 2026", category: "Craft & Quality" },
+  { slug: "/insights/committee-of-adjustment-toronto", title: "The Committee of Adjustment: The Approval Most Homeowners Have Never Heard Of", excerpt: "Everyone worries about the building permit. The step that quietly adds two to four months is one most people have never heard of. Here’s what the Committee of Adjustment is, when you need a minor variance, and how to get through it without losing a season.", date: "June 2026", category: "Process" },
   { slug: "/insights/why-layout-matters-more-than-finishes", title: "Why Layout Matters More Than Finishes in a Custom Home", excerpt: "Finishes get the attention. But the layout shapes how a home actually feels to live in. Where the light lands, how spaces flow, what you experience every day. Here\u2019s why layout matters more than any finish you can choose.", date: "May 2026", category: "Design-Build" },
   { slug: "/insights/renovate-or-rebuild", title: "Is It Worth Renovating or Should You Rebuild?", excerpt: "The decision between renovating your existing home and building new isn\u2019t just about cost. Here\u2019s how to think through it clearly, from a team that does both.", date: "April 2026", category: "Investment & Value" },
   { slug: "/insights/why-design-build-changes-everything", title: "Why Design-Build Changes Everything", excerpt: "When the person who designs your home is the same person building it, nothing gets lost in translation. Here\u2019s why the design-build model leads to better outcomes, fewer surprises, and a home that matches what was promised.", date: "March 2026", category: "Design-Build" },
