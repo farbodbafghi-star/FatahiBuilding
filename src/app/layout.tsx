@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+// Set NEXT_PUBLIC_GA_ID in Vercel (Project → Settings → Environment Variables).
+// Until it exists, no analytics script loads at all — nothing breaks.
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-heading",
@@ -49,7 +55,9 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Analytics />
       </body>
+      {GA_ID ? <GoogleAnalytics gaId={GA_ID} /> : null}
     </html>
   );
 }

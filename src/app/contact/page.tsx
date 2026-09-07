@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { sendGAEvent } from "@next/third-parties/google";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export default function ContactPage() {
@@ -28,7 +29,12 @@ export default function ContactPage() {
           ...formData,
         }),
       });
-      if (res.ok) setSubmitted(true);
+      if (res.ok) {
+        setSubmitted(true);
+        // The form never navigates, so GA4 would otherwise record no conversion.
+        // This is the event that gets attributed back to the utm_source on arrival.
+        sendGAEvent("event", "generate_lead", { form: "contact" });
+      }
     } finally {
       setSubmitting(false);
     }
