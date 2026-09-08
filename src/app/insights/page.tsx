@@ -63,9 +63,23 @@ const categoryIcons: Record<string, React.ReactNode> = {
       <path d="M34 24h2" />
     </svg>
   ),
+  Neighbourhoods: (
+    /* Street of lots with a canopy tree — where we build */
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth={1} strokeLinecap="round" strokeLinejoin="round" className="w-16 h-16">
+      <path d="M4 42h40" />
+      <path d="M8 42V26l8-6 8 6v16" />
+      <path d="M14 42v-8h4v8" />
+      <path d="M33 42V30" />
+      <circle cx="33" cy="21" r="9" />
+      <path d="M33 30c-3-3-5-5-5-9" />
+      <path d="M33 26c2-2 3-3 3-6" />
+    </svg>
+  ),
 };
 
 const articles = [
+  { slug: "/insights/building-custom-homes-north-york", title: "What It’s Actually Like to Build a Custom Home in North York", excerpt: "Most of what makes North York a good place to build is the same thing that makes it difficult. Wide lots and seventy-year-old trees give you room to design properly, and they bring protection zones, variance hearings and neighbours ten feet away. Here’s the honest version.", date: "September 2026", category: "Neighbourhoods" },
+  { slug: "/insights/tree-protection-zones-toronto", title: "You Can Kill a Tree on a Construction Site Without Ever Touching It", excerpt: "The fence around a tree isn’t drawn around the tree. It’s drawn around roots nobody can see, calculated backwards from the diameter of the trunk. What a tree protection zone actually is, and why one zone can carry two different fences.", date: "August 2026", category: "Process" },
   { slug: "/insights/the-90-percent-you-never-see", title: "The 90% You’ll Never See", excerpt: "Two finished homes can look identical on handover day. Ten years later, they’re not the same home at all. The difference is the 90% behind the drywall, the invisible work that decides how a home actually holds up.", date: "July 2026", category: "Craft & Quality" },
   { slug: "/insights/committee-of-adjustment-toronto", title: "The Committee of Adjustment: The Approval Most Homeowners Have Never Heard Of", excerpt: "Everyone worries about the building permit. The step that quietly adds two to four months is one most people have never heard of. Here’s what the Committee of Adjustment is, when you need a minor variance, and how to get through it without losing a season.", date: "June 2026", category: "Process" },
   { slug: "/insights/why-layout-matters-more-than-finishes", title: "Why Layout Matters More Than Finishes in a Custom Home", excerpt: "Finishes get the attention. But the layout shapes how a home actually feels to live in. Where the light lands, how spaces flow, what you experience every day. Here\u2019s why layout matters more than any finish you can choose.", date: "May 2026", category: "Design-Build" },
