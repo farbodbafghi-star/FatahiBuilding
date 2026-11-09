@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+
+export const metadata: Metadata = {
+  title: "About | Fatahi Building, Design-Build in Toronto",
+  description:
+    "A family-run design-build firm in Toronto. One team designs and builds every home, from the first conversation to the keys.",
+  alternates: { canonical: "/about" },
+};
 
 export default function AboutPage() {
   return (

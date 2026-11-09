@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ProcessJourney from "@/components/ProcessJourney";
 import { transformationsPhases } from "@/data/process-phases";
+
+export const metadata: Metadata = {
+  title: "Whole-Home Renovations & Transformations in Toronto | Fatahi Building",
+  description:
+    "Whole-home transformations in Toronto: open layouts, new systems and a rebuilt interior, while keeping the home you already have. Designed and built by one team.",
+  alternates: { canonical: "/services/transformations" },
+};
 
 export default function TransformationsPage() {
   return (

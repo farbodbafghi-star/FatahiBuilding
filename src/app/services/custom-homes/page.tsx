@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -12,6 +13,13 @@ const galleryImages = [
   { src: "/images/projects/poyntz/070-Images_060.jpg", alt: "Ensuite bathroom with freestanding tub" },
   { src: "/images/projects/terrace/3Q1A2268.JPG", alt: "Kitchen with black marble island and walnut details" },
 ];
+
+export const metadata: Metadata = {
+  title: "Custom Home Builder in Toronto & North York | Fatahi Building",
+  description:
+    "Design-build custom homes in Toronto and North York. Design, engineering, approvals and construction handled by one team, from teardown to keys.",
+  alternates: { canonical: "/services/custom-homes" },
+};
 
 export default function CustomHomesPage() {
   return (

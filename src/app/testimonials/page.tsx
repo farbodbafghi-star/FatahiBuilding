@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -6,6 +7,13 @@ const testimonials = [
   { quote: "He truly cares about the quality of his work. One thing I really appreciated is that he tries to make sure there is no wasted or unused space in the house, which makes the design very practical and efficient.", author: "Azita N.", project: "Custom Home" },
   { quote: "Reliable, pays close attention to detail, and focuses on high-quality work. Especially appreciated his effort to create practical, efficient designs.", author: "Green Building Canmo", project: "Partner Review" },
 ];
+
+export const metadata: Metadata = {
+  title: "Client Reviews | Fatahi Building",
+  description:
+    "What homeowners and partners say about working with Fatahi Building on custom homes in Toronto.",
+  alternates: { canonical: "/testimonials" },
+};
 
 export default function TestimonialsPage() {
   return (

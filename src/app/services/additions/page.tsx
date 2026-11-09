@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ProcessJourney from "@/components/ProcessJourney";
 import { additionsPhases } from "@/data/process-phases";
+
+export const metadata: Metadata = {
+  title: "Home Additions in Toronto | Fatahi Building",
+  description:
+    "Second-storey and rear additions in Toronto, designed and built to look like they were always part of the house.",
+  alternates: { canonical: "/services/additions" },
+};
 
 export default function AdditionsPage() {
   return (
