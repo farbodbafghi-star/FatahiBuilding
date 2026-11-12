@@ -38,7 +38,7 @@ export const areas: Area[] = [
           and Farrell homes are both here, and so is Terrace, which we
           completed in 2021. We design and build custom homes, additions and
           whole-home transformations on these streets, and we know them at the
-          level of specific lots, specific approvals and specific trees.
+          level of specific lots and specific approvals.
         </p>
       </>
     ),
@@ -48,9 +48,8 @@ export const areas: Area[] = [
         body: (
           <>
             <p>
-              Wide frontages, real depth, and trees that were planted when the
-              streets were first laid out. In much of Willowdale that means a
-              canopy that has had generations to fill in.
+              Wide frontages and real depth, on streets that were laid out
+              generations ago.
             </p>
             <p>
               That changes what can be drawn. On a wide lot you get choices
@@ -68,13 +67,6 @@ export const areas: Area[] = [
         body: (
           <>
             <ul>
-              <li>
-                <strong>Mature trees mean protection zones.</strong> A tree on
-                or near the lot brings an arborist report and a protected
-                radius where nothing can be dug, compacted or stored for the
-                whole build. See{" "}
-                <Link href="/insights/tree-protection-zones-toronto">how a tree protection zone works</Link>.
-              </li>
               <li>
                 <strong>Established streets mean the Committee of Adjustment.</strong>{" "}
                 A design that fits its lot often needs at least one minor
@@ -103,8 +95,7 @@ export const areas: Area[] = [
             <p>
               By the second house here, we had a working sense of what the
               Committee of Adjustment would approve in this area, what it
-              wouldn&apos;t, and how long the answer takes. We knew which lots
-              were likely to carry tree issues. So when we give a client a
+              wouldn&apos;t, and how long the answer takes. So when we give a client a
               timeline in Willowdale, we are not guessing at it. The longer
               version is in{" "}
               <Link href="/insights/building-custom-homes-north-york">What It&apos;s Actually Like to Build a Custom Home in North York</Link>.
@@ -160,10 +151,6 @@ export const areas: Area[] = [
         linkLabel: "How to think through renovating or rebuilding.",
       },
       {
-        q: "How do the mature trees on my lot affect the design?",
-        a: "A protected tree comes with a protection zone measured from the trunk, and nothing can be dug, stored or driven on inside it for the whole build. It can change where the house sits, where the driveway runs and how the site is staged, so it is settled before design is final.",
-      },
-      {
         q: "Can I see one of your homes in Willowdale?",
         a: "Yes. Leave your details and we'll call you to arrange a visit to one of our finished homes or to our active site on Old Yonge.",
       },
@@ -211,15 +198,9 @@ export const areas: Area[] = [
         ),
       },
       {
-        heading: "Trees and approvals",
+        heading: "Approvals",
         body: (
           <>
-            <p>
-              The first thing that went up on this site was tree protection.
-              One protection zone at the front carries two kinds of fence,
-              because it crosses the property line. We wrote about it in{" "}
-              <Link href="/insights/tree-protection-zones-toronto">You Can Kill a Tree on a Construction Site Without Ever Touching It</Link>.
-            </p>
             <p>
               The design needed some variances, so it went to the{" "}
               <Link href="/insights/committee-of-adjustment-toronto">Committee of Adjustment</Link>,
@@ -293,7 +274,7 @@ export const areas: Area[] = [
     kind: "served",
     title: "Custom Home Builder Serving Richmond Hill | Fatahi Building",
     description:
-      "What building a custom home, addition or renovation in Richmond Hill involves, from the City's own rules: zoning, variances, trees and grading.",
+      "What building a custom home, addition or renovation in Richmond Hill involves, from the City's own rules: zoning, variances and grading.",
     h1: "Custom Home Builder Serving Richmond Hill",
     headline: "Building in Richmond Hill",
     intro: (
@@ -346,22 +327,6 @@ export const areas: Area[] = [
         ),
       },
       {
-        heading: "Trees",
-        body: (
-          <>
-            <p>
-              Richmond Hill&apos;s Tree Preservation By-law No. 19-25 requires
-              a permit before removing or injuring any tree with a diameter at
-              breast height of 15 centimetres or more. An arborist report is
-              part of the application, and replacement trees are required.
-              On a lot with mature trees, that shapes where a house or an
-              addition can sit, so it belongs at the start of design.{" "}
-              <a href="https://www.richmondhill.ca/en/learn-more/Tree-Cutting-Permit.aspx" target="_blank" rel="noopener noreferrer">City of Richmond Hill: Tree Cutting Permit</a>.
-            </p>
-          </>
-        ),
-      },
-      {
         heading: "Grading, the moraine and conservation lands",
         body: (
           <>
@@ -400,8 +365,7 @@ export const areas: Area[] = [
           <>
             <p>
               The same way we approach every home. We stand on the property
-              before we talk about price, we check the zoning, the trees and
-              the grading before a design is final, and we work off{" "}
+              before we talk about price, we check the zoning and the grading before a design is final, and we work off{" "}
               <Link href="/insights/fixed-price-vs-cost-plus-custom-home">a fixed price</Link>{" "}
               for an agreed scope. You are welcome to see our homes in{" "}
               <Link href="/areas/willowdale">Willowdale</Link> and our active
@@ -428,10 +392,6 @@ export const areas: Area[] = [
         a: "The City of Richmond Hill says a minor variance application typically takes two to three months from submission to the hearing date. Decisions can be appealed to the Ontario Land Tribunal within 20 days.",
       },
       {
-        q: "Do I need a permit to remove a tree on my lot in Richmond Hill?",
-        a: "Under Tree Preservation By-law No. 19-25, a permit is required before removing or injuring any tree with a diameter at breast height of 15 centimetres or more. An arborist report is part of the application.",
-      },
-      {
         q: "Which zoning by-law applies to my Richmond Hill lot?",
         a: "Comprehensive Zoning By-law 93-25, passed in September 2025, is in force for the majority of lands in the city. Some site and area specific appeals are still outstanding, so the rules for a specific lot should be confirmed with the City before design begins.",
       },
@@ -443,7 +403,7 @@ export const areas: Area[] = [
     kind: "served",
     title: "Custom Home Builder Serving Vaughan | Fatahi Building",
     description:
-      "What building a custom home, addition or renovation in Vaughan involves, from the City's own rules: zoning, variances, trees, grading and heritage.",
+      "What building a custom home, addition or renovation in Vaughan involves, from the City's own rules: zoning, variances, grading and heritage.",
     h1: "Custom Home Builder Serving Vaughan",
     headline: "Building in Vaughan",
     intro: (
@@ -498,24 +458,6 @@ export const areas: Area[] = [
         ),
       },
       {
-        heading: "Trees",
-        body: (
-          <>
-            <p>
-              Under Vaughan&apos;s Tree Protection By-law 177-2025, a tree
-              with a diameter of 20 centimetres or more cannot be injured,
-              destroyed or removed without a permit. Construction-related
-              work needs its own permit, with an arborist report and, where
-              it applies, a replanting plan. The City gives its standard
-              initial response time for tree permit requests as 30 business
-              days, which is a reason to deal with trees at the start of
-              design.{" "}
-              <a href="https://www.vaughan.ca/residential/parks-and-trees/forestry-operations/tree-removal-permits-and-protection" target="_blank" rel="noopener noreferrer">City of Vaughan: Tree Removal Permits and Protection</a>.
-            </p>
-          </>
-        ),
-      },
-      {
         heading: "Grading, heritage and conservation lands",
         body: (
           <>
@@ -551,8 +493,7 @@ export const areas: Area[] = [
           <>
             <p>
               The same way we approach every home. We stand on the property
-              before we talk about price, we check the zoning, the trees and
-              the grading before a design is final, and we work off{" "}
+              before we talk about price, we check the zoning and the grading before a design is final, and we work off{" "}
               <Link href="/insights/fixed-price-vs-cost-plus-custom-home">a fixed price</Link>{" "}
               for an agreed scope. You are welcome to see our homes in{" "}
               <Link href="/areas/willowdale">Willowdale</Link> and our active
@@ -575,12 +516,8 @@ export const areas: Area[] = [
         a: "Yes. We serve Vaughan, with custom homes, additions and whole-home transformations. We are glad to show you our finished homes and our active site in person.",
       },
       {
-        q: "Do I need a permit to remove a tree on my lot in Vaughan?",
-        a: "Under Tree Protection By-law 177-2025, a tree with a diameter of 20 centimetres or more cannot be injured, destroyed or removed without a permit. Construction-related work needs its own permit, with an arborist report.",
-      },
-      {
         q: "What comes before a building permit for a new home in Vaughan?",
-        a: "For a new home on an existing lot, the City of Vaughan requires a grading permit before a building permit application can be made. Depending on the lot, a minor variance, a tree permit, a heritage permit or a conservation authority permit may also come first.",
+        a: "For a new home on an existing lot, the City of Vaughan requires a grading permit before a building permit application can be made. Depending on the lot, a minor variance, a heritage permit or a conservation authority permit may also come first.",
       },
       {
         q: "Which zoning by-law applies in Vaughan?",
@@ -594,7 +531,7 @@ export const areas: Area[] = [
     kind: "served",
     title: "Custom Home Builder Serving Etobicoke | Fatahi Building",
     description:
-      "What building a custom home, addition or renovation in Etobicoke involves, from the City of Toronto's own rules: zoning, variances, trees and ravines.",
+      "What building a custom home, addition or renovation in Etobicoke involves, from the City of Toronto's own rules: zoning and variances.",
     h1: "Custom Home Builder Serving Etobicoke",
     headline: "Building in Etobicoke",
     intro: (
@@ -646,38 +583,12 @@ export const areas: Area[] = [
         ),
       },
       {
-        heading: "Trees and ravines",
-        body: (
-          <>
-            <p>
-              On private property in Toronto, a tree of 30 centimetres or
-              more in diameter cannot be injured or removed without a permit.
-              City Council has endorsed reducing that to 20 centimetres, which
-              is not yet in force.{" "}
-              <a href="https://www.toronto.ca/services-payments/building-construction/tree-ravine-protection-permits/when-to-apply-for-a-tree-or-ravine-permit/" target="_blank" rel="noopener noreferrer">City of Toronto: When to Apply for a Tree or Ravine Permit</a>.
-            </p>
-            <p>
-              Lots in a ravine and natural feature protected area carry more.
-              There, a permit is needed to harm or remove any tree regardless
-              of size, to change the grade, or to build new structures or
-              retaining walls. The Humber, Mimico Creek and Etobicoke Creek
-              watersheds are also within the Toronto and Region Conservation
-              Authority&apos;s jurisdiction, and on regulated lands its permit
-              comes before the building permit. What a protection zone means
-              on site is in{" "}
-              <Link href="/insights/tree-protection-zones-toronto">our article on tree protection zones</Link>.
-            </p>
-          </>
-        ),
-      },
-      {
         heading: "How we approach a project in Etobicoke",
         body: (
           <>
             <p>
               The same way we approach every home. We stand on the property
-              before we talk about price, we check the zoning, the trees and
-              any ravine or conservation limits before a design is final, and
+              before we talk about price, we check the zoning and any conservation limits before a design is final, and
               we work off{" "}
               <Link href="/insights/fixed-price-vs-cost-plus-custom-home">a fixed price</Link>{" "}
               for an agreed scope. You are welcome to see our homes in{" "}
@@ -703,10 +614,6 @@ export const areas: Area[] = [
       {
         q: "Where are minor variance hearings held for Etobicoke?",
         a: "Etobicoke applications go to the Etobicoke York district of Toronto's Committee of Adjustment, with hearings at the Etobicoke Civic Centre. The appeal period for a minor variance is 20 days from the decision, and appeals are heard by the Toronto Local Appeal Body.",
-      },
-      {
-        q: "Which trees are protected on an Etobicoke lot?",
-        a: "On private property in Toronto, a tree of 30 centimetres or more in diameter cannot be injured or removed without a permit. In a ravine and natural feature protected area, a permit is needed to harm or remove any tree regardless of size.",
       },
       {
         q: "Does the Etobicoke Zoning Code still apply?",
