@@ -10,11 +10,22 @@ export const AREAS_SERVED = [
   "North York",
   "Willowdale",
   "York Mills",
+  "The Bridle Path",
+  "Rosedale",
+  "Forest Hill",
   "Lawrence Park",
   "Midtown Toronto",
-  "Richmond Hill",
+  "Etobicoke",
+  "Scarborough",
   "Vaughan",
+  "Richmond Hill",
   "Markham",
+  "King City",
+  "Aurora",
+  "Newmarket",
+  "Mississauga",
+  "Oakville",
+  "Greater Toronto Area",
 ].map((name) => ({ "@type": "Place", name }));
 
 export function breadcrumbSchema(items: { name: string; path: string }[]) {

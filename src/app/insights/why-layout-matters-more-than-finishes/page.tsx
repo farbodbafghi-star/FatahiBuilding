@@ -68,7 +68,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
               <p>
                 Most conversations about a custom home begin with finishes. The
                 marble. The white oak. The fixtures. These are the visible,
-                comparable, photographable decisions &mdash; and they get the
+                comparable, photographable decisions, and they get the
                 attention.
               </p>
               <p>
@@ -101,7 +101,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
                     Toronto lots make layout decisions harder, not optional.
                   </strong>{" "}
                   Narrow lots, mature trees that can&apos;t be removed, ravine
-                  orientations, heritage districts &mdash; the lot shapes what
+                  orientations, heritage districts: the lot shapes what
                   a good layout looks like. A floor plan that works on a wide
                   Oakville lot may not work on a 30-foot Forest Hill lot.
                 </li>
@@ -110,7 +110,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
                     A good layout is invisible. A bad one is felt every day.
                   </strong>{" "}
                   The best homes don&apos;t announce their cleverness. You
-                  just enjoy living in them &mdash; the morning light pours
+                  just enjoy living in them: the morning light pours
                   in, the rooms relate to each other the way you actually
                   live, the path from the entry feels intentional.
                 </li>
@@ -118,7 +118,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
               <p>
                 At Fatahi Building, design and construction are one continuous
                 process. The person designing the layout is the same person
-                building it &mdash; every decision made with construction
+                building it, every decision made with construction
                 reality in mind from the first sketch forward.
               </p>
             </>
@@ -134,13 +134,13 @@ export default function LayoutMattersMoreThanFinishesArticle() {
             That&apos;s understandable. Finishes are visible. They&apos;re
             easy to compare. They photograph beautifully. They&apos;re what
             shows up in the design magazines and on Instagram. And they do
-            matter &mdash; the right materials, well-installed, will outlast
+            matter: the right materials, well-installed, will outlast
             trends and continue to feel current decades later.
           </p>
           <p>
             But finishes are the surface. The decisions that determine whether
-            a home actually works &mdash; whether you love living in it on a
-            Tuesday morning in November &mdash; are made earlier, on the
+            a home actually works, whether you love living in it on a
+            Tuesday morning in November, are made earlier, on the
             layout. And those decisions are far more permanent than any
             backsplash.
           </p>
@@ -173,7 +173,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
           <p>
             <strong>Light.</strong> Where the windows go and what time of day
             each room receives sun. A kitchen that faces north will be in
-            cool, indirect light all day &mdash; beautiful for some uses,
+            cool, indirect light all day, beautiful for some uses,
             frustrating for others. A primary bedroom that catches direct
             east sun will wake you with the sunrise whether you want it to
             or not.
@@ -200,7 +200,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
           <h2>Why Finishes Get the Attention Anyway</h2>
           <p>
             Finishes are easy to talk about. There&apos;s a vocabulary for
-            them &mdash; Calacatta marble, white oak, satin nickel, matte
+            them: Calacatta marble, white oak, satin nickel, matte
             black. There are showrooms for them. They can be compared across
             builders, across budgets, across mood boards.
           </p>
@@ -213,7 +213,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
           <p>
             And finishes get sold. Showrooms exist for them. Suppliers post
             them. Designers feature them on social media. Every part of the
-            industry is built around helping clients pick finishes &mdash;
+            industry is built around helping clients pick finishes,
             because there&apos;s a product to sell at the end.
           </p>
           <p>
@@ -225,13 +225,13 @@ export default function LayoutMattersMoreThanFinishesArticle() {
 
           <h2>Layout Decisions Are Permanent</h2>
           <p>
-            This is the part most people underestimate. The cost &mdash; and
-            difficulty &mdash; of changing a finish versus changing a layout.
+            This is the part most people underestimate. The cost, and
+            difficulty, of changing a finish versus changing a layout.
           </p>
           <p>
             A backsplash can be swapped in a week. Cabinet doors can be
             replaced. Floors can be refinished or even replaced. These are
-            real projects, but they&apos;re contained &mdash; a single
+            real projects, but they&apos;re contained: a single
             trade, a single room, a defined timeline.
           </p>
           <p>
@@ -279,7 +279,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
           </p>
           <p>
             <strong>Ravine orientations.</strong> A ravine-back lot is a
-            gift &mdash; but only if the layout uses it. We design every
+            gift, but only if the layout uses it. We design every
             common space to pull toward the ravine view, with the service
             spaces (pantries, mudrooms, laundry) tucked along the street
             side where the view doesn&apos;t matter.
@@ -288,8 +288,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
             <strong>Light orientation.</strong> A north-facing front means
             most of the day&apos;s light comes from the back. A
             south-facing front means the rear yard is shaded most of the
-            day. The layout has to respond to which direction the lot faces
-            &mdash; the rooms that need morning light, the rooms that
+            day. The layout has to respond to which direction the lot faces: the rooms that need morning light, the rooms that
             benefit from evening light, and the rooms that can do without
             direct sun all change based on orientation.
           </p>
@@ -298,7 +297,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
             Cabbagetown, the Annex, or parts of Rosedale, the facade is
             constrained by heritage rules. The layout becomes the only real
             variable. The exterior may have to look a specific way, but the
-            interior can be reimagined entirely &mdash; and that&apos;s
+            interior can be reimagined entirely, and that&apos;s
             where a good layout earns its keep.
           </p>
           <p>
@@ -322,7 +321,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
               intentional, not accidental
             </li>
             <li>
-              The kitchen connects to the right outdoor space &mdash; the
+              The kitchen connects to the right outdoor space: the
               morning coffee patio, or the evening dining terrace, depending
               on the home
             </li>
@@ -331,7 +330,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
               stairs, a hall, or a service zone
             </li>
             <li>
-              Sightlines pull you through the house &mdash; you can see from
+              Sightlines pull you through the house: you can see from
               the entry to the back garden, or from the kitchen to the
               family room, or from the primary bedroom to a tree
             </li>
@@ -351,7 +350,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
               proportioned
             </li>
             <li>
-              All the light comes from one direction only &mdash; the rest
+              All the light comes from one direction only, and the rest
               of the house feels darker than it should
             </li>
             <li>The dining room sits in a corner with no natural light</li>
@@ -411,17 +410,17 @@ export default function LayoutMattersMoreThanFinishesArticle() {
           </p>
           <p>
             Finishes are the surface. Layout is the foundation underneath.
-            The two are linked &mdash; beautiful materials placed within a
+            The two are linked: beautiful materials placed within a
             thoughtful layout create something neither could create on its
-            own &mdash; but if there&apos;s one thing you can only get right
+            own, but if there&apos;s one thing you can only get right
             once, it&apos;s the layout.
           </p>
           <p>
             At Fatahi Building, design and construction are one continuous
             process. Majid designs the home knowing exactly how it will be
             built. Layout decisions get made with construction reality in
-            mind &mdash; material thickness, structural spans, mechanical
-            routing, daylight angles &mdash; every constraint and
+            mind: material thickness, structural spans, mechanical
+            routing, daylight angles, every constraint and
             opportunity considered from the first sketch forward.
           </p>
           <p>

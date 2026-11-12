@@ -34,7 +34,7 @@ const inProgress: {
     image: "/images/projects/old-yonge/exterior-1.jpg",
     highlights: ["8,000+ sq ft", "3-car garage", "Heated driveway", "Elevator", "11’ basement ceilings", "Walkout basement", "Radiant heated floors"],
     description: "A modern custom home in the heart of North York that blends open-concept living with contemporary styling, designed for effortless living. Grand open spaces and tall ceilings, warmed by natural materials and millwork, with a three-car garage, a heated driveway, an elevator, and a walkout basement.",
-    href: "/insights/custom-home-foundation-north-york",
+    href: "/projects/225-old-yonge",
     linkLabel: "Follow the Build",
   },
   {

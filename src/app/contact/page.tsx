@@ -6,27 +6,32 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
-    name: "", email: "", phone: "", message: "",
+    firstName: "", lastName: "", email: "", phone: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
+    const fullName = `${formData.firstName} ${formData.lastName}`.trim();
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
-          subject: `New inquiry from ${formData.name}`,
-          from_name: formData.name,
-          ...formData,
+          subject: `Call request from ${fullName}`,
+          from_name: fullName,
+          name: fullName,
+          first_name: formData.firstName,
+          last_name: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
         }),
       });
       if (res.ok) {
@@ -58,39 +63,44 @@ export default function ContactPage() {
                   <div className="w-16 h-px bg-beige mb-8" />
                   <h2 className="text-2xl md:text-3xl font-light font-heading text-white tracking-wide mb-6">Thank you</h2>
                   <p className="text-white/70 font-light leading-relaxed max-w-md">
-                    We&apos;ll be in touch within one business day.
+                    We&apos;ll call you within one business day.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-10">
+                  <p className="text-white/70 font-light leading-relaxed max-w-md">
+                    Leave your details and we&apos;ll call you. The first conversation happens over the phone, so there&apos;s nothing to prepare.
+                  </p>
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <div className="group">
-                      <label htmlFor="name" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-4 group-focus-within:text-beige/70 transition-colors duration-300">Name</label>
-                      <input type="text" id="name" name="name" required value={formData.name} onChange={handleChange}
+                      <label htmlFor="firstName" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-4 group-focus-within:text-beige/70 transition-colors duration-300">First name</label>
+                      <input type="text" id="firstName" name="firstName" required autoComplete="given-name" value={formData.firstName} onChange={handleChange}
                         className="w-full border-b border-white/10 pb-3 text-[15px] font-light text-white bg-transparent focus:outline-none focus:border-beige hover:border-beige/40 transition-colors duration-300 hover:shadow-[0_1px_8px_-2px_rgba(196,180,158,0.3)] focus:shadow-[0_1px_8px_-2px_rgba(196,180,158,0.4)]" />
                     </div>
                     <div className="group">
-                      <label htmlFor="email" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-4 group-focus-within:text-beige/70 transition-colors duration-300">Email</label>
-                      <input type="email" id="email" name="email" required value={formData.email} onChange={handleChange}
+                      <label htmlFor="lastName" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-4 group-focus-within:text-beige/70 transition-colors duration-300">Last name</label>
+                      <input type="text" id="lastName" name="lastName" required autoComplete="family-name" value={formData.lastName} onChange={handleChange}
                         className="w-full border-b border-white/10 pb-3 text-[15px] font-light text-white bg-transparent focus:outline-none focus:border-beige hover:border-beige/40 transition-colors duration-300 hover:shadow-[0_1px_8px_-2px_rgba(196,180,158,0.3)] focus:shadow-[0_1px_8px_-2px_rgba(196,180,158,0.4)]" />
                     </div>
                   </div>
 
-                  <div className="group">
-                    <label htmlFor="phone" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-4 group-focus-within:text-beige/70 transition-colors duration-300">Phone <span className="text-white/20">(optional)</span></label>
-                    <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange}
-                      className="w-full border-b border-white/10 pb-3 text-[15px] font-light text-white bg-transparent focus:outline-none focus:border-beige hover:border-beige/40 transition-colors duration-300 hover:shadow-[0_1px_8px_-2px_rgba(196,180,158,0.3)] focus:shadow-[0_1px_8px_-2px_rgba(196,180,158,0.4)]" />
-                  </div>
-
-                  <div className="group">
-                    <label htmlFor="message" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-4 group-focus-within:text-beige/70 transition-colors duration-300">What do you have in mind?</label>
-                    <textarea id="message" name="message" rows={5} value={formData.message} onChange={handleChange}
-                      className="w-full border-b border-white/10 pb-3 text-[15px] font-light text-white bg-transparent focus:outline-none focus:border-beige hover:border-beige/40 transition-colors duration-300 hover:shadow-[0_1px_8px_-2px_rgba(196,180,158,0.3)] focus:shadow-[0_1px_8px_-2px_rgba(196,180,158,0.4)] resize-none placeholder:text-white/20" />
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div className="group">
+                      <label htmlFor="email" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-4 group-focus-within:text-beige/70 transition-colors duration-300">Email</label>
+                      <input type="email" id="email" name="email" required autoComplete="email" value={formData.email} onChange={handleChange}
+                        className="w-full border-b border-white/10 pb-3 text-[15px] font-light text-white bg-transparent focus:outline-none focus:border-beige hover:border-beige/40 transition-colors duration-300 hover:shadow-[0_1px_8px_-2px_rgba(196,180,158,0.3)] focus:shadow-[0_1px_8px_-2px_rgba(196,180,158,0.4)]" />
+                    </div>
+                    <div className="group">
+                      <label htmlFor="phone" className="block text-xs font-medium tracking-[0.2em] text-white/40 mb-4 group-focus-within:text-beige/70 transition-colors duration-300">Phone</label>
+                      <input type="tel" id="phone" name="phone" required autoComplete="tel" value={formData.phone} onChange={handleChange}
+                        className="w-full border-b border-white/10 pb-3 text-[15px] font-light text-white bg-transparent focus:outline-none focus:border-beige hover:border-beige/40 transition-colors duration-300 hover:shadow-[0_1px_8px_-2px_rgba(196,180,158,0.3)] focus:shadow-[0_1px_8px_-2px_rgba(196,180,158,0.4)]" />
+                    </div>
                   </div>
 
                   <div className="pt-6">
                     <button type="submit" disabled={submitting} className="border border-beige/30 text-beige px-14 py-5 text-[13px] font-light tracking-[0.15em] hover:bg-beige hover:text-navy transition-all duration-500 disabled:opacity-50">
-                      {submitting ? "Sending..." : "Send Message"}
+                      {submitting ? "Sending..." : "Request a Call"}
                     </button>
                   </div>
                 </form>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ProcessJourney from "@/components/ProcessJourney";
 import Faq, { type FaqItem } from "@/components/Faq";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, serviceSchema } from "@/lib/schema";
 import { transformationsPhases } from "@/data/process-phases";
@@ -71,6 +72,7 @@ export default function TransformationsPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/40 to-navy-dark/20" />
         <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 pb-24 w-full">
           <div className="max-w-2xl">
+            <Breadcrumbs className="mb-6 animate-fade-in" items={[{ name: "Home", path: "/" }, { name: "Whole-Home Transformations" }]} />
             <h1 className="section-label mb-8 animate-fade-in">Whole-Home Renovations &amp; Transformations in Toronto</h1>
             <p className="font-heading text-4xl md:text-5xl font-light text-white leading-tight tracking-wide animate-fade-up">Redesigned and rebuilt.<br />Not just renovated.</p>
             <p className="mt-6 text-lg text-white/70 font-light leading-relaxed animate-fade-up animate-delay-200">Complete reimagining of an existing structure. The result should feel like it was always meant to be this way.</p>

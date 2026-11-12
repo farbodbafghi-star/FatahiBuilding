@@ -114,7 +114,7 @@ export default function DesignBuildArticle() {
             <strong>Decisions happen in real time.</strong> Construction always has moments that require judgment: soil conditions differ from the report, a material lead time shifts, a detail that works on paper needs adjustment in three dimensions. When the designer is on site every day, those moments get resolved immediately. No waiting. No back-and-forth. Just a decision made by the person who understands both the design intent and the construction reality.
           </p>
           <p>
-            <strong>The craft runs deeper.</strong> When you&apos;ve spent decades physically building &mdash; framing walls, setting stone, installing millwork &mdash; you design with your hands as much as your eyes. You think about how a joint will be finished. How a transition between materials will age. How 22 feet of continuous white oak grain should flow from the first floor to the third without a single break. These are details that don&apos;t show up in a rendering, but they define whether a home feels right.
+            <strong>The craft runs deeper.</strong> When you&apos;ve spent decades physically building, framing walls, setting stone, installing millwork, you design with your hands as much as your eyes. You think about how a joint will be finished. How a transition between materials will age. How 22 feet of continuous white oak grain should flow from the first floor to the third without a single break. These are details that don&apos;t show up in a rendering, but they define whether a home feels right.
           </p>
 
           <h2>Design-Build Is Not &ldquo;A Builder Who Can Draw&rdquo;</h2>
@@ -125,7 +125,7 @@ export default function DesignBuildArticle() {
             The difference is that every design decision is grounded in the reality of how it will be built. This doesn&apos;t limit the design. It makes the design more honest.
           </p>
           <p>
-            We know which materials will perform in Toronto&apos;s climate &mdash; the freeze-thaw cycles, the humidity swings, the wind loads on an exposed elevation. We know where a design can push boundaries and where the budget needs us to be strategic. That knowledge doesn&apos;t constrain creativity. It focuses it.
+            We know which materials will perform in Toronto&apos;s climate: the freeze-thaw cycles, the humidity swings, the wind loads on an exposed elevation. We know where a design can push boundaries and where the budget needs us to be strategic. That knowledge doesn&apos;t constrain creativity. It focuses it.
           </p>
 
           <h2>What This Means for Your Project</h2>

@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { areas } from "@/data/areas";
 
 const BASE = "https://www.fatahibuilding.com";
 
@@ -9,8 +10,11 @@ const pages: { path: string; priority: number }[] = [
   { path: "/services/transformations", priority: 0.9 },
   { path: "/services/additions", priority: 0.9 },
   { path: "/projects", priority: 0.8 },
+  { path: "/projects/225-old-yonge", priority: 0.8 },
   { path: "/projects/131-poyntz-ave", priority: 0.8 },
   { path: "/projects/23-terrace", priority: 0.8 },
+  { path: "/areas", priority: 0.8 },
+  ...areas.map((area) => ({ path: `/areas/${area.slug}`, priority: 0.8 })),
   { path: "/about", priority: 0.7 },
   { path: "/testimonials", priority: 0.6 },
   { path: "/contact", priority: 0.7 },

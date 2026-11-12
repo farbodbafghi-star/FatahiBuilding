@@ -4,6 +4,7 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ProcessJourney from "@/components/ProcessJourney";
 import Faq, { type FaqItem } from "@/components/Faq";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, serviceSchema } from "@/lib/schema";
 import { additionsPhases } from "@/data/process-phases";
@@ -71,6 +72,7 @@ export default function AdditionsPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/40 to-navy-dark/20" />
         <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 pb-24 w-full">
           <div className="max-w-2xl">
+            <Breadcrumbs className="mb-6 animate-fade-in" items={[{ name: "Home", path: "/" }, { name: "Additions" }]} />
             <h1 className="section-label mb-8 animate-fade-in">Home Additions &amp; Second-Storey Additions in Toronto</h1>
             <p className="font-heading text-4xl md:text-5xl font-light text-white leading-tight tracking-wide animate-fade-up">Expansion that feels<br />like it was always there</p>
             <p className="mt-6 text-lg text-white/70 font-light leading-relaxed animate-fade-up animate-delay-200">Seamless additions designed to integrate with your existing architecture, not just attach to it.</p>

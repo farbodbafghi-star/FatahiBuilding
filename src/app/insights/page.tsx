@@ -108,7 +108,7 @@ export default function InsightsPage() {
               </p>
               <div className="divider mt-10 mb-10" />
               <p className="text-white/50 font-light leading-relaxed max-w-lg">
-                Practical guidance on custom home building, materials, and the design-build process &mdash; from a team with over 30 years in the trade.
+                Practical guidance on custom home building, materials, and the design-build process, from a team with over 30 years in the trade.
               </p>
             </div>
           </ScrollReveal>

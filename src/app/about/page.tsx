@@ -24,6 +24,7 @@ export default function AboutPage() {
             jobTitle: "Founder, Lead Designer & Builder",
             worksFor: { "@id": BUSINESS_ID },
             image: `${SITE}/images/branding/majid-portrait.jpg`,
+            sameAs: ["https://www.linkedin.com/in/majidfatahi/"],
             url: `${SITE}/about`,
           },
           {
@@ -33,6 +34,7 @@ export default function AboutPage() {
             jobTitle: "Client Relations & Project Management",
             worksFor: { "@id": BUSINESS_ID },
             image: `${SITE}/images/branding/farbod-portrait.jpg`,
+            sameAs: ["https://www.linkedin.com/in/farbodfatahi/"],
             url: `${SITE}/about`,
           },
           breadcrumbSchema([
@@ -161,6 +163,67 @@ export default function AboutPage() {
               </div>
             </ScrollReveal>
           </div>
+        </div>
+      </section>
+
+      <div className="section-sep" />
+
+      {/* AT A GLANCE */}
+      <section className="py-10 md:py-16">
+        <div className="max-w-4xl mx-auto px-8 md:px-16">
+          <ScrollReveal>
+            <div className="mb-10">
+              <p className="section-label mb-8">The Firm</p>
+              <h2 className="text-3xl md:text-4xl font-heading font-light text-white tracking-wide">
+                Fatahi Building at a glance
+              </h2>
+            </div>
+            <dl className="divide-y divide-white/[0.06] border-y border-white/[0.06]">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8 py-5">
+                  <dt className="section-label md:pt-1">Founded</dt>
+                  <dd className="md:col-span-3 text-white/70 font-light text-[15px] leading-[1.85]">
+                    2020, by Majid Fatahi, a designer and builder with over 30 years of experience.
+                  </dd>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8 py-5">
+                  <dt className="section-label md:pt-1">What we do</dt>
+                  <dd className="md:col-span-3 text-white/70 font-light text-[15px] leading-[1.85]">
+                    <Link href="/services/custom-homes" className="text-beige underline underline-offset-2 hover:text-beige-light">Custom homes</Link>,{" "}
+                    <Link href="/services/transformations" className="text-beige underline underline-offset-2 hover:text-beige-light">whole-home transformations</Link>{" "}
+                    and{" "}
+                    <Link href="/services/additions" className="text-beige underline underline-offset-2 hover:text-beige-light">additions</Link>,
+                    designed and built by one team.
+                  </dd>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8 py-5">
+                  <dt className="section-label md:pt-1">How we work</dt>
+                  <dd className="md:col-span-3 text-white/70 font-light text-[15px] leading-[1.85]">
+                    A fixed price for an agreed scope. Majid on site daily. A written progress report every Friday. A 12-month warranty with scheduled check-ins.
+                  </dd>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8 py-5">
+                  <dt className="section-label md:pt-1">Where we build</dt>
+                  <dd className="md:col-span-3 text-white/70 font-light text-[15px] leading-[1.85]">
+                    Most of our work is in North York, in Willowdale West and along the Yonge corridor. We serve Toronto and the Greater Toronto Area, including Richmond Hill, Vaughan and Markham.
+                  </dd>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8 py-5">
+                  <dt className="section-label md:pt-1">Building now</dt>
+                  <dd className="md:col-span-3 text-white/70 font-light text-[15px] leading-[1.85]">
+                    Old Yonge, North York: a new custom home with more than 8,000 square feet of living space.{" "}
+                    <Link href="/projects" className="text-beige underline underline-offset-2 hover:text-beige-light">See our projects</Link>.
+                  </dd>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8 py-5">
+                  <dt className="section-label md:pt-1">Contact</dt>
+                  <dd className="md:col-span-3 text-white/70 font-light text-[15px] leading-[1.85]">
+                    <a href="tel:+16476311211" className="text-beige underline underline-offset-2 hover:text-beige-light">(647) 631-1211</a>{" "}
+                    &middot;{" "}
+                    <a href="mailto:info@fatahibuilding.com" className="text-beige underline underline-offset-2 hover:text-beige-light">info@fatahibuilding.com</a>
+                  </dd>
+                </div>
+            </dl>
+          </ScrollReveal>
         </div>
       </section>
 
