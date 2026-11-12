@@ -2,16 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Choosing Materials That Last | Fatahi Building",
+  title: "Choosing Materials for a Custom Home That Last | Fatahi Building",
   description:
     "Not every premium material is the right choice for every home. A builder\u2019s guide to selecting flooring, countertops, and fixtures that perform as well as they look.",
+  alternates: { canonical: "/insights/choosing-materials-that-last" },
 };
 
 export default function MaterialsArticle() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: "Choosing Materials That Last",
+            description: String(metadata.description),
+            slug: "choosing-materials-that-last",
+            datePublished: "2026-03-21",
+          }),
+          insightBreadcrumbs("Choosing Materials That Last", "choosing-materials-that-last"),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">

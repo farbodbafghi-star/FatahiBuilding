@@ -3,8 +3,9 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Insights | Fatahi Building",
+  title: "Custom Home Building Insights | Fatahi Building",
   description: "Practical advice on custom home building, design-build, material selection, and the construction process from the Fatahi Building team.",
+  alternates: { canonical: "/insights" },
 };
 
 /* Category icons — thin-stroke SVG paths */

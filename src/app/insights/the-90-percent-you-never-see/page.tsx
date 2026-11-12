@@ -2,17 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title:
-    "The 90% You'll Never See: Why Two Identical-Looking Homes Age Completely Differently | Fatahi Building",
+  title: "The 90% of a Custom Home You Never See | Fatahi Building",
   description:
-    "You judge a home by the 10% you can see: the counters, the floors, the tile. But the 90% behind the drywall is what decides how it holds up. Here is the invisible work that separates a home that ages gracefully from one that quietly falls apart.",
+    "You judge a home by the 10% you can see. The 90% behind the drywall decides how it holds up. Here is the invisible work that makes a home age well.",
+  alternates: { canonical: "/insights/the-90-percent-you-never-see" },
 };
 
 export default function NinetyPercentYouNeverSeeArticle() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: "The 90% You'll Never See: Why Two Identical-Looking Homes Age Completely Differently",
+            description: String(metadata.description),
+            slug: "the-90-percent-you-never-see",
+            datePublished: "2026-07-03",
+          }),
+          insightBreadcrumbs("The 90% You'll Never See: Why Two Identical-Looking Homes Age Completely Differently", "the-90-percent-you-never-see"),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">

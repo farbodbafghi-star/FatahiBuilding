@@ -4,6 +4,8 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ProcessJourney from "@/components/ProcessJourney";
 import Faq, { type FaqItem } from "@/components/Faq";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, serviceSchema } from "@/lib/schema";
 import { additionsPhases } from "@/data/process-phases";
 
 const faqs: FaqItem[] = [
@@ -49,6 +51,20 @@ export const metadata: Metadata = {
 export default function AdditionsPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          serviceSchema({
+            name: "Home Additions and Extensions",
+            serviceType: "Home addition",
+            description: String(metadata.description),
+            path: "/services/additions",
+          }),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Additions", path: "/services/additions" },
+          ]),
+        ]}
+      />
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[550px] flex items-end">
         <Image src="/images/projects/poyntz/004-131 Poyntz Ave - N. York - Twilights-4.jpg" alt="Home designed and built by Fatahi Building, North York" fill className="object-cover" priority quality={90} />

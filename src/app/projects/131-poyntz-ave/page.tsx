@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Poyntz | Projects | Fatahi Building",
-  description: "A modern custom home in North York, Toronto featuring clean contemporary lines, glass staircase, marble fireplace surround, and warm oak flooring. Designed and built by Fatahi Building.",
+  title: "Modern Custom Home in North York: Poyntz | Fatahi Building",
+  description:
+    "A modern custom home in North York, Toronto with clean contemporary lines, a glass staircase, a marble fireplace surround and warm oak flooring.",
+  alternates: { canonical: "/projects/131-poyntz-ave" },
 };
 
 const galleryImages = [
@@ -28,6 +32,13 @@ const galleryImages = [
 export default function PoyntzAvenuePage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Projects", path: "/projects" },
+          { name: "Poyntz", path: "/projects/131-poyntz-ave" },
+        ])}
+      />
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[500px] flex items-end">
         <Image src="/images/projects/poyntz/twilight-1.jpg" alt="Poyntz Avenue, custom home exterior at twilight" fill className="object-cover" priority quality={90} />

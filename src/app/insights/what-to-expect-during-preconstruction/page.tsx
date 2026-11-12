@@ -2,16 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "What to Expect During Preconstruction | Fatahi Building",
+  title: "Custom Home Preconstruction: What to Expect | Fatahi Building",
   description:
-    "The weeks before construction begins are where the real decisions happen. Here&apos;s what preconstruction looks like for a custom home in Toronto.",
+    "The weeks before construction begins are where the real decisions happen. Here's what preconstruction looks like for a custom home in Toronto.",
+  alternates: { canonical: "/insights/what-to-expect-during-preconstruction" },
 };
 
 export default function PreconstructionArticle() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: "What to Expect During Preconstruction",
+            description: String(metadata.description),
+            slug: "what-to-expect-during-preconstruction",
+            datePublished: "2026-03-21",
+          }),
+          insightBreadcrumbs("What to Expect During Preconstruction", "what-to-expect-during-preconstruction"),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">

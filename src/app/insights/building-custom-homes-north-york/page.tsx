@@ -2,17 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title:
-    "What It's Actually Like to Build a Custom Home in North York | Fatahi Building",
+  title: "Building a Custom Home in North York | Fatahi Building",
   description:
-    "Most of what makes North York a good place to build a custom home is the same thing that makes it difficult. Wide lots, deep frontages and seventy-year-old trees give you room to design properly, and they bring protection zones, variance hearings and neighbours ten feet away. Here is the honest version.",
+    "What it's like to build a custom home in North York: wide lots and mature trees, plus the protection zones, variances and close neighbours that come with them.",
+  alternates: { canonical: "/insights/building-custom-homes-north-york" },
 };
 
 export default function NorthYorkArticle() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: "What It's Actually Like to Build a Custom Home in North York",
+            description: String(metadata.description),
+            slug: "building-custom-homes-north-york",
+            datePublished: "2026-09-08",
+          }),
+          insightBreadcrumbs("What It's Actually Like to Build a Custom Home in North York", "building-custom-homes-north-york"),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">

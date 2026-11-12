@@ -2,16 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Why Layout Matters More Than Finishes in a Custom Home | Fatahi Building",
+  title: "Custom Home Layout Matters More Than Finishes | Fatahi Building",
   description:
-    "Finishes get the attention. But the layout — how the spaces flow, where the light lands, how rooms connect — is what makes a home feel right. Here’s why it matters more than most people realize.",
+    "Finishes get the attention, but the layout is what makes a custom home feel right: how the spaces flow, where the light lands, how the rooms connect.",
+  alternates: { canonical: "/insights/why-layout-matters-more-than-finishes" },
 };
 
 export default function LayoutMattersMoreThanFinishesArticle() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: "Why Layout Matters More Than Finishes in a Custom Home",
+            description: String(metadata.description),
+            slug: "why-layout-matters-more-than-finishes",
+            datePublished: "2026-05-10",
+          }),
+          insightBreadcrumbs("Why Layout Matters More Than Finishes in a Custom Home", "why-layout-matters-more-than-finishes"),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">

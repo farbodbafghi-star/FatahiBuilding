@@ -2,16 +2,29 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Cost Per Square Foot to Build in Ontario | Fatahi Building",
-  description: "The cost per square foot to build a custom home in Ontario depends on the lot, the layout, the materials and the finishes. Here is what moves the number and how to get a real one.",
+  description: "The cost per square foot to build a custom home in Ontario depends on the lot, the layout, the materials and the finishes. Here is what moves the number.",
   alternates: { canonical: "/insights/cost-per-square-foot-custom-home" },
 };
 
 export default function CostPerSquareFootCustomHomeArticle() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: "Two Houses Can Be the Same Size and Cost Completely Different Amounts to Build",
+            description: String(metadata.description),
+            slug: "cost-per-square-foot-custom-home",
+            datePublished: "2026-11-11",
+          }),
+          insightBreadcrumbs("Two Houses Can Be the Same Size and Cost Completely Different Amounts to Build", "cost-per-square-foot-custom-home"),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">

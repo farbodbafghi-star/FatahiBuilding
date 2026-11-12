@@ -4,6 +4,7 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
+  title: "Custom Home Builder in Toronto & the GTA | Fatahi Building",
   alternates: { canonical: "/" },
 };
 

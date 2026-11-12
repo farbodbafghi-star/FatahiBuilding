@@ -2,16 +2,29 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Building a Custom Home in Toronto: Timeline | Fatahi Building",
-  description: "Building a custom home in Toronto starts months before construction. Design, engineering, the Committee of Adjustment and permits take five to six months on average. Here is how it ran on one North York lot.",
+  description: "Building a custom home in Toronto starts months before construction. Design, engineering, approvals and permits take five to six months on average.",
   alternates: { canonical: "/insights/custom-home-timeline-toronto-before-you-build" },
 };
 
 export default function CustomHomeTimelineTorontoBeforeYouBuildArticle() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: "For Six Months You Could Have Driven Past This Lot and Thought Nothing Was Happening",
+            description: String(metadata.description),
+            slug: "custom-home-timeline-toronto-before-you-build",
+            datePublished: "2026-11-11",
+          }),
+          insightBreadcrumbs("For Six Months You Could Have Driven Past This Lot and Thought Nothing Was Happening", "custom-home-timeline-toronto-before-you-build"),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">

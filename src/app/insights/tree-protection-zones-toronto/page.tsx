@@ -2,17 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title:
-    "You Can Kill a Tree on a Construction Site Without Ever Touching It | Fatahi Building",
+  title: "Tree Protection Zones in Toronto, Explained | Fatahi Building",
   description:
-    "The fence around a tree on a construction site isn't drawn around the tree. It's drawn around roots nobody can see, calculated backwards from the trunk. Here's what a tree protection zone actually is, why one zone can carry two different fences, and why it's settled before a shovel moves.",
+    "A tree protection zone is drawn around roots nobody can see, calculated from the trunk. What it is, why one zone can carry two fences, and why it comes first.",
+  alternates: { canonical: "/insights/tree-protection-zones-toronto" },
 };
 
 export default function TreeProtectionZonesArticle() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: "You Can Kill a Tree on a Construction Site Without Ever Touching It",
+            description: String(metadata.description),
+            slug: "tree-protection-zones-toronto",
+            datePublished: "2026-09-08",
+          }),
+          insightBreadcrumbs("You Can Kill a Tree on a Construction Site Without Ever Touching It", "tree-protection-zones-toronto"),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">

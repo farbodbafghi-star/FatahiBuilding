@@ -2,16 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Why Design-Build Changes Everything | Fatahi Building",
+  title: "What Is Design-Build? Why It Changes Everything | Fatahi Building",
   description:
-    "When the person who designs your home is the same person building it, nothing gets lost in translation. Here's what design-build actually looks like from the inside.",
+    "When the person who designs your home is the same person building it, nothing gets lost in translation. Here's what design-build looks like from the inside.",
+  alternates: { canonical: "/insights/why-design-build-changes-everything" },
 };
 
 export default function DesignBuildArticle() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: "Why Design-Build Changes Everything",
+            description: String(metadata.description),
+            slug: "why-design-build-changes-everything",
+            datePublished: "2026-03-21",
+          }),
+          insightBreadcrumbs("Why Design-Build Changes Everything", "why-design-build-changes-everything"),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">

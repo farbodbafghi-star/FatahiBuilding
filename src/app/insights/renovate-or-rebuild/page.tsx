@@ -2,16 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Is It Worth Renovating or Should You Rebuild? | Fatahi Building",
+  title: "Renovate or Rebuild in Toronto: How to Decide | Fatahi Building",
   description:
     "The decision between renovating your existing home and building new isn\u2019t just about cost. Here\u2019s how to think through it clearly, from a team that does both.",
+  alternates: { canonical: "/insights/renovate-or-rebuild" },
 };
 
 export default function RenovateOrRebuildArticle() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: "Is It Worth Renovating or Should You Rebuild?",
+            description: String(metadata.description),
+            slug: "renovate-or-rebuild",
+            datePublished: "2026-04-05",
+          }),
+          insightBreadcrumbs("Is It Worth Renovating or Should You Rebuild?", "renovate-or-rebuild"),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">

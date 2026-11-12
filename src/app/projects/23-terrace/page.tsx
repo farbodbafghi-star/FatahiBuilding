@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Terrace | Projects | Fatahi Building",
-  description: "A warm, sophisticated custom home in North York, Toronto with walnut ceiling details, black marble kitchen island, brass fixtures, and floating oak staircase. Designed and built by Fatahi Building.",
+  title: "Custom Home in North York: Terrace | Fatahi Building",
+  description:
+    "A warm custom home in North York, Toronto with walnut ceiling details, a black marble kitchen island, brass fixtures and a floating oak staircase.",
+  alternates: { canonical: "/projects/23-terrace" },
 };
 
 const galleryImages = [
@@ -26,6 +30,13 @@ const galleryImages = [
 export default function TerracePage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Projects", path: "/projects" },
+          { name: "Terrace", path: "/projects/23-terrace" },
+        ])}
+      />
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[500px] flex items-end">
         <Image src="/images/projects/terrace/dining.jpg" alt="Terrace, dining area with walnut ceiling details" fill className="object-cover" priority quality={90} />

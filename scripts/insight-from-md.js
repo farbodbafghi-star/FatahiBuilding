@@ -106,6 +106,8 @@ for (const slug of slugs) {
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: ${js(field("Search title") + " | Fatahi Building")},
@@ -116,6 +118,17 @@ export const metadata: Metadata = {
 export default function ${component}() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: ${js(headline)},
+            description: String(metadata.description),
+            slug: ${js(slug)},
+            datePublished: ${js(field("Published"))},
+          }),
+          insightBreadcrumbs(${js(headline)}, ${js(slug)}),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">

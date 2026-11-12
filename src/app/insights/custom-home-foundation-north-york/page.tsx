@@ -2,16 +2,29 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Home Construction in North York: Foundations | Fatahi Building",
-  description: "Inside the foundation of an 8,000 sq ft custom home under construction in North York: footings, soil checks, full-height concrete walls, an 11-foot basement and an elevator planned from the first drawing.",
+  description: "Inside the foundation of an 8,000 sq ft custom home in North York: footings, soil checks, full-height concrete walls and an elevator planned from day one.",
   alternates: { canonical: "/insights/custom-home-foundation-north-york" },
 };
 
 export default function CustomHomeFoundationNorthYorkArticle() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: "The Concrete on This House Doesn't Stop at the Ground",
+            description: String(metadata.description),
+            slug: "custom-home-foundation-north-york",
+            datePublished: "2026-11-11",
+          }),
+          insightBreadcrumbs("The Concrete on This House Doesn't Stop at the Ground", "custom-home-foundation-north-york"),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">

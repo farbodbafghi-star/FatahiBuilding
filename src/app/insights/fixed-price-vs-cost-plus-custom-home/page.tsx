@@ -2,16 +2,29 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Fixed Price vs Cost Plus for a Custom Home | Fatahi Building",
-  description: "Custom home builders in Toronto price a build one of two ways: cost plus or fixed price. Here is how each contract works, what makes a fixed price hold, and what to ask before you sign.",
+  description: "Custom home builders in Toronto price a build one of two ways: cost plus or fixed price. How each works, what makes a fixed price hold, and what to ask.",
   alternates: { canonical: "/insights/fixed-price-vs-cost-plus-custom-home" },
 };
 
 export default function FixedPriceVsCostPlusCustomHomeArticle() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: "The Two Ways to Price a Custom Home, and the One That Tells You What You'll Actually Pay",
+            description: String(metadata.description),
+            slug: "fixed-price-vs-cost-plus-custom-home",
+            datePublished: "2026-11-11",
+          }),
+          insightBreadcrumbs("The Two Ways to Price a Custom Home, and the One That Tells You What You'll Actually Pay", "fixed-price-vs-cost-plus-custom-home"),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">

@@ -4,6 +4,8 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ProcessJourney from "@/components/ProcessJourney";
 import Faq, { type FaqItem } from "@/components/Faq";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, serviceSchema } from "@/lib/schema";
 import { transformationsPhases } from "@/data/process-phases";
 
 const faqs: FaqItem[] = [
@@ -40,7 +42,7 @@ const faqs: FaqItem[] = [
 ];
 
 export const metadata: Metadata = {
-  title: "Whole-Home Renovations & Transformations in Toronto | Fatahi Building",
+  title: "Whole-Home Renovations in Toronto | Fatahi Building",
   description:
     "Whole-home transformations in Toronto: open layouts, new systems and a rebuilt interior, while keeping the home you already have. Designed and built by one team.",
   alternates: { canonical: "/services/transformations" },
@@ -49,6 +51,20 @@ export const metadata: Metadata = {
 export default function TransformationsPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          serviceSchema({
+            name: "Whole-Home Renovations and Transformations",
+            serviceType: "Whole-home renovation",
+            description: String(metadata.description),
+            path: "/services/transformations",
+          }),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Whole-Home Transformations", path: "/services/transformations" },
+          ]),
+        ]}
+      />
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[550px] flex items-end">
         <Image src="/images/projects/terrace/3Q1A2136.JPG" alt="Interior designed and built by Fatahi Building, North York" fill className="object-cover" priority quality={90} />

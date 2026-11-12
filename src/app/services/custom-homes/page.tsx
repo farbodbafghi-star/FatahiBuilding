@@ -4,6 +4,8 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ProcessJourney from "@/components/ProcessJourney";
 import Faq, { type FaqItem } from "@/components/Faq";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, serviceSchema } from "@/lib/schema";
 import { customHomesPhases } from "@/data/process-phases";
 
 const galleryImages = [
@@ -60,6 +62,20 @@ export const metadata: Metadata = {
 export default function CustomHomesPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          serviceSchema({
+            name: "Custom Home Design and Build",
+            serviceType: "Custom home builder",
+            description: String(metadata.description),
+            path: "/services/custom-homes",
+          }),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Custom Homes", path: "/services/custom-homes" },
+          ]),
+        ]}
+      />
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[550px] flex items-end">
         <Image src="/images/projects/poyntz/twilight-1.jpg" alt="Custom home by Fatahi Building, Poyntz at twilight" fill className="object-cover" priority quality={90} />

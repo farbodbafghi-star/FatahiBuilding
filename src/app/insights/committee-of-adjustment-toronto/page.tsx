@@ -2,17 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title:
-    "The Committee of Adjustment: The Approval Step Most Homeowners Have Never Heard Of | Fatahi Building",
+  title: "Committee of Adjustment in Toronto, Explained | Fatahi Building",
   description:
-    "Everyone building a custom home worries about the building permit. The step that quietly adds two to four months is the Committee of Adjustment. Here is what it is, when you need it, and how to get through it without losing a season.",
+    "The Committee of Adjustment quietly adds two to four months to a custom home in Toronto. What it is, when you need a minor variance, and how to get through it.",
+  alternates: { canonical: "/insights/committee-of-adjustment-toronto" },
 };
 
 export default function CommitteeOfAdjustmentArticle() {
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema({
+            headline: "The Committee of Adjustment: The Approval Step Most Homeowners Have Never Heard Of",
+            description: String(metadata.description),
+            slug: "committee-of-adjustment-toronto",
+            datePublished: "2026-07-03",
+          }),
+          insightBreadcrumbs("The Committee of Adjustment: The Approval Step Most Homeowners Have Never Heard Of", "committee-of-adjustment-toronto"),
+        ]}
+      />
       {/* HERO */}
       <section className="relative py-32 md:py-40">
         <div className="max-w-3xl mx-auto px-8 md:px-16">
