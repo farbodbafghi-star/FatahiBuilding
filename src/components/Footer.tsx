@@ -88,7 +88,7 @@ export default function Footer() {
                 { href: "/services/custom-homes", label: "Custom Homes" },
                 { href: "/services/transformations", label: "Transformations" },
                 { href: "/services/additions", label: "Additions" },
-                { href: "/process", label: "Process" },
+                { href: "/services/custom-homes", label: "Process" },
                 { href: "/insights", label: "Insights" },
                 { href: "/about", label: "About" },
               ].map((link) => (
