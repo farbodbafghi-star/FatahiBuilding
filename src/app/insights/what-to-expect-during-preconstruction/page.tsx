@@ -89,12 +89,11 @@ export default function PreconstructionArticle() {
             Everyone pictures the exciting part: watching the framing go up,
             seeing the kitchen take shape, walking through the finished home
             for the first time. But the months before a single shovel hits the
-            ground are where your custom home is actually made.
+            ground are where your <Link href="/services/custom-homes">custom home</Link> is actually made.
           </p>
           <p>
             At Fatahi Building, preconstruction is where we spend the most
-            time thinking. Every decision made here, from the foundation
-            design to the window placement to the plumbing layout, determines
+            time thinking. Every decision made here, from the <Link href="/insights/custom-home-foundation-north-york">foundation design</Link> to the window placement to the plumbing layout, determines
             whether the build goes smoothly or becomes a series of expensive
             surprises.
           </p>
@@ -203,7 +202,7 @@ export default function PreconstructionArticle() {
 
           <h2>Permits: The Part Nobody Loves</h2>
           <p>
-            In Toronto, the permit process is a reality of custom home
+            In Toronto, the <Link href="/insights/custom-home-timeline-toronto-before-you-build">permit process</Link> is a reality of custom home
             building. Timelines vary, but here&apos;s what to expect:
           </p>
           <ul>
@@ -243,7 +242,7 @@ export default function PreconstructionArticle() {
               A detailed scope of work with material specifications
             </li>
             <li>A construction schedule with milestones</li>
-            <li>A fixed contract price</li>
+            <li>A <Link href="/insights/fixed-price-vs-cost-plus-custom-home">fixed contract price</Link></li>
           </ul>
           <p>
             That last point matters. Because we&apos;ve done the design and

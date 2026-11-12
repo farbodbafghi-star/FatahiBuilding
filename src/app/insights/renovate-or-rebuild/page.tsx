@@ -148,7 +148,7 @@ export default function RenovateOrRebuildArticle() {
           </p>
           <p>
             <strong>The framing.</strong> Can the existing structure support what
-            you want? Adding a second storey to a bungalow, for example, often
+            you want? <Link href="/services/additions">Adding a second storey</Link> to a bungalow, for example, often
             requires reinforcing or replacing the entire first-floor structure
             to carry the new load. At a certain point, you&apos;re keeping the
             old framing out of sentiment rather than savings.
@@ -156,7 +156,7 @@ export default function RenovateOrRebuildArticle() {
           <p>
             <strong>The mechanical systems.</strong> Wiring, plumbing, HVAC. In
             older Toronto homes, these are often original or partially updated.
-            A whole-home transformation typically means replacing all of them.
+            A <Link href="/services/transformations">whole-home transformation</Link> typically means replacing all of them.
             This is the right thing to do, but it&apos;s important to account
             for it honestly in the budget rather than treating it as a surprise
             once the walls are open.
@@ -175,7 +175,7 @@ export default function RenovateOrRebuildArticle() {
           </p>
           <p>
             <strong>Sometimes zoning works in your favour.</strong> An older
-            bungalow on a wide lot in North York might sit well within current
+            bungalow on a <Link href="/insights/building-custom-homes-north-york">wide lot in North York</Link> might sit well within current
             setback and coverage limits, meaning a new build could be larger and
             better positioned than what&apos;s there today. In these cases,
             rebuilding gives you a home that fully uses what the lot offers.
@@ -302,8 +302,7 @@ export default function RenovateOrRebuildArticle() {
             you&apos;ve chosen deliberately.
           </p>
           <p>
-            At Fatahi Building, we do both. Majid has designed and built new
-            custom homes from the foundation up, and he&apos;s led whole-home
+            At Fatahi Building, we do both. Majid has designed and built <Link href="/services/custom-homes">new custom homes</Link> from the foundation up, and he&apos;s led whole-home
             transformations that made a 1960s bungalow unrecognizable from the
             inside while respecting its place on the street. The process is the
             same either way: we start with how you want to live, we study the

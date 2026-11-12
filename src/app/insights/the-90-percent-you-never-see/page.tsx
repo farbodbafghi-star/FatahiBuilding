@@ -329,8 +329,7 @@ export default function NinetyPercentYouNeverSeeArticle() {
             than any finish ever could.
           </p>
           <p>
-            If you&apos;re thinking about a custom home or a whole-home
-            transformation and you want to understand what really separates one
+            If you&apos;re thinking about a <Link href="/services/custom-homes">custom home</Link> or a <Link href="/services/transformations">whole-home transformation</Link> and you want to understand what really separates one
             build from another, that&apos;s a conversation we&apos;re always glad
             to have.
           </p>

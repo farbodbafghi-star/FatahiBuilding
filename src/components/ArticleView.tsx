@@ -38,8 +38,13 @@ export default function ArticleView({ summary, children }: ArticleViewProps) {
       </div>
 
       <div className="max-w-3xl mx-auto px-8 md:px-16">
-        <div className="prose-custom">
-          {view === "summary" ? summary : children}
+        {/* Both versions are always in the page so search engines and AI
+            crawlers can read the full article; the toggle only hides one. */}
+        <div className="prose-custom" hidden={view !== "summary"}>
+          {summary}
+        </div>
+        <div className="prose-custom" hidden={view !== "full"}>
+          {children}
         </div>
       </div>
     </>

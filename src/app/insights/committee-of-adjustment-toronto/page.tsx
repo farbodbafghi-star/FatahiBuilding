@@ -129,7 +129,7 @@ export default function CommitteeOfAdjustmentArticle() {
           </p>
           <p>
             Almost nobody outside the industry has heard of it. Clients come to
-            us worried about the building permit, because that&apos;s the term
+            us worried about the <Link href="/insights/custom-home-timeline-toronto-before-you-build">building permit</Link>, because that&apos;s the term
             everyone knows. The Committee of Adjustment is the step that sits in
             front of it, and it&apos;s the one that most often decides whether a
             project breaks ground in spring or in fall.
@@ -377,8 +377,7 @@ export default function CommitteeOfAdjustmentArticle() {
             where the whole thing is being won.
           </p>
           <p>
-            If you&apos;re starting to think about a custom home or a whole-home
-            transformation and you&apos;re not sure whether your ideas will need
+            If you&apos;re starting to think about a <Link href="/services/custom-homes">custom home</Link> or a <Link href="/services/transformations">whole-home transformation</Link> and you&apos;re not sure whether your ideas will need
             a variance, that&apos;s exactly the conversation to have early.
             We&apos;d welcome it.
           </p>

@@ -122,8 +122,8 @@ export default function NorthYorkArticle() {
           }
         >
           <p>
-            We finished two custom homes in Willowdale West this past year. In
-            the next few weeks we break ground on a third, on Old Yonge Street.
+            We finished two <Link href="/services/custom-homes">custom homes</Link> in Willowdale West this past year. In
+            the next few weeks we break ground on a third, on <Link href="/insights/custom-home-foundation-north-york">Old Yonge Street</Link>.
           </p>
           <p>
             Three houses within a few streets of each other, which is a
@@ -234,7 +234,7 @@ export default function NorthYorkArticle() {
             through it on the same streets.
           </p>
           <p>
-            The practical value is simple: when we give a client a timeline in
+            The practical value is simple: when we give a client <Link href="/insights/custom-home-timeline-toronto-before-you-build">a timeline</Link> in
             this area, we&apos;re not guessing at it. A schedule for a North
             York infill build is a set of estimates about approvals, trees and
             neighbours, and estimates get better with repetition in one place.

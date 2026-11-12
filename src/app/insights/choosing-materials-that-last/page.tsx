@@ -93,7 +93,7 @@ export default function MaterialsArticle() {
             you&apos;ll be replacing it in five.
           </p>
           <p>
-            After three decades of building custom homes, we&apos;ve
+            After three decades of <Link href="/services/custom-homes">building custom homes</Link>, we&apos;ve
             installed just about every material on the market. We&apos;ve
             seen what holds up, what doesn&apos;t, and what looks stunning on
             a sample board but fails in a real kitchen with real life
@@ -259,7 +259,7 @@ export default function MaterialsArticle() {
 
           <h2>Fixtures and Hardware: The Details That Date a Home</h2>
           <p>
-            Kitchens and bathrooms get renovated every 15 to 20 years. The
+            Kitchens and bathrooms <Link href="/services/transformations">get renovated</Link> every 15 to 20 years. The
             materials that age the fastest aren&apos;t the big surfaces.
             They&apos;re the small things: faucets, cabinet pulls,
             light fixtures, door handles.

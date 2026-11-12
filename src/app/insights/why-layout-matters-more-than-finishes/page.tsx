@@ -425,8 +425,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
             opportunity considered from the first sketch forward.
           </p>
           <p>
-            If you&apos;re starting to think about a custom home or a
-            whole-home transformation, we&apos;d welcome a conversation.
+            If you&apos;re starting to think about a <Link href="/services/custom-homes">custom home</Link> or a <Link href="/services/transformations">whole-home transformation</Link>, we&apos;d welcome a conversation.
             The layout is where it starts.
           </p>
         </ArticleView>

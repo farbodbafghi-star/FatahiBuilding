@@ -93,7 +93,7 @@ export default function DesignBuildArticle() {
           }
         >
           <p>
-            After 30 years of designing and building custom homes in Toronto, Majid has never handed a set of drawings to someone else to build. Not because he can&apos;t. Because the continuity between the drawing and the build is where the quality lives.
+            After 30 years of designing and building <Link href="/services/custom-homes">custom homes in Toronto</Link>, Majid has never handed a set of drawings to someone else to build. Not because he can&apos;t. Because the continuity between the drawing and the build is where the quality lives.
           </p>
           <p>
             Design-build means one team handles both. At Fatahi Building, the person who imagines the home is the same person on site every day constructing it. That&apos;s not a tagline. It&apos;s the daily reality of how every project moves from concept to keys.
@@ -108,7 +108,7 @@ export default function DesignBuildArticle() {
             <strong>The design you approve is the home you get.</strong> Because construction knowledge is embedded in every design decision, the plans reflect reality from the start. The home that gets built is the home that was envisioned. Not a version of it. Not a scaled-back compromise.
           </p>
           <p>
-            <strong>Cost intelligence is part of the creative process.</strong> Majid knows what things cost to build as he designs them. That dramatic double-height living room? He&apos;s already figured out the steel. That cantilevered upper floor? He knows the foundation implications before you see the drawing. The budget isn&apos;t a constraint applied later. It shapes the design from the first conversation.
+            <strong>Cost intelligence is part of the creative process.</strong> Majid knows what things cost to build as he designs them. That dramatic double-height living room? He&apos;s already figured out the steel. That cantilevered upper floor? He knows the <Link href="/insights/custom-home-foundation-north-york">foundation implications</Link> before you see the drawing. The budget isn&apos;t a constraint applied later. It shapes the design from the first conversation.
           </p>
           <p>
             <strong>Decisions happen in real time.</strong> Construction always has moments that require judgment: soil conditions differ from the report, a material lead time shifts, a detail that works on paper needs adjustment in three dimensions. When the designer is on site every day, those moments get resolved immediately. No waiting. No back-and-forth. Just a decision made by the person who understands both the design intent and the construction reality.

@@ -127,14 +127,14 @@ export default function TreeProtectionZonesArticle() {
           }
         >
           <p>
-            On our Old Yonge Street project, the first thing that went up
+            On our <Link href="/insights/custom-home-foundation-north-york">Old Yonge Street project</Link>, the first thing that went up
             wasn&apos;t a fence around the site. It was a fence around a tree.
           </p>
           <p>
             There&apos;s a large old tree at the front of that lot, and a run of
             trees across the back. Before any equipment arrived, before a shovel
             moved, the protection zones were surveyed, drawn, and built.
-            That&apos;s the actual first day of a custom home on a mature
+            That&apos;s the actual first day of <Link href="/services/custom-homes">a custom home</Link> on a mature
             Toronto lot, and almost nobody outside the industry knows it.
           </p>
           <p>
@@ -305,7 +305,7 @@ export default function TreeProtectionZonesArticle() {
           <p>
             There&apos;s a second reason too, and it&apos;s the one that matters
             more to us. Those trees are most of why these streets are worth
-            building on. A wide North York lot with a seventy-year-old canopy is
+            building on. A wide <Link href="/insights/building-custom-homes-north-york">North York lot</Link> with a seventy-year-old canopy is
             not something you can create; you can only inherit it or lose it.
             Designing around a tree is not a compliance exercise. It&apos;s the
             reason the finished house feels like it belongs there.
