@@ -189,7 +189,7 @@ export default function AboutPage() {
                   <dt className="section-label md:pt-1">What we do</dt>
                   <dd className="md:col-span-3 text-white/70 font-light text-[15px] leading-[1.85]">
                     <Link href="/services/custom-homes" className="text-beige underline underline-offset-2 hover:text-beige-light">Custom homes</Link>,{" "}
-                    <Link href="/services/transformations" className="text-beige underline underline-offset-2 hover:text-beige-light">whole-home transformations</Link>{" "}
+                    <Link href="/services/transformations" className="text-beige underline underline-offset-2 hover:text-beige-light">whole-home renovations</Link>{" "}
                     and{" "}
                     <Link href="/services/additions" className="text-beige underline underline-offset-2 hover:text-beige-light">additions</Link>,
                     designed and built by one team.

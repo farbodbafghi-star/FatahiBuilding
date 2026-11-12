@@ -75,7 +75,7 @@ export default function Footer() {
             </Link>
             <p className="text-sm font-light text-white/40 leading-relaxed">
               Luxury design-build for custom homes,
-              whole-home transformations, and extensions in Toronto &amp; the GTA.
+              whole-home renovations, and additions in Toronto &amp; the GTA.
             </p>
           </div>
 

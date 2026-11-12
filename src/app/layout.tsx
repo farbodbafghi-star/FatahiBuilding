@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.fatahibuilding.com"),
   title: "Fatahi Building | Custom Home Builder | Toronto & GTA",
   description:
-    "Design-build custom homes in the Greater Toronto Area. Over 30 years of craftsmanship. One team. Concept to completion.",
+    "Design-build firm and custom home builder in North York, Toronto. Custom homes, whole-home renovations and additions, designed and built by one team.",
   keywords: [
     "custom home builder",
     "Toronto",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fatahi Building | Custom Home Builder | Toronto & GTA",
     description:
-      "Design-build custom homes in the Greater Toronto Area. Over 30 years of craftsmanship.",
+      "Design-build firm and custom home builder in North York, Toronto. Custom homes, whole-home renovations and additions, designed and built by one team.",
     type: "website",
     locale: "en_CA",
     url: "https://www.fatahibuilding.com",
@@ -75,7 +75,7 @@ const businessSchema = {
   telephone: "+1-647-631-1211",
   email: "info@fatahibuilding.com",
   description:
-    "Design-build firm for custom homes, whole-home transformations and additions in Toronto and North York.",
+    "Design-build firm and custom home builder in North York, serving Toronto and the GTA. We design and build custom homes, whole-home renovations and additions, with the same team from first sketch to final walkthrough. Founded by Majid Fatahi, a designer and builder with over 30 years of experience.",
   areaServed: AREAS_SERVED,
   // Add each new official profile here as it goes live (Houzz, Bing Places, Yelp...).
   sameAs: [
