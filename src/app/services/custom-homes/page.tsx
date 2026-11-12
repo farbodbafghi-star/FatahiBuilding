@@ -101,7 +101,7 @@ export default function CustomHomesPage() {
                 <p className="section-label mb-8">Our Approach</p>
                 <h2 className="font-heading text-3xl md:text-4xl font-light text-white leading-snug tracking-wide">Conceived and realized<br />as one</h2>
                 <div className="divider mt-10 mb-10" />
-                <p className="text-white/70 font-light leading-relaxed mb-6">Majid leads every project as both its architect and master builder. A discipline that ensures the creative vision remains uncompromised from the first concept through to the finished residence.</p>
+                <p className="text-white/70 font-light leading-relaxed mb-6">Majid leads every project as both its designer and master builder. A discipline that ensures the creative vision remains uncompromised from the first concept through to the finished residence.</p>
                 <p className="text-white/70 font-light leading-relaxed mb-6">Every design decision is informed by three decades of craft. Materials, proportions, and finishes are resolved with precision. The residence you approve is exactly the one we deliver.</p>
                 <p className="text-white/70 font-light leading-relaxed">The result is a residence where every detail feels inevitable, because nothing has been left to interpretation.</p>
               </div>
@@ -225,7 +225,7 @@ export default function CustomHomesPage() {
                 </li>
                 <li>
                   <strong>Betty Ann and Farrell, Willowdale West.</strong> Two
-                  custom homes completed in the past year.
+                  custom homes, completing at the end of 2026.
                 </li>
                 <li>
                   <strong>Poyntz, North York (2023).</strong> A modern custom

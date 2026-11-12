@@ -111,7 +111,7 @@ export default function Home() {
                 <div className="divider mt-10 mb-10" />
                 <p className="text-white/70 font-light leading-[1.85] text-[15px] mb-5">
                   <span className="text-cream font-medium">Majid Fatahi</span>{" "}
-                  has spent over three decades as both architect and master
+                  has spent over three decades as both designer and master
                   builder, bringing a rare depth of vision to every residence
                   he creates.
                 </p>

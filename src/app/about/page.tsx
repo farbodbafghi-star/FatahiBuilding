@@ -109,7 +109,7 @@ export default function AboutPage() {
                 <div className="divider mb-6" />
                 <p className="text-white/70 font-light text-[15px] leading-[1.85] mb-4">
                   For over three decades, Majid has led every project as both
-                  its architect and its master builder. A rare discipline that
+                  its designer and its master builder. A rare discipline that
                   ensures the integrity of the original vision is never compromised.
                 </p>
                 <p className="text-white/70 font-light text-[15px] leading-[1.85]">
