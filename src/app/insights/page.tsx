@@ -101,10 +101,10 @@ export default function InsightsPage() {
         <div className="max-w-7xl mx-auto px-8 md:px-16">
           <ScrollReveal>
             <div className="max-w-2xl">
-              <p className="section-label mb-8">Insights</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light font-heading text-white leading-tight tracking-wide">
+              <h1 className="section-label mb-8">Insights on Building a Custom Home in Toronto</h1>
+              <p className="text-4xl md:text-5xl lg:text-6xl font-light font-heading text-white leading-tight tracking-wide">
                 Building Knowledge
-              </h1>
+              </p>
               <div className="divider mt-10 mb-10" />
               <p className="text-white/50 font-light leading-relaxed max-w-lg">
                 Practical guidance on custom home building, materials, and the design-build process &mdash; from a team with over 30 years in the trade.

@@ -47,10 +47,10 @@ export default function ContactPage() {
 
           {/* LEFT — HEADLINE + FORM */}
           <div className="lg:col-span-7">
-            <p className="section-label mb-8 animate-fade-in">Contact</p>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light font-heading text-white leading-[1.1] tracking-wide animate-fade-up mb-16">
+            <h1 className="section-label mb-8 animate-fade-in">Contact Fatahi Building</h1>
+            <p className="text-5xl md:text-6xl lg:text-7xl font-light font-heading text-white leading-[1.1] tracking-wide animate-fade-up mb-16">
               Let&apos;s Build<br />Something Together
-            </h1>
+            </p>
 
             <ScrollReveal>
               {submitted ? (

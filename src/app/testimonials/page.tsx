@@ -22,10 +22,10 @@ export default function TestimonialsPage() {
       <section className="relative pt-44 pb-24">
         <div className="max-w-7xl mx-auto px-8 md:px-16">
           <div className="max-w-2xl">
-            <p className="section-label mb-8 animate-fade-in">Client Experiences</p>
-            <h1 className="text-4xl md:text-5xl font-light font-heading text-white leading-tight tracking-wide animate-fade-up">
+            <h1 className="section-label mb-8 animate-fade-in">Fatahi Building Client Reviews</h1>
+            <p className="text-4xl md:text-5xl font-light font-heading text-white leading-tight tracking-wide animate-fade-up">
               What our clients say
-            </h1>
+            </p>
             <div className="divider mt-10 mb-10 animate-fade-in animate-delay-200" />
             <p className="text-white/50 font-light leading-relaxed animate-fade-up animate-delay-200">
               Our reputation is defined by those we serve.

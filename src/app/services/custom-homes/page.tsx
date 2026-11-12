@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import ProcessJourney from "@/components/ProcessJourney";
+import Faq, { type FaqItem } from "@/components/Faq";
 import { customHomesPhases } from "@/data/process-phases";
 
 const galleryImages = [
@@ -12,6 +13,41 @@ const galleryImages = [
   { src: "/images/projects/poyntz/045-Images_035.jpg", alt: "Kitchen with marble backsplash and pendants" },
   { src: "/images/projects/poyntz/070-Images_060.jpg", alt: "Ensuite bathroom with freestanding tub" },
   { src: "/images/projects/terrace/3Q1A2268.JPG", alt: "Kitchen with black marble island and walnut details" },
+];
+
+const faqs: FaqItem[] = [
+  {
+    q: "How long before construction can start on a custom home in Toronto?",
+    a: "From our first conversation to permits in hand, there's about five to six months of work on average. That covers the design, the engineering, arborist reports where there are mature trees, and for most homes the Committee of Adjustment, which on its own adds two to four months at minimum.",
+    href: "/insights/custom-home-timeline-toronto-before-you-build",
+    linkLabel: "See how those months ran on our Old Yonge build.",
+  },
+  {
+    q: "Will my custom home need to go to the Committee of Adjustment?",
+    a: "For most homes nowadays, yes. A design that fits its lot often needs at least one minor variance, and each one is decided at a public hearing. We design with the zoning by-law in front of us, so we know every variance a design will need before the drawings are final.",
+    href: "/insights/committee-of-adjustment-toronto",
+    linkLabel: "Read how the Committee of Adjustment works.",
+  },
+  {
+    q: "How do you price a custom home?",
+    a: "We work off a fixed price. We settle the scope first, build an accurate budget and a real schedule around it, and then the number stops moving. The price holds for the scope you agreed on.",
+    href: "/insights/fixed-price-vs-cost-plus-custom-home",
+    linkLabel: "Fixed price and cost plus, compared.",
+  },
+  {
+    q: "What does it cost per square foot to build a custom home?",
+    a: "Two houses can be identical in size and cost completely different amounts to build, depending on the lot, the layout, the materials and the finishes. So we walk you through what our previous projects have averaged for those specific homes, and how much more or less yours would cost based on what you're planning.",
+    href: "/insights/cost-per-square-foot-custom-home",
+    linkLabel: "What a cost per square foot figure leaves out.",
+  },
+  {
+    q: "Can I bring my own architect or designer?",
+    a: "Yes. We design and build as one team, and we also build homes designed by outside architects. When we do, we build them the way they were drawn.",
+  },
+  {
+    q: "What is the first step?",
+    a: "A small one. Reach out, come see our past work in person or visit an active site, and sit down with us to talk through your goals, your needs and how you live. You leave with a direction, a timeline and a rough estimate. Committing to anything comes later.",
+  },
 ];
 
 export const metadata: Metadata = {
@@ -30,8 +66,8 @@ export default function CustomHomesPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/40 to-navy-dark/20" />
         <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 pb-24 w-full">
           <div className="max-w-2xl">
-            <p className="section-label mb-8 animate-fade-in">Custom Homes</p>
-            <h1 className="font-heading text-4xl md:text-5xl font-light text-white leading-tight tracking-wide animate-fade-up">Designed around<br />your life</h1>
+            <h1 className="section-label mb-8 animate-fade-in">Custom Home Builder in Toronto &amp; North York</h1>
+            <p className="font-heading text-4xl md:text-5xl font-light text-white leading-tight tracking-wide animate-fade-up">Designed around<br />your life</p>
             <p className="mt-6 text-lg text-white/70 font-light leading-relaxed animate-fade-up animate-delay-200">A complete design-build experience. One team, one vision, one uncompromising standard.</p>
             <div className="divider mt-10 animate-fade-in animate-delay-300" />
           </div>
@@ -63,6 +99,68 @@ export default function CustomHomesPage() {
 
       <div className="section-sep" />
 
+      {/* WHAT IT INVOLVES */}
+      <section className="py-10 md:py-16">
+        <div className="max-w-3xl mx-auto px-8 md:px-16">
+          <ScrollReveal>
+            <p className="section-label mb-8">Building a Custom Home in Toronto</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-light text-white tracking-wide mb-10">What building with us involves</h2>
+            <div className="prose-custom">
+              <p>
+                We design and build custom homes in Toronto, with most of our
+                work in North York. Design, engineering, approvals and
+                construction are handled by one team, so the home you approve
+                on paper is the home you move into.
+              </p>
+
+              <h3>Before construction: five to six months on paper</h3>
+              <p>
+                From our first conversation to permits in hand, there&apos;s
+                about five to six months of work on average before we can put
+                a shovel in the ground. That covers the design, the
+                engineering, arborist reports where there are{" "}
+                <Link href="/insights/tree-protection-zones-toronto">mature trees</Link>,
+                and for most homes now, the{" "}
+                <Link href="/insights/committee-of-adjustment-toronto">Committee of Adjustment</Link>,
+                which on its own adds two to four months at minimum.
+              </p>
+              <p>
+                None of that work happens on site, so it&apos;s the part nobody
+                sees. It&apos;s also what decides how the build goes. We wrote
+                about{" "}
+                <Link href="/insights/custom-home-timeline-toronto-before-you-build">how those months ran on our Old Yonge build</Link>.
+              </p>
+
+              <h3>A fixed price, built on the property and the drawings</h3>
+              <p>
+                We work off a fixed price. We settle the scope first, we build
+                an accurate budget and a real schedule around it, and then the
+                number stops moving. That price is built on time spent on your
+                property and time spent on the drawings, which is why we
+                don&apos;t price a home from a photo. Here is{" "}
+                <Link href="/insights/fixed-price-vs-cost-plus-custom-home">how a fixed price compares with cost plus</Link>,
+                and{" "}
+                <Link href="/insights/cost-per-square-foot-custom-home">why a cost per square foot doesn&apos;t tell you much</Link>.
+              </p>
+
+              <h3>The part of the house you never see</h3>
+              <p>
+                On our current build on Old Yonge Street in North York, the
+                foundation walls run full height in concrete, the basement has
+                11-foot ceilings with radiant heated floors in the slab, and
+                the elevator was planned from the first drawing. That stage is
+                covered in{" "}
+                <Link href="/insights/custom-home-foundation-north-york">The Concrete on This House Doesn&apos;t Stop at the Ground</Link>,
+                and the thinking behind it in{" "}
+                <Link href="/insights/the-90-percent-you-never-see">The 90% You&apos;ll Never See</Link>.
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <div className="section-sep" />
+
       {/* PROCESS */}
       <ProcessJourney phases={customHomesPhases} heading="How your home comes to life" />
 
@@ -88,6 +186,53 @@ export default function CustomHomesPage() {
           </div>
         </div>
       </section>
+
+      <div className="section-sep" />
+
+      {/* RECENT WORK AND AREAS */}
+      <section className="py-10 md:py-16">
+        <div className="max-w-3xl mx-auto px-8 md:px-16">
+          <ScrollReveal>
+            <p className="section-label mb-8">Recent Custom Homes</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-light text-white tracking-wide mb-10">Where we&apos;ve been building</h2>
+            <div className="prose-custom">
+              <ul>
+                <li>
+                  <strong>Old Yonge, North York (under construction).</strong>{" "}
+                  A new custom home with more than 8,000 square feet of living
+                  space. Design began in the spring of 2026, the permits came
+                  through at the end of September, and the foundation is going
+                  in now.
+                </li>
+                <li>
+                  <strong>Betty Ann and Farrell, Willowdale West.</strong> Two
+                  custom homes completed in the past year.
+                </li>
+                <li>
+                  <strong>Poyntz, North York (2023).</strong> A modern custom
+                  home at Yonge and Sheppard.{" "}
+                  <Link href="/projects/131-poyntz-ave">See the project</Link>.
+                </li>
+                <li>
+                  <strong>Terrace, North York (2021).</strong>{" "}
+                  <Link href="/projects/23-terrace">See the project</Link>.
+                </li>
+              </ul>
+              <p>
+                Most of our work sits in Willowdale West and along the Yonge
+                corridor through North York, including the streets around Old
+                Yonge, and we build across Toronto and the GTA. If you&apos;re
+                looking at a lot here, start with{" "}
+                <Link href="/insights/building-custom-homes-north-york">what it&apos;s actually like to build a custom home in North York</Link>.
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <div className="section-sep" />
+
+      <Faq heading="Custom home questions we hear most" items={faqs} />
 
       <div className="section-sep" />
 

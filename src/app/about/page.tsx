@@ -19,12 +19,12 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-28 items-center">
             <div>
               <div className="divider mb-10" />
-              <p className="section-label mb-8">About Us</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-light text-white leading-tight tracking-wide">
+              <h1 className="section-label mb-8">About Fatahi Building, a Design-Build Firm in Toronto</h1>
+              <p className="text-4xl md:text-5xl lg:text-6xl font-heading font-light text-white leading-tight tracking-wide">
                 Two generations.
                 <br />
                 One standard.
-              </h1>
+              </p>
               <p className="mt-6 text-lg md:text-xl text-white/70 font-light leading-relaxed">
                 A father and son united by a singular conviction: that the mind
                 which conceives a home should be the same one that brings it to

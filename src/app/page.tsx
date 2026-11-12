@@ -61,11 +61,14 @@ export default function Home() {
         <div className="relative z-10 px-[5%] pb-28 w-full">
           <div className="max-w-2xl">
             <div className="divider mb-10 animate-fade-in" />
-            <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-light text-white leading-[1.15] tracking-wide animate-fade-up">
+            <h1 className="section-label mb-8 animate-fade-in">
+              Custom Home Builder in Toronto &amp; the GTA
+            </h1>
+            <p className="font-heading text-5xl md:text-6xl lg:text-7xl font-light text-white leading-[1.15] tracking-wide animate-fade-up">
               One team.
               <br />
               Concept to completion.
-            </h1>
+            </p>
             <p className="mt-8 text-lg md:text-xl text-white/60 font-light leading-relaxed animate-fade-up animate-delay-200 max-w-lg">
               Luxury residences in Toronto &amp; the GTA. Three decades
               of design-build mastery.

@@ -13,12 +13,34 @@ const projects = [
   { slug: "23-terrace", title: "Terrace", location: "North York, Toronto", type: "Custom Home", year: "2021", image: "/images/projects/terrace/dining.jpg", description: "A warm, sophisticated custom home with walnut ceiling details, black marble kitchen island with brass fixtures, and floating oak staircase." },
 ];
 
-const inProgress = [
+const inProgress: {
+  title: string;
+  location: string;
+  type: string;
+  expected?: string;
+  status?: string;
+  image: string;
+  highlights: string[];
+  description: string;
+  href?: string;
+  linkLabel?: string;
+}[] = [
+  {
+    title: "Old Yonge",
+    location: "North York, Toronto",
+    type: "Custom Home",
+    status: "Under construction",
+    image: "/images/projects/old-yonge/exterior-1.jpg",
+    highlights: ["8,000+ sq ft", "3-car garage", "Heated driveway", "Elevator", "11’ basement ceilings", "Walkout basement", "Radiant heated floors"],
+    description: "A modern custom home in the heart of North York that blends open-concept living with contemporary styling, designed for effortless living. Grand open spaces and tall ceilings, warmed by natural materials and millwork, with a three-car garage, a heated driveway, an elevator, and a walkout basement.",
+    href: "/insights/custom-home-foundation-north-york",
+    linkLabel: "Follow the Build",
+  },
   {
     title: "Betty Ann",
     location: "North York, Toronto",
     type: "Custom Home",
-    expected: "Summer 2026",
+    expected: "Spring 2027",
     image: "/images/projects/betty-ann/exterior-1.jpg",
     highlights: ["~7,000 sq ft", "10.5\u2019 main floor ceilings", "12\u2019 basement ceilings", "4 bed / 8 bath", "Elevator", "3-car garage"],
     description: "A statement custom home with heated driveway, walkout basement, massive aluminum windows, engineered white oak flooring and millwork throughout, dual show-and-chef\u2019s kitchen, and a deck integrated into the concrete structure.",
@@ -27,7 +49,7 @@ const inProgress = [
     title: "Farrell",
     location: "North York, Toronto",
     type: "Custom Home",
-    expected: "Summer 2026",
+    expected: "Spring 2027",
     image: "/images/projects/farrell/exterior-1.jpg",
     highlights: ["~4,500 sq ft", "14\u2019 basement ceilings", "2-car garage", "Walkout basement", "Open concept", "Heated driveway"],
     description: "A modern custom home with 14-foot basement ceilings, oversized windows on every floor, engineered white oak flooring throughout, a chef\u2019s kitchen with top-of-the-line appliances, heated driveway, and a walkout lower level.",
@@ -42,8 +64,8 @@ export default function ProjectsPage() {
         <div className="max-w-7xl mx-auto px-8 md:px-16">
           <ScrollReveal>
             <div className="max-w-2xl">
-              <p className="section-label mb-8">Our Work</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light font-heading text-white leading-tight tracking-wide">Selected Projects</h1>
+              <h1 className="section-label mb-8">Custom Home Projects in Toronto &amp; North York</h1>
+              <p className="text-4xl md:text-5xl lg:text-6xl font-light font-heading text-white leading-tight tracking-wide">Selected Projects</p>
               <div className="divider mt-10 mb-10" />
               <p className="text-white/50 font-light leading-relaxed max-w-lg">
                 Each residence begins with a deeply personal vision. These are some of the homes we&apos;ve brought to life across Toronto and the GTA.
@@ -101,13 +123,13 @@ export default function ProjectsPage() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-14">
             {inProgress.map((project, i) => (
               <ScrollReveal key={project.title} delay={i * 100}>
                 <div className="text-center">
                   <p className="section-label mb-4">{project.type}</p>
                   <h3 className="text-2xl md:text-3xl font-light font-heading text-white tracking-wide">{project.title}</h3>
-                  <p className="text-white/40 text-sm font-light mt-2">{project.location} &middot; Est. {project.expected}</p>
+                  <p className="text-white/40 text-sm font-light mt-2">{project.location} &middot; {project.status ?? `Est. ${project.expected}`}</p>
                   <div className="w-10 h-px bg-beige/30 mx-auto my-6" />
                   <p className="text-white/70 font-light text-sm leading-relaxed mb-6">{project.description}</p>
                   <div className="flex flex-wrap justify-center gap-2">
@@ -117,6 +139,14 @@ export default function ProjectsPage() {
                       </span>
                     ))}
                   </div>
+                  {project.href && project.linkLabel ? (
+                    <Link href={project.href} className="inline-flex items-center text-beige text-[13px] font-medium tracking-[0.15em] hover:text-beige-light transition-colors duration-300 mt-8">
+                      {project.linkLabel}
+                      <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                      </svg>
+                    </Link>
+                  ) : null}
                 </div>
               </ScrollReveal>
             ))}
