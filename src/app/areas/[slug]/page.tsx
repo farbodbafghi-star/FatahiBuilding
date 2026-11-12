@@ -32,6 +32,8 @@ export default async function AreaPage({ params }: Params) {
   const area = getArea(slug);
   if (!area) notFound();
 
+  const otherAreas = areas.filter((a) => a.slug !== area.slug);
+
   return (
     <>
       <JsonLd
@@ -44,7 +46,7 @@ export default async function AreaPage({ params }: Params) {
             description: area.description,
             url: `${SITE}/areas/${area.slug}`,
             provider: { "@id": BUSINESS_ID },
-            areaServed: { "@type": "Place", name: area.name },
+            areaServed: [area.name, ...area.places].map((name) => ({ "@type": "Place", name })),
           },
           breadcrumbSchema([
             { name: "Home", path: "/" },
@@ -56,21 +58,44 @@ export default async function AreaPage({ params }: Params) {
 
       {/* HERO */}
       <section className="relative pt-44 pb-16 md:pt-52 md:pb-20">
-        <div className="max-w-3xl mx-auto px-8 md:px-16">
-          <Breadcrumbs
-            className="mb-8"
-            items={[
-              { name: "Home", path: "/" },
-              { name: "Areas We Serve", path: "/areas" },
-              { name: area.name },
-            ]}
-          />
-          <div className="divider mb-6" />
-          <h1 className="section-label mb-6">{area.h1}</h1>
-          <p className="text-4xl md:text-5xl font-light font-heading text-white leading-tight tracking-wide mb-10">
-            {area.headline}
-          </p>
-          <div className="prose-custom">{area.intro}</div>
+        <div className="max-w-7xl mx-auto px-8 md:px-16">
+          <div className="max-w-3xl">
+            <Breadcrumbs
+              className="mb-8"
+              items={[
+                { name: "Home", path: "/" },
+                { name: "Areas We Serve", path: "/areas" },
+                { name: area.name },
+              ]}
+            />
+            <div className="divider mb-6" />
+            <h1 className="section-label mb-6">{area.h1}</h1>
+            <p className="text-4xl md:text-5xl lg:text-6xl font-light font-heading text-white leading-tight tracking-wide mb-10">
+              {area.headline}
+            </p>
+            <div className="prose-custom">{area.intro}</div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-sep" />
+
+      {/* PLACES */}
+      <section className="py-10 md:py-16">
+        <div className="max-w-7xl mx-auto px-8 md:px-16">
+          <ScrollReveal>
+            <p className="section-label mb-8">Where We Serve</p>
+            <h2 className="text-3xl md:text-4xl font-light font-heading text-white tracking-wide mb-10">
+              {area.placesHeading}
+            </h2>
+            <ul className="flex flex-wrap gap-2 max-w-5xl">
+              {area.places.map((place) => (
+                <li key={place} className="text-[12px] font-light tracking-[0.1em] text-white/70 border border-white/10 px-4 py-2">
+                  {place}
+                </li>
+              ))}
+            </ul>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -98,13 +123,36 @@ export default async function AreaPage({ params }: Params) {
 
       <div className="section-sep" />
 
+      {/* OTHER AREAS */}
+      <section className="py-10 md:py-16">
+        <div className="max-w-7xl mx-auto px-8 md:px-16">
+          <ScrollReveal>
+            <p className="section-label mb-8">Other Areas We Serve</p>
+            <ul className="flex flex-wrap gap-2">
+              {otherAreas.map((other) => (
+                <li key={other.slug}>
+                  <Link
+                    href={`/areas/${other.slug}`}
+                    className="inline-block text-[12px] font-light tracking-[0.1em] text-beige border border-beige/40 px-4 py-2 hover:bg-beige hover:text-navy transition-all duration-300"
+                  >
+                    {other.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <div className="section-sep" />
+
       {/* CTA */}
       <section className="relative py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-8 md:px-16 text-center">
           <ScrollReveal>
             <p className="section-label mb-8">{area.name}</p>
             <h2 className="text-3xl md:text-4xl font-light font-heading text-white tracking-wide mb-6">
-              Find out what your lot will allow
+              Tell us where you&apos;re building
             </h2>
             <div className="divider mx-auto mb-8" />
             <p className="text-white/50 font-light leading-relaxed max-w-md mx-auto mb-10">

@@ -17,6 +17,11 @@ const nextConfig: NextConfig = {
       // These two were linked from the nav/footer but had no page.
       { source: "/process", destination: "/services/custom-homes", permanent: true },
       { source: "/services", destination: "/services/custom-homes", permanent: true },
+      // Area pages were regrouped into regions; send the earlier URLs to their region.
+      { source: "/areas/willowdale", destination: "/areas/north-york", permanent: true },
+      { source: "/areas/york-mills", destination: "/areas/north-york", permanent: true },
+      { source: "/areas/vaughan", destination: "/areas/york-region", permanent: true },
+      { source: "/areas/richmond-hill", destination: "/areas/york-region", permanent: true },
     ];
   },
 };

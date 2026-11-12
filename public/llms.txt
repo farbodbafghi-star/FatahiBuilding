@@ -35,9 +35,13 @@
 
 ## Areas we serve
 
-- [Willowdale, North York](https://www.fatahibuilding.com/areas/willowdale): where most of our recent homes are.
-- [York Mills, Toronto](https://www.fatahibuilding.com/areas/york-mills): where we are building now, on Old Yonge Street.
-- [Vaughan](https://www.fatahibuilding.com/areas/vaughan), [Richmond Hill](https://www.fatahibuilding.com/areas/richmond-hill) and [Etobicoke](https://www.fatahibuilding.com/areas/etobicoke): areas we serve, with each municipality's own building rules summarized.
+- [Toronto](https://www.fatahibuilding.com/areas/toronto): Rosedale, Forest Hill, Lawrence Park, Yorkville, Summerhill, Moore Park, Midtown and central Toronto.
+- [North York](https://www.fatahibuilding.com/areas/north-york): The Bridle Path, Hoggs Hollow, York Mills, Bayview Village, Willowdale. Most of our work is here.
+- [Etobicoke](https://www.fatahibuilding.com/areas/etobicoke): The Kingsway, Humber Valley Village, Princess Anne Manor.
+- [East York](https://www.fatahibuilding.com/areas/east-york): Leaside, Bennington Heights, Governor's Bridge.
+- [Scarborough](https://www.fatahibuilding.com/areas/scarborough): The Bluffs, Guildwood, Birch Cliff.
+- [York Region](https://www.fatahibuilding.com/areas/york-region): King City, Kleinburg, Thornhill, Vaughan, Richmond Hill, Markham, Aurora, Newmarket.
+- [Peel, Halton and Durham](https://www.fatahibuilding.com/areas/peel-halton-durham): Oakville, Lorne Park, Mineola, Mississauga, Burlington, Pickering.
 - [Full list of areas we serve](https://www.fatahibuilding.com/areas)
 
 ## Projects

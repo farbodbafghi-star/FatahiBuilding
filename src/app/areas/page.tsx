@@ -3,7 +3,7 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
-import { areas, serviceRegions } from "@/data/areas";
+import { areas } from "@/data/areas";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -47,68 +47,43 @@ export default function AreasPage() {
 
       <div className="section-sep" />
 
-      {/* SERVICE LIST */}
+      {/* REGIONS */}
       <section className="py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-8 md:px-16">
           <div className="divide-y divide-white/[0.06] border-y border-white/[0.06]">
-            {serviceRegions.map((group) => (
-              <ScrollReveal key={group.region}>
+            {areas.map((area) => (
+              <ScrollReveal key={area.slug}>
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-12 py-10">
-                  <h2 className="text-2xl font-light font-heading text-white tracking-wide">{group.region}</h2>
+                  <div>
+                    <h2 className="text-2xl font-light font-heading text-white tracking-wide">
+                      <Link href={`/areas/${area.slug}`} className="hover:text-beige transition-colors duration-300">
+                        {area.name}
+                      </Link>
+                    </h2>
+                    <Link
+                      href={`/areas/${area.slug}`}
+                      className="inline-flex items-center text-beige text-[12px] font-medium tracking-[0.15em] hover:text-beige-light transition-colors duration-300 mt-4 group"
+                    >
+                      View {area.name}
+                      <svg className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                      </svg>
+                    </Link>
+                  </div>
                   <ul className="lg:col-span-3 flex flex-wrap gap-2">
-                    {group.places.map((place) =>
-                      place.slug ? (
-                        <li key={place.name}>
-                          <Link
-                            href={`/areas/${place.slug}`}
-                            className="inline-block text-[12px] font-light tracking-[0.1em] text-beige border border-beige/40 px-4 py-2 hover:bg-beige hover:text-navy transition-all duration-300"
-                          >
-                            {place.name}
-                          </Link>
-                        </li>
-                      ) : (
-                        <li key={place.name} className="text-[12px] font-light tracking-[0.1em] text-white/60 border border-white/10 px-4 py-2">
-                          {place.name}
-                        </li>
-                      )
-                    )}
+                    {area.places.map((place) => (
+                      <li key={place} className="text-[12px] font-light tracking-[0.1em] text-white/60 border border-white/10 px-4 py-2">
+                        {place}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </ScrollReveal>
             ))}
           </div>
           <p className="text-white/40 font-light text-sm leading-relaxed mt-8 max-w-2xl">
-            Don&apos;t see your neighbourhood? We serve the whole Greater
-            Toronto Area. Areas outlined in gold have their own page.
+            Don&apos;t see your neighbourhood? We serve the whole Greater Toronto Area.
           </p>
-        </div>
-      </section>
-
-      <div className="section-sep" />
-
-      {/* AREA GUIDES */}
-      <section className="py-10 md:py-16">
-        <div className="max-w-7xl mx-auto px-8 md:px-16">
-          <ScrollReveal>
-            <div className="mb-12">
-              <p className="section-label mb-8">Area Guides</p>
-              <h2 className="text-3xl md:text-4xl font-light font-heading text-white tracking-wide">Building in your area</h2>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {areas.map((area) => (
-                <Link key={area.slug} href={`/areas/${area.slug}`} className="group block border border-white/[0.06] p-8 hover:border-beige/30 transition-colors duration-500">
-                  <h3 className="text-2xl font-light font-heading text-white tracking-wide group-hover:text-beige transition-colors duration-300">{area.name}</h3>
-                  <p className="text-white/60 font-light text-sm leading-relaxed mt-4">{area.description}</p>
-                </Link>
-              ))}
-              <Link href="/insights/building-custom-homes-north-york" className="group block border border-white/[0.06] p-8 hover:border-beige/30 transition-colors duration-500">
-                <h3 className="text-2xl font-light font-heading text-white tracking-wide group-hover:text-beige transition-colors duration-300">North York</h3>
-                <p className="text-white/60 font-light text-sm leading-relaxed mt-4">
-                  What it&apos;s actually like to build a custom home in North York: wide lots and mature trees, and what comes with them.
-                </p>
-              </Link>
-            </div>
-          </ScrollReveal>
         </div>
       </section>
 
