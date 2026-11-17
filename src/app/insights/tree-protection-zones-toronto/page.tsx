@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "A tree protection zone is drawn around roots nobody can see, calculated from the trunk. What it is, why one zone can carry two fences, and why it comes first.",
   alternates: { canonical: "/insights/tree-protection-zones-toronto" },
-  ...social({ path: "/insights/tree-protection-zones-toronto", type: "article", publishedTime: "2026-09-08", modifiedTime: "2026-11-11" }),
+  ...social({ path: "/insights/tree-protection-zones-toronto", type: "article", publishedTime: "2026-09-08", modifiedTime: "2026-11-17" }),
 };
 
 export default function TreeProtectionZonesArticle() {
@@ -24,7 +24,7 @@ export default function TreeProtectionZonesArticle() {
             description: String(metadata.description),
             slug: "tree-protection-zones-toronto",
             datePublished: "2026-09-08",
-            dateModified: "2026-11-11",
+            dateModified: "2026-11-17",
           }),
           insightBreadcrumbs("You Can Kill a Tree on a Construction Site Without Ever Touching It", "tree-protection-zones-toronto"),
         ]}
@@ -173,7 +173,9 @@ export default function TreeProtectionZonesArticle() {
           <h2>The Fence Isn&apos;t Drawn Around the Tree</h2>
           <p>Here&apos;s the part that reframes the whole thing.</p>
           <p>
-            A tree protection zone is a set radius around the trunk, and{" "}
+            A{" "}
+            <a href="https://www.toronto.ca/services-payments/building-construction/tree-ravine-protection-permits/" target="_blank" rel="noopener noreferrer">tree protection zone</a>{" "}
+            is a set radius around the trunk, and{" "}
             <strong>the radius isn&apos;t chosen by eye.</strong> It comes off
             the diameter of the trunk. Trunk size is how you work out how far
             the roots are likely to run, so the protected area is calculated

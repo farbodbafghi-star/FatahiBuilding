@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "The Committee of Adjustment quietly adds two to four months to a custom home in Toronto. What it is, when you need a minor variance, and how to get through it.",
   alternates: { canonical: "/insights/committee-of-adjustment-toronto" },
-  ...social({ path: "/insights/committee-of-adjustment-toronto", type: "article", publishedTime: "2026-07-03", modifiedTime: "2026-11-11" }),
+  ...social({ path: "/insights/committee-of-adjustment-toronto", type: "article", publishedTime: "2026-07-03", modifiedTime: "2026-11-17" }),
 };
 
 export default function CommitteeOfAdjustmentArticle() {
@@ -24,7 +24,7 @@ export default function CommitteeOfAdjustmentArticle() {
             description: String(metadata.description),
             slug: "committee-of-adjustment-toronto",
             datePublished: "2026-07-03",
-            dateModified: "2026-11-11",
+            dateModified: "2026-11-17",
           }),
           insightBreadcrumbs("The Committee of Adjustment: The Approval Step Most Homeowners Have Never Heard Of", "committee-of-adjustment-toronto"),
         ]}
@@ -146,7 +146,8 @@ export default function CommitteeOfAdjustmentArticle() {
 
           <h2>What the Committee of Adjustment Actually Is</h2>
           <p>
-            Every property in Toronto is governed by a zoning by-law. It sets
+            Every property in Toronto is governed by a{" "}
+            <a href="https://www.toronto.ca/city-government/planning-development/zoning-by-law-preliminary-zoning-reviews/zoning-by-law-569-2013-2/" target="_blank" rel="noopener noreferrer">zoning by-law</a>. It sets
             the rules for what you&apos;re allowed to build without any special
             permission: the maximum height, the required distance from each
             property line (the setbacks), how much of the lot the building can
@@ -211,8 +212,9 @@ export default function CommitteeOfAdjustmentArticle() {
 
           <h2>The Four Tests the Panel Weighs</h2>
           <p>
-            A minor variance isn&apos;t granted because you asked nicely. Under
-            Section 45(1) of Ontario&apos;s Planning Act, the Committee has to be
+            A minor variance isn&apos;t granted because you asked nicely. Under{" "}
+            <a href="https://www.ontario.ca/laws/statute/90p13" target="_blank" rel="noopener noreferrer">Section 45(1) of Ontario&apos;s Planning Act</a>, the{" "}
+            <a href="https://www.toronto.ca/city-government/planning-development/committee-of-adjustment/" target="_blank" rel="noopener noreferrer">Committee</a> has to be
             satisfied on four points, the &ldquo;four tests&rdquo;:
           </p>
           <ol>
@@ -281,7 +283,8 @@ export default function CommitteeOfAdjustmentArticle() {
               there&apos;s a short appeal period (20 days for a minor variance).
               If no one appeals, the decision becomes final. If someone does,
               whether a neighbour objecting or the applicant after a refusal, it
-              goes to the <strong>Toronto Local Appeal Body (TLAB)</strong>, a
+              goes to the{" "}
+              <a href="https://www.toronto.ca/city-government/accountability-operations-customer-service/city-administration/city-managers-office/agencies-corporations/adjudicative-boards/toronto-local-appeal-body/" target="_blank" rel="noopener noreferrer"><strong>Toronto Local Appeal Body (TLAB)</strong></a>, a
               separate and longer process.
             </li>
           </ol>

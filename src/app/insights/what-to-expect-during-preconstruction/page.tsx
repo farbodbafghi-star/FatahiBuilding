@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "The weeks before construction begins are where the real decisions happen. Here's what preconstruction looks like for a custom home in Toronto.",
   alternates: { canonical: "/insights/what-to-expect-during-preconstruction" },
-  ...social({ path: "/insights/what-to-expect-during-preconstruction", type: "article", publishedTime: "2026-03-21", modifiedTime: "2026-11-11" }),
+  ...social({ path: "/insights/what-to-expect-during-preconstruction", type: "article", publishedTime: "2026-03-21", modifiedTime: "2026-11-17" }),
 };
 
 export default function PreconstructionArticle() {
@@ -24,7 +24,7 @@ export default function PreconstructionArticle() {
             description: String(metadata.description),
             slug: "what-to-expect-during-preconstruction",
             datePublished: "2026-03-21",
-            dateModified: "2026-11-11",
+            dateModified: "2026-11-17",
           }),
           insightBreadcrumbs("What to Expect During Preconstruction", "what-to-expect-during-preconstruction"),
         ]}
@@ -135,7 +135,10 @@ export default function PreconstructionArticle() {
             possible:
           </p>
           <p>
-            <strong>Zoning bylaws.</strong> How far you can build from the
+            <strong>
+              <a href="https://www.toronto.ca/city-government/planning-development/zoning-by-law-preliminary-zoning-reviews/zoning-by-law-569-2013-2/" target="_blank" rel="noopener noreferrer">Zoning bylaws</a>.
+            </strong>{" "}
+            How far you can build from the
             property line (setbacks), maximum height, lot coverage limits,
             number of storeys. In many North York neighbourhoods, these are
             tighter than people expect.

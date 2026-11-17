@@ -6,7 +6,16 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
-import { AREAS_SERVED, BUSINESS_ID, SITE } from "@/lib/schema";
+import {
+  AREAS_SERVED,
+  BUSINESS_ID,
+  CITY_ADDRESS,
+  FARBOD_ID,
+  MAJID_ID,
+  SITE,
+  WEBSITE_ID,
+  peopleSchema,
+} from "@/lib/schema";
 import { social } from "@/lib/metadata";
 
 // Set NEXT_PUBLIC_GA_ID in Vercel (Project → Settings → Environment Variables).
@@ -42,11 +51,9 @@ const businessSchema = {
   name: "Fatahi Building",
   legalName: "Fatahi Building Inc.",
   foundingDate: "2020",
-  founder: {
-    "@type": "Person",
-    name: "Majid Fatahi",
-    jobTitle: "Founder, Lead Designer & Builder",
-  },
+  founder: { "@id": MAJID_ID },
+  employee: [{ "@id": MAJID_ID }, { "@id": FARBOD_ID }],
+  address: CITY_ADDRESS,
   knowsAbout: [
     "Custom home building",
     "Design-build",
@@ -56,7 +63,8 @@ const businessSchema = {
   ],
   url: "https://www.fatahibuilding.com",
   logo: "https://www.fatahibuilding.com/icon.png",
-  image: "https://www.fatahibuilding.com/icon.png",
+  // A real photo of our work; the logo stays in `logo` above.
+  image: "https://www.fatahibuilding.com/images/share/default.jpg",
   telephone: "+1-647-631-1211",
   email: "info@fatahibuilding.com",
   description:
@@ -64,7 +72,7 @@ const businessSchema = {
   areaServed: AREAS_SERVED,
   // Add each new official profile here as it goes live (Houzz, Bing Places, Yelp...).
   sameAs: [
-    "https://instagram.com/fatahibuilding",
+    "https://www.instagram.com/fatahibuilding",
     "https://www.linkedin.com/company/fatahi-building-inc/",
   ],
 };
@@ -72,6 +80,7 @@ const businessSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": WEBSITE_ID,
   name: "Fatahi Building",
   url: SITE,
   publisher: { "@id": BUSINESS_ID },
@@ -86,7 +95,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${cormorant.variable} ${inter.variable} antialiased`}>
-        <JsonLd data={[businessSchema, websiteSchema]} />
+        <JsonLd data={[businessSchema, websiteSchema, ...peopleSchema]} />
         <Header />
         <main>{children}</main>
         <Footer />

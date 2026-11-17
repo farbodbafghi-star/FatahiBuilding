@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, projectSchema } from "@/lib/schema";
 import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
@@ -33,11 +33,23 @@ export default function TerracePage() {
   return (
     <>
       <JsonLd
-        data={breadcrumbSchema([
-          { name: "Home", path: "/" },
-          { name: "Projects", path: "/projects" },
-          { name: "Terrace", path: "/projects/23-terrace" },
-        ])}
+        data={[
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Projects", path: "/projects" },
+            { name: "Terrace", path: "/projects/23-terrace" },
+          ]),
+          projectSchema({
+            name: "Terrace",
+            description: String(metadata.description),
+            path: "/projects/23-terrace",
+            yearCompleted: "2021",
+            images: [
+              "/images/projects/terrace/dining.jpg",
+              ...galleryImages.slice(0, 3).map((photo) => photo.src),
+            ],
+          }),
+        ]}
       />
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[500px] flex items-end">

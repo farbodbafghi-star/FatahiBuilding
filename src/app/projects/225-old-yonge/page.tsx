@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, projectSchema } from "@/lib/schema";
 import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
@@ -73,11 +73,19 @@ export default function OldYongeProjectPage() {
   return (
     <>
       <JsonLd
-        data={breadcrumbSchema([
-          { name: "Home", path: "/" },
-          { name: "Projects", path: "/projects" },
-          { name: "Old Yonge", path: "/projects/225-old-yonge" },
-        ])}
+        data={[
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Projects", path: "/projects" },
+            { name: "Old Yonge", path: "/projects/225-old-yonge" },
+          ]),
+          // Under construction: no completion year and no photos yet.
+          projectSchema({
+            name: "Old Yonge",
+            description: String(metadata.description),
+            path: "/projects/225-old-yonge",
+          }),
+        ]}
       />
 
       {/* HERO */}

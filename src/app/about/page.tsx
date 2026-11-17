@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
-import { BUSINESS_ID, SITE, breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema } from "@/lib/schema";
 import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
@@ -17,33 +17,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
+      {/* Majid and Farbod are described once, site-wide, in the root layout. */}
       <JsonLd
-        data={[
-          {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            name: "Majid Fatahi",
-            jobTitle: "Founder, Lead Designer & Builder",
-            worksFor: { "@id": BUSINESS_ID },
-            image: `${SITE}/images/branding/majid-portrait.jpg`,
-            sameAs: ["https://www.linkedin.com/in/majidfatahi/"],
-            url: `${SITE}/about`,
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            name: "Farbod Fatahi",
-            jobTitle: "Client Relations & Project Management",
-            worksFor: { "@id": BUSINESS_ID },
-            image: `${SITE}/images/branding/farbod-portrait.jpg`,
-            sameAs: ["https://www.linkedin.com/in/farbodfatahi/"],
-            url: `${SITE}/about`,
-          },
-          breadcrumbSchema([
-            { name: "Home", path: "/" },
-            { name: "About", path: "/about" },
-          ]),
-        ]}
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "About", path: "/about" },
+        ])}
       />
       {/* HERO */}
       <section className="relative pt-44 pb-24 md:pt-52 md:pb-28">

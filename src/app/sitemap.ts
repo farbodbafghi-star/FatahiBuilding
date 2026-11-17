@@ -9,7 +9,7 @@ const BASE = "https://www.fatahibuilding.com";
 const AREAS_UPDATED = "2026-11-12";
 
 const pages: { path: string; priority: number; updated: string }[] = [
-  { path: "/", priority: 1, updated: "2026-11-12" },
+  { path: "/", priority: 1, updated: "2026-11-17" },
   { path: "/services/custom-homes", priority: 0.9, updated: "2026-11-12" },
   { path: "/services/transformations", priority: 0.9, updated: "2026-11-12" },
   { path: "/services/additions", priority: 0.9, updated: "2026-11-12" },
@@ -32,11 +32,11 @@ const pages: { path: string; priority: number; updated: string }[] = [
   { path: "/insights/custom-home-timeline-toronto-before-you-build", priority: 0.6, updated: "2026-11-11" },
   { path: "/insights/fixed-price-vs-cost-plus-custom-home", priority: 0.6, updated: "2026-11-11" },
   { path: "/insights/the-90-percent-you-never-see", priority: 0.6, updated: "2026-11-11" },
-  { path: "/insights/committee-of-adjustment-toronto", priority: 0.6, updated: "2026-11-11" },
-  { path: "/insights/tree-protection-zones-toronto", priority: 0.6, updated: "2026-11-11" },
+  { path: "/insights/committee-of-adjustment-toronto", priority: 0.6, updated: "2026-11-17" },
+  { path: "/insights/tree-protection-zones-toronto", priority: 0.6, updated: "2026-11-17" },
   { path: "/insights/building-custom-homes-north-york", priority: 0.6, updated: "2026-11-11" },
-  { path: "/insights/renovate-or-rebuild", priority: 0.6, updated: "2026-11-11" },
-  { path: "/insights/what-to-expect-during-preconstruction", priority: 0.6, updated: "2026-11-11" },
+  { path: "/insights/renovate-or-rebuild", priority: 0.6, updated: "2026-11-17" },
+  { path: "/insights/what-to-expect-during-preconstruction", priority: 0.6, updated: "2026-11-17" },
   { path: "/insights/why-layout-matters-more-than-finishes", priority: 0.6, updated: "2026-11-12" },
   { path: "/insights/why-design-build-changes-everything", priority: 0.6, updated: "2026-11-12" },
   { path: "/insights/choosing-materials-that-last", priority: 0.6, updated: "2026-11-11" },

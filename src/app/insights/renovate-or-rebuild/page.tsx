@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "The decision between renovating your existing home and building new isn\u2019t just about cost. Here\u2019s how to think through it clearly, from a team that does both.",
   alternates: { canonical: "/insights/renovate-or-rebuild" },
-  ...social({ path: "/insights/renovate-or-rebuild", type: "article", publishedTime: "2026-04-05", modifiedTime: "2026-11-11" }),
+  ...social({ path: "/insights/renovate-or-rebuild", type: "article", publishedTime: "2026-04-05", modifiedTime: "2026-11-17" }),
 };
 
 export default function RenovateOrRebuildArticle() {
@@ -24,7 +24,7 @@ export default function RenovateOrRebuildArticle() {
             description: String(metadata.description),
             slug: "renovate-or-rebuild",
             datePublished: "2026-04-05",
-            dateModified: "2026-11-11",
+            dateModified: "2026-11-17",
           }),
           insightBreadcrumbs("Is It Worth Renovating or Should You Rebuild?", "renovate-or-rebuild"),
         ]}
@@ -172,8 +172,9 @@ export default function RenovateOrRebuildArticle() {
 
           <h2>What the Lot Allows (and Doesn&apos;t)</h2>
           <p>
-            Zoning is the factor most homeowners underestimate. Toronto&apos;s
-            zoning bylaws have evolved significantly, and many older homes exist
+            Zoning is the factor most homeowners underestimate. Toronto&apos;s{" "}
+            <a href="https://www.toronto.ca/city-government/planning-development/zoning-by-law-preliminary-zoning-reviews/zoning-by-law-569-2013-2/" target="_blank" rel="noopener noreferrer">zoning bylaws</a>{" "}
+            have evolved significantly, and many older homes exist
             under rules that no longer apply.
           </p>
           <p>
