@@ -4,11 +4,13 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
 import JsonLd from "@/components/JsonLd";
 import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Fixed Price vs Cost Plus for a Custom Home | Fatahi Building",
   description: "Custom home builders in Toronto price a build one of two ways: cost plus or fixed price. How each works, what makes a fixed price hold, and what to ask.",
   alternates: { canonical: "/insights/fixed-price-vs-cost-plus-custom-home" },
+  ...social({ path: "/insights/fixed-price-vs-cost-plus-custom-home", type: "article", publishedTime: "2026-11-11", modifiedTime: "2026-11-11" }),
 };
 
 export default function FixedPriceVsCostPlusCustomHomeArticle() {
@@ -21,6 +23,7 @@ export default function FixedPriceVsCostPlusCustomHomeArticle() {
             description: String(metadata.description),
             slug: "fixed-price-vs-cost-plus-custom-home",
             datePublished: "2026-11-11",
+            dateModified: "2026-11-11",
           }),
           insightBreadcrumbs("The Two Ways to Price a Custom Home, and the One That Tells You What You'll Actually Pay", "fixed-price-vs-cost-plus-custom-home"),
         ]}
@@ -52,7 +55,7 @@ export default function FixedPriceVsCostPlusCustomHomeArticle() {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-light font-heading text-white leading-tight tracking-wide mb-8">
               The Two Ways to Price a Custom Home, and the One That Tells You What You&apos;ll Actually Pay
             </h1>
-            <p className="text-white/40 text-sm font-light">October 2026</p>
+            <p className="text-white/40 text-sm font-light">November 2026</p>
           </ScrollReveal>
         </div>
       </section>

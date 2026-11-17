@@ -4,12 +4,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
 import JsonLd from "@/components/JsonLd";
 import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "What Is Design-Build? Why It Changes Everything | Fatahi Building",
   description:
     "When the person who designs your home is the same person building it, nothing gets lost in translation. Here's what design-build looks like from the inside.",
   alternates: { canonical: "/insights/why-design-build-changes-everything" },
+  ...social({ path: "/insights/why-design-build-changes-everything", type: "article", publishedTime: "2026-03-21", modifiedTime: "2026-11-12" }),
 };
 
 export default function DesignBuildArticle() {
@@ -22,6 +24,7 @@ export default function DesignBuildArticle() {
             description: String(metadata.description),
             slug: "why-design-build-changes-everything",
             datePublished: "2026-03-21",
+            dateModified: "2026-11-12",
           }),
           insightBreadcrumbs("Why Design-Build Changes Everything", "why-design-build-changes-everything"),
         ]}

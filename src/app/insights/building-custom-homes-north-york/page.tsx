@@ -4,12 +4,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
 import JsonLd from "@/components/JsonLd";
 import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Building a Custom Home in North York | Fatahi Building",
   description:
     "What it's like to build a custom home in North York: wide lots and mature trees, plus the protection zones, variances and close neighbours that come with them.",
   alternates: { canonical: "/insights/building-custom-homes-north-york" },
+  ...social({ path: "/insights/building-custom-homes-north-york", type: "article", publishedTime: "2026-09-08", modifiedTime: "2026-11-11" }),
 };
 
 export default function NorthYorkArticle() {
@@ -22,6 +24,7 @@ export default function NorthYorkArticle() {
             description: String(metadata.description),
             slug: "building-custom-homes-north-york",
             datePublished: "2026-09-08",
+            dateModified: "2026-11-11",
           }),
           insightBreadcrumbs("What It's Actually Like to Build a Custom Home in North York", "building-custom-homes-north-york"),
         ]}

@@ -4,12 +4,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
 import JsonLd from "@/components/JsonLd";
 import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Custom Home Preconstruction: What to Expect | Fatahi Building",
   description:
     "The weeks before construction begins are where the real decisions happen. Here's what preconstruction looks like for a custom home in Toronto.",
   alternates: { canonical: "/insights/what-to-expect-during-preconstruction" },
+  ...social({ path: "/insights/what-to-expect-during-preconstruction", type: "article", publishedTime: "2026-03-21", modifiedTime: "2026-11-11" }),
 };
 
 export default function PreconstructionArticle() {
@@ -22,6 +24,7 @@ export default function PreconstructionArticle() {
             description: String(metadata.description),
             slug: "what-to-expect-during-preconstruction",
             datePublished: "2026-03-21",
+            dateModified: "2026-11-11",
           }),
           insightBreadcrumbs("What to Expect During Preconstruction", "what-to-expect-during-preconstruction"),
         ]}

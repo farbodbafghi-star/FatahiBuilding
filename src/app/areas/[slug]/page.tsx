@@ -7,6 +7,7 @@ import Faq from "@/components/Faq";
 import JsonLd from "@/components/JsonLd";
 import { areas, getArea } from "@/data/areas";
 import { BUSINESS_ID, SITE, breadcrumbSchema } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -24,6 +25,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     title: area.title,
     description: area.description,
     alternates: { canonical: `/areas/${area.slug}` },
+    ...social({ path: `/areas/${area.slug}` }),
   };
 }
 

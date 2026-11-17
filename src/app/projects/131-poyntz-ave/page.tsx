@@ -4,12 +4,14 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Modern Custom Home in North York: Poyntz | Fatahi Building",
   description:
     "A modern custom home in North York, Toronto with clean contemporary lines, a glass staircase, a marble fireplace surround and warm oak flooring.",
   alternates: { canonical: "/projects/131-poyntz-ave" },
+  ...social({ path: "/projects/131-poyntz-ave" }),
 };
 
 const galleryImages = [

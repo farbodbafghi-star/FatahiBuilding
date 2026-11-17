@@ -4,12 +4,14 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Custom Home in North York: Terrace | Fatahi Building",
   description:
     "A warm custom home in North York, Toronto with walnut ceiling details, a black marble kitchen island, brass fixtures and a floating oak staircase.",
   alternates: { canonical: "/projects/23-terrace" },
+  ...social({ path: "/projects/23-terrace" }),
 };
 
 const galleryImages = [

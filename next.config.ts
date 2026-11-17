@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   images: {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    qualities: [75, 95],
+    qualities: [75, 85, 95],
   },
   async redirects() {
     return [
@@ -17,6 +17,10 @@ const nextConfig: NextConfig = {
       // These two were linked from the nav/footer but had no page.
       { source: "/process", destination: "/services/custom-homes", permanent: true },
       { source: "/services", destination: "/services/custom-homes", permanent: true },
+      // Addresses from the earlier website that search engines still list.
+      { source: "/transformations", destination: "/services/transformations", permanent: true },
+      { source: "/servicesextensionsadditions", destination: "/services/additions", permanent: true },
+      { source: "/renovate-or-rebuild", destination: "/insights/renovate-or-rebuild", permanent: true },
       // Area pages were regrouped into regions; send the earlier URLs to their region.
       { source: "/areas/willowdale", destination: "/areas/north-york", permanent: true },
       { source: "/areas/york-mills", destination: "/areas/north-york", permanent: true },

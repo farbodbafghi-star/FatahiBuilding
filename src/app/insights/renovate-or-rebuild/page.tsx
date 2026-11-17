@@ -4,12 +4,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
 import JsonLd from "@/components/JsonLd";
 import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Renovate or Rebuild in Toronto: How to Decide | Fatahi Building",
   description:
     "The decision between renovating your existing home and building new isn\u2019t just about cost. Here\u2019s how to think through it clearly, from a team that does both.",
   alternates: { canonical: "/insights/renovate-or-rebuild" },
+  ...social({ path: "/insights/renovate-or-rebuild", type: "article", publishedTime: "2026-04-05", modifiedTime: "2026-11-11" }),
 };
 
 export default function RenovateOrRebuildArticle() {
@@ -22,6 +24,7 @@ export default function RenovateOrRebuildArticle() {
             description: String(metadata.description),
             slug: "renovate-or-rebuild",
             datePublished: "2026-04-05",
+            dateModified: "2026-11-11",
           }),
           insightBreadcrumbs("Is It Worth Renovating or Should You Rebuild?", "renovate-or-rebuild"),
         ]}

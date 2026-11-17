@@ -4,12 +4,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
 import JsonLd from "@/components/JsonLd";
 import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Tree Protection Zones in Toronto, Explained | Fatahi Building",
   description:
     "A tree protection zone is drawn around roots nobody can see, calculated from the trunk. What it is, why one zone can carry two fences, and why it comes first.",
   alternates: { canonical: "/insights/tree-protection-zones-toronto" },
+  ...social({ path: "/insights/tree-protection-zones-toronto", type: "article", publishedTime: "2026-09-08", modifiedTime: "2026-11-11" }),
 };
 
 export default function TreeProtectionZonesArticle() {
@@ -22,6 +24,7 @@ export default function TreeProtectionZonesArticle() {
             description: String(metadata.description),
             slug: "tree-protection-zones-toronto",
             datePublished: "2026-09-08",
+            dateModified: "2026-11-11",
           }),
           insightBreadcrumbs("You Can Kill a Tree on a Construction Site Without Ever Touching It", "tree-protection-zones-toronto"),
         ]}
@@ -54,7 +57,7 @@ export default function TreeProtectionZonesArticle() {
               You Can Kill a Tree on a Construction Site Without Ever Touching
               It
             </h1>
-            <p className="text-white/40 text-sm font-light">August 2026</p>
+            <p className="text-white/40 text-sm font-light">September 2026</p>
           </ScrollReveal>
         </div>
       </section>

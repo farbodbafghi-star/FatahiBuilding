@@ -4,12 +4,14 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
 import { BUSINESS_ID, SITE, breadcrumbSchema } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "About | Fatahi Building, Design-Build in Toronto",
   description:
     "A family-run design-build firm in Toronto. One team designs and builds every home, from the first conversation to the keys.",
   alternates: { canonical: "/about" },
+  ...social({ path: "/about" }),
 };
 
 export default function AboutPage() {
@@ -69,6 +71,8 @@ export default function AboutPage() {
                   width={1600}
                   height={2000}
                   quality={95}
+                  priority
+                  sizes="(min-width: 1280px) 560px, (min-width: 1024px) 42vw, 90vw"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -101,6 +105,7 @@ export default function AboutPage() {
                     width={1200}
                     height={1600}
                     quality={95}
+                    sizes="(min-width: 1280px) 560px, (min-width: 768px) 42vw, 90vw"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -136,6 +141,7 @@ export default function AboutPage() {
                     width={1200}
                     height={1600}
                     quality={95}
+                    sizes="(min-width: 1280px) 560px, (min-width: 768px) 42vw, 90vw"
                     className="w-full h-full object-cover"
                   />
                 </div>

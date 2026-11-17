@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { AREAS_SERVED, BUSINESS_ID, SITE } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 // Set NEXT_PUBLIC_GA_ID in Vercel (Project → Settings → Environment Variables).
 // Until it exists, no analytics script loads at all — nothing breaks.
@@ -29,24 +30,8 @@ export const metadata: Metadata = {
   title: "Fatahi Building | Custom Home Builder | Toronto & GTA",
   description:
     "Design-build firm and custom home builder in North York, Toronto. Custom homes, whole-home renovations and additions, designed and built by one team.",
-  keywords: [
-    "custom home builder",
-    "Toronto",
-    "GTA",
-    "design build",
-    "luxury homes",
-    "custom homes North York",
-    "home builder Toronto",
-  ],
-  openGraph: {
-    title: "Fatahi Building | Custom Home Builder | Toronto & GTA",
-    description:
-      "Design-build firm and custom home builder in North York, Toronto. Custom homes, whole-home renovations and additions, designed and built by one team.",
-    type: "website",
-    locale: "en_CA",
-    url: "https://www.fatahibuilding.com",
-    siteName: "Fatahi Building",
-  },
+  // Fallback share preview. Each page sets its own with social({ path }).
+  ...social({ path: "/" }),
 };
 
 // Tells Google who the business is. Service-area business: no public street address.

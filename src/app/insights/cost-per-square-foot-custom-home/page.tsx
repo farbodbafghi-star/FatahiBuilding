@@ -4,11 +4,13 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
 import JsonLd from "@/components/JsonLd";
 import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Cost Per Square Foot to Build in Ontario | Fatahi Building",
   description: "The cost per square foot to build a custom home in Ontario depends on the lot, the layout, the materials and the finishes. Here is what moves the number.",
   alternates: { canonical: "/insights/cost-per-square-foot-custom-home" },
+  ...social({ path: "/insights/cost-per-square-foot-custom-home", type: "article", publishedTime: "2026-11-11", modifiedTime: "2026-11-11" }),
 };
 
 export default function CostPerSquareFootCustomHomeArticle() {
@@ -21,6 +23,7 @@ export default function CostPerSquareFootCustomHomeArticle() {
             description: String(metadata.description),
             slug: "cost-per-square-foot-custom-home",
             datePublished: "2026-11-11",
+            dateModified: "2026-11-11",
           }),
           insightBreadcrumbs("Two Houses Can Be the Same Size and Cost Completely Different Amounts to Build", "cost-per-square-foot-custom-home"),
         ]}

@@ -8,6 +8,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, serviceSchema } from "@/lib/schema";
 import { additionsPhases } from "@/data/process-phases";
+import { social } from "@/lib/metadata";
 
 const faqs: FaqItem[] = [
   {
@@ -47,6 +48,7 @@ export const metadata: Metadata = {
   description:
     "Second-storey and rear additions in Toronto, designed and built to look like they were always part of the house.",
   alternates: { canonical: "/services/additions" },
+  ...social({ path: "/services/additions" }),
 };
 
 export default function AdditionsPage() {

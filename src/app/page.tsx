@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Custom Home Builder in Toronto & the GTA | Fatahi Building",
   alternates: { canonical: "/" },
+  ...social({ path: "/" }),
 };
 
 const projects = [
@@ -47,14 +49,18 @@ export default function Home() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section
-        className="relative h-screen min-h-[750px] flex items-end"
-        style={{
-          backgroundImage: "url('/images/projects/poyntz/hero-exterior-edited.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center 15%",
-        }}
-      >
+      <section className="relative h-screen min-h-[750px] flex items-end overflow-hidden">
+        {/* Loaded through next/image so phones get a small file and it starts first. */}
+        <Image
+          src="/images/projects/poyntz/hero-exterior-edited.jpg"
+          alt="A custom home in North York, Toronto, designed and built by Fatahi Building"
+          fill
+          priority
+          sizes="100vw"
+          quality={85}
+          className="object-cover"
+          style={{ objectPosition: "center 15%" }}
+        />
         <div className="absolute inset-0 bg-navy-dark/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-transparent to-transparent" />
         <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-navy-dark/70 to-transparent" />
@@ -153,6 +159,7 @@ export default function Home() {
                       width={1200}
                       height={1600}
                       quality={95}
+                      sizes="(min-width: 1024px) 22vw, 45vw"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -163,6 +170,7 @@ export default function Home() {
                       width={1200}
                       height={1600}
                       quality={95}
+                      sizes="(min-width: 1024px) 22vw, 45vw"
                       className="w-full h-full object-cover"
                     />
                   </div>

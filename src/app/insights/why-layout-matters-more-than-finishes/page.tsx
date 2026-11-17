@@ -4,12 +4,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
 import JsonLd from "@/components/JsonLd";
 import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Custom Home Layout Matters More Than Finishes | Fatahi Building",
   description:
     "Finishes get the attention, but the layout is what makes a custom home feel right: how the spaces flow, where the light lands, how the rooms connect.",
   alternates: { canonical: "/insights/why-layout-matters-more-than-finishes" },
+  ...social({ path: "/insights/why-layout-matters-more-than-finishes", type: "article", publishedTime: "2026-05-10", modifiedTime: "2026-11-12" }),
 };
 
 export default function LayoutMattersMoreThanFinishesArticle() {
@@ -22,6 +24,7 @@ export default function LayoutMattersMoreThanFinishesArticle() {
             description: String(metadata.description),
             slug: "why-layout-matters-more-than-finishes",
             datePublished: "2026-05-10",
+            dateModified: "2026-11-12",
           }),
           insightBreadcrumbs("Why Layout Matters More Than Finishes in a Custom Home", "why-layout-matters-more-than-finishes"),
         ]}

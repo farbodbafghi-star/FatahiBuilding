@@ -4,12 +4,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
 import JsonLd from "@/components/JsonLd";
 import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Choosing Materials for a Custom Home That Last | Fatahi Building",
   description:
     "Not every premium material is the right choice for every home. A builder\u2019s guide to selecting flooring, countertops, and fixtures that perform as well as they look.",
   alternates: { canonical: "/insights/choosing-materials-that-last" },
+  ...social({ path: "/insights/choosing-materials-that-last", type: "article", publishedTime: "2026-03-21", modifiedTime: "2026-11-11" }),
 };
 
 export default function MaterialsArticle() {
@@ -22,6 +24,7 @@ export default function MaterialsArticle() {
             description: String(metadata.description),
             slug: "choosing-materials-that-last",
             datePublished: "2026-03-21",
+            dateModified: "2026-11-11",
           }),
           insightBreadcrumbs("Choosing Materials That Last", "choosing-materials-that-last"),
         ]}

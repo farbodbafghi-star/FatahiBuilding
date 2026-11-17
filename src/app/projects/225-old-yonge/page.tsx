@@ -3,12 +3,14 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "New Custom Home in North York: Old Yonge | Fatahi Building",
   description:
     "A custom home of more than 8,000 sq ft under construction on Old Yonge Street in North York. Follow the build from design and approvals to the foundation.",
   alternates: { canonical: "/projects/225-old-yonge" },
+  ...social({ path: "/projects/225-old-yonge" }),
 };
 
 const highlights = [

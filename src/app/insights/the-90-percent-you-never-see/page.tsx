@@ -4,12 +4,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
 import JsonLd from "@/components/JsonLd";
 import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "The 90% of a Custom Home You Never See | Fatahi Building",
   description:
     "You judge a home by the 10% you can see. The 90% behind the drywall decides how it holds up. Here is the invisible work that makes a home age well.",
   alternates: { canonical: "/insights/the-90-percent-you-never-see" },
+  ...social({ path: "/insights/the-90-percent-you-never-see", type: "article", publishedTime: "2026-07-03", modifiedTime: "2026-11-11" }),
 };
 
 export default function NinetyPercentYouNeverSeeArticle() {
@@ -22,6 +24,7 @@ export default function NinetyPercentYouNeverSeeArticle() {
             description: String(metadata.description),
             slug: "the-90-percent-you-never-see",
             datePublished: "2026-07-03",
+            dateModified: "2026-11-11",
           }),
           insightBreadcrumbs("The 90% You'll Never See: Why Two Identical-Looking Homes Age Completely Differently", "the-90-percent-you-never-see"),
         ]}

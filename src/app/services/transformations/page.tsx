@@ -8,6 +8,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, serviceSchema } from "@/lib/schema";
 import { transformationsPhases } from "@/data/process-phases";
+import { social } from "@/lib/metadata";
 
 const faqs: FaqItem[] = [
   {
@@ -47,6 +48,7 @@ export const metadata: Metadata = {
   description:
     "Whole-home transformations in Toronto: open layouts, new systems and a rebuilt interior, while keeping the home you already have. Designed and built by one team.",
   alternates: { canonical: "/services/transformations" },
+  ...social({ path: "/services/transformations" }),
 };
 
 export default function TransformationsPage() {

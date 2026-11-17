@@ -4,12 +4,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
 import JsonLd from "@/components/JsonLd";
 import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Committee of Adjustment in Toronto, Explained | Fatahi Building",
   description:
     "The Committee of Adjustment quietly adds two to four months to a custom home in Toronto. What it is, when you need a minor variance, and how to get through it.",
   alternates: { canonical: "/insights/committee-of-adjustment-toronto" },
+  ...social({ path: "/insights/committee-of-adjustment-toronto", type: "article", publishedTime: "2026-07-03", modifiedTime: "2026-11-11" }),
 };
 
 export default function CommitteeOfAdjustmentArticle() {
@@ -22,6 +24,7 @@ export default function CommitteeOfAdjustmentArticle() {
             description: String(metadata.description),
             slug: "committee-of-adjustment-toronto",
             datePublished: "2026-07-03",
+            dateModified: "2026-11-11",
           }),
           insightBreadcrumbs("The Committee of Adjustment: The Approval Step Most Homeowners Have Never Heard Of", "committee-of-adjustment-toronto"),
         ]}
@@ -54,7 +57,7 @@ export default function CommitteeOfAdjustmentArticle() {
               The Committee of Adjustment: The Approval Step Most Homeowners
               Have Never Heard Of
             </h1>
-            <p className="text-white/40 text-sm font-light">June 2026</p>
+            <p className="text-white/40 text-sm font-light">July 2026</p>
           </ScrollReveal>
         </div>
       </section>

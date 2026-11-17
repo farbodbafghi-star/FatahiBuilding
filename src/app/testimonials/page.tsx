@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+import { social } from "@/lib/metadata";
 
 const testimonials = [
   { quote: "The work was completed right on time, and Majid along with his entire team handled the project with professionalism, care, and great attention to detail. Everything was finished to a very high standard.", author: "Ali N.", project: "Custom Home" },
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
   description:
     "What homeowners and partners say about working with Fatahi Building on custom homes in Toronto.",
   alternates: { canonical: "/testimonials" },
+  ...social({ path: "/testimonials" }),
 };
 
 export default function TestimonialsPage() {

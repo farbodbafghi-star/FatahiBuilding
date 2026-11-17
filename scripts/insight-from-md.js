@@ -101,6 +101,15 @@ for (const slug of slugs) {
       .map((w) => w[0].toUpperCase() + w.slice(1))
       .join("") + "Article";
   const js = (s) => JSON.stringify(s);
+  // "Updated" is optional: the day the text last changed. Defaults to Published.
+  const updatedMatch = md.match(/^\*\*Updated:\*\*\s*(.+)$/m);
+  const updated = updatedMatch ? updatedMatch[1].trim() : field("Published");
+  // The month shown under the headline must be the month it was published.
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const publishedLabel = `${months[Number(field("Published").slice(5, 7)) - 1]} ${field("Published").slice(0, 4)}`;
+  if (field("Date") !== publishedLabel) {
+    throw new Error(`${slug}: Date is "${field("Date")}" but Published ${field("Published")} is ${publishedLabel}. They must match.`);
+  }
 
   const page = `import type { Metadata } from "next";
 import Link from "next/link";
@@ -108,11 +117,13 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
 import JsonLd from "@/components/JsonLd";
 import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: ${js(field("Search title") + " | Fatahi Building")},
   description: ${js(field("Meta description"))},
   alternates: { canonical: ${js("/insights/" + slug)} },
+  ...social({ path: ${js("/insights/" + slug)}, type: "article", publishedTime: ${js(field("Published"))}, modifiedTime: ${js(updated)} }),
 };
 
 export default function ${component}() {
@@ -125,6 +136,7 @@ export default function ${component}() {
             description: String(metadata.description),
             slug: ${js(slug)},
             datePublished: ${js(field("Published"))},
+            dateModified: ${js(updated)},
           }),
           insightBreadcrumbs(${js(headline)}, ${js(slug)}),
         ]}

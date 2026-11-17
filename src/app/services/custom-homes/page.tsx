@@ -8,6 +8,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, serviceSchema } from "@/lib/schema";
 import { customHomesPhases } from "@/data/process-phases";
+import { social } from "@/lib/metadata";
 
 const galleryImages = [
   { src: "/images/projects/poyntz/027-Images_017.jpg", alt: "Custom home living room with marble fireplace" },
@@ -58,6 +59,7 @@ export const metadata: Metadata = {
   description:
     "Design-build custom homes in Toronto and North York. Design, engineering, approvals and construction handled by one team, from teardown to keys.",
   alternates: { canonical: "/services/custom-homes" },
+  ...social({ path: "/services/custom-homes" }),
 };
 
 export default function CustomHomesPage() {

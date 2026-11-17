@@ -46,11 +46,14 @@ export function articleSchema({
   description,
   slug,
   datePublished,
+  dateModified,
 }: {
   headline: string;
   description: string;
   slug: string;
   datePublished: string;
+  // The day the article's text last changed. Leave out if it never has.
+  dateModified?: string;
 }) {
   const url = `${SITE}/insights/${slug}`;
   return {
@@ -61,6 +64,8 @@ export function articleSchema({
     url,
     mainEntityOfPage: url,
     datePublished,
+    dateModified: dateModified ?? datePublished,
+    image: `${SITE}/images/share/default.jpg`,
     inLanguage: "en-CA",
     author: { "@id": BUSINESS_ID },
     publisher: { "@id": BUSINESS_ID },

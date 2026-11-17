@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Custom Home Projects in Toronto & North York | Fatahi Building",
   description: "Explore custom homes designed and built by Fatahi Building in Toronto and the GTA. From ground-up builds to whole-home transformations.",
   alternates: { canonical: "/projects" },
+  ...social({ path: "/projects" }),
 };
 
 const projects = [

@@ -4,11 +4,13 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ArticleView from "@/components/ArticleView";
 import JsonLd from "@/components/JsonLd";
 import { articleSchema, insightBreadcrumbs } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Building a Custom Home in Toronto: Timeline | Fatahi Building",
   description: "Building a custom home in Toronto starts months before construction. Design, engineering, approvals and permits take five to six months on average.",
   alternates: { canonical: "/insights/custom-home-timeline-toronto-before-you-build" },
+  ...social({ path: "/insights/custom-home-timeline-toronto-before-you-build", type: "article", publishedTime: "2026-11-11", modifiedTime: "2026-11-11" }),
 };
 
 export default function CustomHomeTimelineTorontoBeforeYouBuildArticle() {
@@ -21,6 +23,7 @@ export default function CustomHomeTimelineTorontoBeforeYouBuildArticle() {
             description: String(metadata.description),
             slug: "custom-home-timeline-toronto-before-you-build",
             datePublished: "2026-11-11",
+            dateModified: "2026-11-11",
           }),
           insightBreadcrumbs("For Six Months You Could Have Driven Past This Lot and Thought Nothing Was Happening", "custom-home-timeline-toronto-before-you-build"),
         ]}
@@ -52,7 +55,7 @@ export default function CustomHomeTimelineTorontoBeforeYouBuildArticle() {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-light font-heading text-white leading-tight tracking-wide mb-8">
               For Six Months You Could Have Driven Past This Lot and Thought Nothing Was Happening
             </h1>
-            <p className="text-white/40 text-sm font-light">October 2026</p>
+            <p className="text-white/40 text-sm font-light">November 2026</p>
           </ScrollReveal>
         </div>
       </section>

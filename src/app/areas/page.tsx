@@ -5,12 +5,14 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { areas } from "@/data/areas";
 import { breadcrumbSchema } from "@/lib/schema";
+import { social } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Areas We Serve in Toronto & the GTA | Fatahi Building",
   description:
     "Fatahi Building designs and builds custom homes, additions and renovations across Toronto and the GTA, from Rosedale and Forest Hill to North York and Vaughan.",
   alternates: { canonical: "/areas" },
+  ...social({ path: "/areas" }),
 };
 
 export default function AreasPage() {
