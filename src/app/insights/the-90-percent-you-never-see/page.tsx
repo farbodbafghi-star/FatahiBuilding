@@ -57,7 +57,11 @@ export default function NinetyPercentYouNeverSeeArticle() {
               The 90% You&apos;ll Never See: Why Two Identical-Looking Homes Age
               Completely Differently
             </h1>
-            <p className="text-white/40 text-sm font-light">July 2026</p>
+            <p className="text-white/40 text-sm font-light">
+              By{" "}
+              <Link href="/about" className="text-white/60 hover:text-beige transition-colors duration-300">Farbod Fatahi</Link>
+              {" "}&middot; July 2026
+            </p>
           </ScrollReveal>
         </div>
       </section>

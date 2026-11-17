@@ -108,7 +108,8 @@ export function articleSchema({
     dateModified: dateModified ?? datePublished,
     image: `${SITE}/images/share/default.jpg`,
     inLanguage: "en-CA",
-    author: { "@id": BUSINESS_ID },
+    // Farbod is the named author of every insight; the firm is the publisher.
+    author: { "@id": FARBOD_ID },
     publisher: { "@id": BUSINESS_ID },
   };
 }

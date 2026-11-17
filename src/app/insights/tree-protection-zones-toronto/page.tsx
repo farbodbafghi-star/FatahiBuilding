@@ -57,7 +57,11 @@ export default function TreeProtectionZonesArticle() {
               You Can Kill a Tree on a Construction Site Without Ever Touching
               It
             </h1>
-            <p className="text-white/40 text-sm font-light">September 2026</p>
+            <p className="text-white/40 text-sm font-light">
+              By{" "}
+              <Link href="/about" className="text-white/60 hover:text-beige transition-colors duration-300">Farbod Fatahi</Link>
+              {" "}&middot; September 2026
+            </p>
           </ScrollReveal>
         </div>
       </section>

@@ -55,7 +55,11 @@ export default function CustomHomeTimelineTorontoBeforeYouBuildArticle() {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-light font-heading text-white leading-tight tracking-wide mb-8">
               For Six Months You Could Have Driven Past This Lot and Thought Nothing Was Happening
             </h1>
-            <p className="text-white/40 text-sm font-light">November 2026</p>
+            <p className="text-white/40 text-sm font-light">
+              By{" "}
+              <Link href="/about" className="text-white/60 hover:text-beige transition-colors duration-300">Farbod Fatahi</Link>
+              {" "}&middot; November 2026
+            </p>
           </ScrollReveal>
         </div>
       </section>

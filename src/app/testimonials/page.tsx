@@ -3,10 +3,16 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import { social } from "@/lib/metadata";
 
+// The firm's public Google profile, where every review below can be read in full.
+const GOOGLE_PROFILE = "https://www.google.com/maps?cid=16447177329701648941";
+
+// Quotes are the reviewer's own words, copied from Google exactly as written.
+// Only whole sentences are left out (the opening and closing lines). Never
+// reword a quote: if a review changes on Google, copy the new text.
 const testimonials = [
   { quote: "The work was completed right on time, and Majid along with his entire team handled the project with professionalism, care, and great attention to detail. Everything was finished to a very high standard.", author: "Ali N.", project: "Custom Home" },
-  { quote: "He truly cares about the quality of his work. One thing I really appreciated is that he tries to make sure there is no wasted or unused space in the house, which makes the design very practical and efficient.", author: "Azita N.", project: "Custom Home" },
-  { quote: "Reliable, pays close attention to detail, and focuses on high-quality work. Especially appreciated his effort to create practical, efficient designs.", author: "Green Building Canmo", project: "Partner Review" },
+  { quote: "He is very reliable, pays close attention to detail, and truly cares about the quality of his work. One thing I really appreciated is that he tries to make sure there is no wasted or unused space in the house, which makes the design very practical and efficient.", author: "Azita N.", project: "Custom Home" },
+  { quote: "He is reliable, pays close attention to detail, and focuses on high-quality work. I especially appreciated his effort to avoid wasted space and create practical, efficient designs.", author: "Green Building Canmo", project: "Partner" },
 ];
 
 export const metadata: Metadata = {
@@ -26,7 +32,7 @@ export default function TestimonialsPage() {
           <div className="max-w-2xl">
             <h1 className="section-label mb-8 animate-fade-in">Fatahi Building Client Reviews</h1>
             <p className="text-4xl md:text-5xl font-light font-heading text-white leading-tight tracking-wide animate-fade-up">
-              What our clients say
+              What our clients and partners say
             </p>
             <div className="divider mt-10 mb-10 animate-fade-in animate-delay-200" />
             <p className="text-white/50 font-light leading-relaxed animate-fade-up animate-delay-200">
@@ -65,9 +71,17 @@ export default function TestimonialsPage() {
                 </div>
               </div>
               <div className="hidden md:block w-px h-12 bg-white/10" />
-              <p className="text-white/40 font-light text-sm text-center md:text-left">
-                Rated 5 stars on Google, every project, every time.
-              </p>
+              <a
+                href={GOOGLE_PROFILE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-beige text-[13px] font-light tracking-[0.15em] hover:text-beige-light transition-colors duration-300 group"
+              >
+                Read the reviews on Google
+                <svg className="ml-3 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                </svg>
+              </a>
             </div>
           </ScrollReveal>
         </div>
@@ -94,7 +108,7 @@ export default function TestimonialsPage() {
                         <div className="w-12 h-px bg-beige" />
                         <div>
                           <p className="text-cream text-sm font-medium">{t.author}</p>
-                          <p className="text-white/40 text-xs font-light mt-0.5">{t.project}</p>
+                          <p className="text-white/40 text-xs font-light mt-0.5">{t.project} &middot; Google review</p>
                         </div>
                       </div>
                     </div>
@@ -148,7 +162,7 @@ export default function TestimonialsPage() {
               Ready to begin something extraordinary?
             </h2>
             <p className="text-white/40 font-light text-sm leading-relaxed max-w-xl mx-auto mb-10">
-              Every project on this page began the same way, with a vision and a conversation. Share yours.
+              Every project began the same way, with a vision and a conversation. Share yours.
             </p>
             <Link href="/contact" className="border border-beige/30 text-beige px-12 py-4 text-[13px] font-light tracking-[0.15em] hover:bg-beige hover:text-navy transition-all duration-500">
               Start a Conversation

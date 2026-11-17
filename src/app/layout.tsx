@@ -74,6 +74,8 @@ const businessSchema = {
   sameAs: [
     "https://www.instagram.com/fatahibuilding",
     "https://www.linkedin.com/company/fatahi-building-inc/",
+    // Google Business Profile
+    "https://www.google.com/maps?cid=16447177329701648941",
   ],
 };
 

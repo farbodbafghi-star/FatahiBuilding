@@ -35,12 +35,12 @@ const testimonials = [
   },
   {
     quote:
-      "He truly cares about the quality of his work. One thing I really appreciated is that he tries to make sure there is no wasted or unused space in the house.",
+      "He is very reliable, pays close attention to detail, and truly cares about the quality of his work.",
     author: "Azita N.",
   },
   {
     quote:
-      "Reliable, pays close attention to detail, and focuses on high-quality work. Especially appreciated his effort to create practical, efficient designs.",
+      "I especially appreciated his effort to avoid wasted space and create practical, efficient designs.",
     author: "Green Building Canmo",
   },
 ];

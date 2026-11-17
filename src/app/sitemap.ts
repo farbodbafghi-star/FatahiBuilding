@@ -24,7 +24,7 @@ const pages: { path: string; priority: number; updated: string }[] = [
     updated: AREAS_UPDATED,
   })),
   { path: "/about", priority: 0.7, updated: "2026-11-12" },
-  { path: "/testimonials", priority: 0.6, updated: "2026-11-11" },
+  { path: "/testimonials", priority: 0.6, updated: "2026-11-17" },
   { path: "/contact", priority: 0.7, updated: "2026-11-12" },
   { path: "/insights", priority: 0.7, updated: "2026-11-12" },
   { path: "/insights/custom-home-foundation-north-york", priority: 0.6, updated: "2026-11-11" },

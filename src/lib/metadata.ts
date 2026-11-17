@@ -18,6 +18,11 @@ export const DEFAULT_SHARE_IMAGE: ShareImage = {
   alt: "A custom home by Fatahi Building in North York, Toronto",
 };
 
+const ARTICLE_AUTHOR = {
+  name: "Farbod Fatahi",
+  url: "https://www.fatahibuilding.com/about",
+};
+
 type SocialOptions = {
   path: string;
   image?: ShareImage;
@@ -33,19 +38,29 @@ export function social({
   type = "website",
   publishedTime,
   modifiedTime,
-}: SocialOptions): Pick<Metadata, "openGraph" | "twitter"> {
+}: SocialOptions): Pick<Metadata, "openGraph" | "twitter" | "authors"> {
   const shared = {
     url: path,
     siteName: "Fatahi Building",
     locale: "en_CA",
     images: [image],
   };
+  const twitter = { card: "summary_large_image" as const, images: [image] };
 
-  return {
-    openGraph:
-      type === "article"
-        ? { ...shared, type: "article", publishedTime, modifiedTime }
-        : { ...shared, type: "website" },
-    twitter: { card: "summary_large_image", images: [image] },
-  };
+  if (type === "article") {
+    return {
+      // Every insight is written by Farbod.
+      authors: [{ name: ARTICLE_AUTHOR.name, url: ARTICLE_AUTHOR.url }],
+      openGraph: {
+        ...shared,
+        type: "article",
+        publishedTime,
+        modifiedTime,
+        authors: [ARTICLE_AUTHOR.url],
+      },
+      twitter,
+    };
+  }
+
+  return { openGraph: { ...shared, type: "website" }, twitter };
 }
