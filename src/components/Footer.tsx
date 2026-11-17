@@ -74,7 +74,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm font-light text-white/40 leading-relaxed">
-              Luxury design-build for custom homes,
+              Design-build for custom homes,
               whole-home renovations, and additions in Toronto &amp; the GTA.
             </p>
           </div>
@@ -170,7 +170,7 @@ export default function Footer() {
           <div>
             <p className="text-white text-sm font-medium mb-6">Subscribe to Insights</p>
             <p className="text-sm font-light text-white/40 leading-relaxed mb-6">
-              Receive perspectives on luxury home design, construction, and living well.
+              Receive perspectives on home design, construction, and living well.
             </p>
             {subStatus === "done" ? (
               <p className="text-beige/70 text-sm font-light">Thank you for subscribing.</p>

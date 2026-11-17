@@ -77,8 +77,8 @@ export default function Home() {
               Concept to completion.
             </p>
             <p className="mt-8 text-lg md:text-xl text-white/60 font-light leading-relaxed animate-fade-up animate-delay-200 max-w-lg">
-              Luxury residences in Toronto &amp; the GTA. Three decades
-              of design-build mastery.
+              Custom homes, whole-home renovations and additions in
+              Toronto &amp; the GTA.
             </p>
             <div className="mt-12 flex flex-wrap gap-5 animate-fade-up animate-delay-300">
               <Link
